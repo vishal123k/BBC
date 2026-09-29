@@ -89,16 +89,25 @@ async function loadAllData() {
 async function loadStats() {
   try {
     const res = await fetch('api.php?action=get_stats');
-    const data = await res.json();
-    if (data.success && data.stats) {
-      document.getElementById('stat-products').textContent = data.stats.total_products || 0;
-      document.getElementById('stat-orders').textContent = data.stats.total_orders || 0;
-      document.getElementById('stat-inquiries').textContent = data.stats.total_inquiries || 0;
-      document.getElementById('stat-blogs').textContent = data.stats.total_blogs || 0;
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success && data.stats) {
+        document.getElementById('stat-products').textContent = data.stats.total_products || 0;
+        document.getElementById('stat-orders').textContent = data.stats.total_orders || 0;
+        document.getElementById('stat-inquiries').textContent = data.stats.total_inquiries || 0;
+        document.getElementById('stat-blogs').textContent = data.stats.total_blogs || 0;
+        return;
+      }
     }
   } catch (err) {
-    console.error('Failed to load stats:', err);
+    // Fallback for local preview mode
   }
+
+  // Local fallback calculations
+  document.getElementById('stat-products').textContent = allProducts.length || 0;
+  document.getElementById('stat-orders').textContent = allOrders.length || 0;
+  document.getElementById('stat-inquiries').textContent = allInquiries.length || 0;
+  document.getElementById('stat-blogs').textContent = allBlogs.length || 0;
 }
 
 function renderOverviewSummaries() {
@@ -163,14 +172,28 @@ function renderOverviewSummaries() {
 async function loadProducts() {
   try {
     const res = await fetch('api.php?action=get_products');
-    const data = await res.json();
-    if (data.success && Array.isArray(data.products)) {
-      allProducts = data.products;
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success && Array.isArray(data.products)) {
+        allProducts = data.products;
+        populateCategoryFilter();
+        renderProductsTable();
+        return;
+      }
+    }
+  } catch (err) {
+    // API call failed, try direct JSON fallback for local preview
+  }
+
+  try {
+    const fallbackRes = await fetch('../data/products.json');
+    if (fallbackRes.ok) {
+      allProducts = await fallbackRes.json();
       populateCategoryFilter();
       renderProductsTable();
     }
-  } catch (err) {
-    console.error('Failed to load products:', err);
+  } catch (e) {
+    console.error('Failed to load products from JSON:', e);
   }
 }
 
@@ -384,13 +407,26 @@ async function deleteProduct(productId) {
 async function loadBlogs() {
   try {
     const res = await fetch('api.php?action=get_blogs');
-    const data = await res.json();
-    if (data.success && Array.isArray(data.blogs)) {
-      allBlogs = data.blogs;
-      renderBlogsTable();
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success && Array.isArray(data.blogs)) {
+        allBlogs = data.blogs;
+        renderBlogsTable();
+        return;
+      }
     }
   } catch (err) {
-    console.error('Failed to load blogs:', err);
+    // Try fallback
+  }
+
+  try {
+    const fallbackRes = await fetch('../data/blog.json');
+    if (fallbackRes.ok) {
+      allBlogs = await fallbackRes.json();
+      renderBlogsTable();
+    }
+  } catch (e) {
+    console.error('Failed to load blogs from JSON:', e);
   }
 }
 
@@ -556,14 +592,30 @@ async function deleteBlog(blogId) {
 async function loadOrders() {
   try {
     const res = await fetch('api.php?action=get_orders');
-    const data = await res.json();
-    if (data.success && Array.isArray(data.orders)) {
-      allOrders = data.orders;
-      renderOrdersTable();
-      renderOverviewSummaries();
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success && Array.isArray(data.orders)) {
+        allOrders = data.orders;
+        renderOrdersTable();
+        renderOverviewSummaries();
+        return;
+      }
     }
   } catch (err) {
-    console.error('Failed to load orders:', err);
+    // Try fallback
+  }
+
+  try {
+    const fallbackRes = await fetch('../data/orders.json');
+    if (fallbackRes.ok) {
+      allOrders = await fallbackRes.json();
+      if (Array.isArray(allOrders)) {
+        renderOrdersTable();
+        renderOverviewSummaries();
+      }
+    }
+  } catch (e) {
+    console.error('Failed to load orders from JSON:', e);
   }
 }
 
@@ -752,14 +804,30 @@ function getStatusBadge(status) {
 async function loadInquiries() {
   try {
     const res = await fetch('api.php?action=get_inquiries');
-    const data = await res.json();
-    if (data.success && Array.isArray(data.inquiries)) {
-      allInquiries = data.inquiries;
-      renderInquiriesTable();
-      renderOverviewSummaries();
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success && Array.isArray(data.inquiries)) {
+        allInquiries = data.inquiries;
+        renderInquiriesTable();
+        renderOverviewSummaries();
+        return;
+      }
     }
   } catch (err) {
-    console.error('Failed to load inquiries:', err);
+    // Try fallback
+  }
+
+  try {
+    const fallbackRes = await fetch('../data/inquiries.json');
+    if (fallbackRes.ok) {
+      allInquiries = await fallbackRes.json();
+      if (Array.isArray(allInquiries)) {
+        renderInquiriesTable();
+        renderOverviewSummaries();
+      }
+    }
+  } catch (e) {
+    console.error('Failed to load inquiries from JSON:', e);
   }
 }
 
@@ -857,17 +925,34 @@ async function deleteInquiry(inquiryId) {
 async function loadSettings() {
   try {
     const res = await fetch('api.php?action=get_settings');
-    const data = await res.json();
-    if (data.success && data.settings) {
-      currentSettings = data.settings;
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success && data.settings) {
+        currentSettings = data.settings;
+        populateSettingsForm();
+        const bannerEmail = document.getElementById('overview-notification-email');
+        if (bannerEmail) {
+          bannerEmail.textContent = currentSettings.notification_email || 'info@brownboyscustoms.ca';
+        }
+        return;
+      }
+    }
+  } catch (err) {
+    // Try fallback
+  }
+
+  try {
+    const fallbackRes = await fetch('../data/settings.json');
+    if (fallbackRes.ok) {
+      currentSettings = await fallbackRes.json();
       populateSettingsForm();
       const bannerEmail = document.getElementById('overview-notification-email');
       if (bannerEmail) {
         bannerEmail.textContent = currentSettings.notification_email || 'info@brownboyscustoms.ca';
       }
     }
-  } catch (err) {
-    console.error('Failed to load settings:', err);
+  } catch (e) {
+    console.error('Failed to load settings from JSON:', e);
   }
 }
 
