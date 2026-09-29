@@ -1669,19 +1669,6 @@
   <script src="js/cart.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Ensure cart has items matching reference scenario if empty
-      const existingCart = getCart();
-      if (!existingCart || existingCart.length === 0) {
-        saveCart([
-          {
-            id: '1969-dodge-challenger',
-            name: '1969 Dodge Challenger 1:18 Die-Cast Collector Model',
-            price: 65.00,
-            image: 'images/products/1969-dodge-challenger.jpg',
-            quantity: 3
-          }
-        ]);
-      }
       initCartPage();
     });
 
