@@ -969,6 +969,11 @@ function populateSettingsForm() {
   if (currInput) currInput.value = currentSettings.currency || '$';
   if (phoneInput) phoneInput.value = currentSettings.store_phone || '289-367-5047';
   if (addrInput) addrInput.value = currentSettings.store_address || 'Unit 20, 180 Wilkinson Road, Brampton, ON L6T 4W8 & Unit 1C30, 7215 Goreway Dr, Mississauga, ON L4T 2T9';
+
+  const smtpUserInput = document.getElementById('setting-smtp-user');
+  const smtpPassInput = document.getElementById('setting-smtp-pass');
+  if (smtpUserInput) smtpUserInput.value = currentSettings.smtp_user || currentSettings.notification_email || 'brownboyscustoms@gmail.com';
+  if (smtpPassInput) smtpPassInput.value = currentSettings.smtp_pass || '';
 }
 
 async function handleSaveSettings(e) {
@@ -978,7 +983,9 @@ async function handleSaveSettings(e) {
     production_email: document.getElementById('setting-production-email').value.trim(),
     currency: document.getElementById('setting-currency').value.trim(),
     store_phone: document.getElementById('setting-store-phone').value.trim(),
-    store_address: document.getElementById('setting-store-address').value.trim()
+    store_address: document.getElementById('setting-store-address').value.trim(),
+    smtp_user: (document.getElementById('setting-smtp-user') ? document.getElementById('setting-smtp-user').value.trim() : 'brownboyscustoms@gmail.com'),
+    smtp_pass: (document.getElementById('setting-smtp-pass') ? document.getElementById('setting-smtp-pass').value.trim() : '')
   };
 
   try {
@@ -990,7 +997,7 @@ async function handleSaveSettings(e) {
     const data = await res.json();
     if (data.success) {
       showToast('Settings saved successfully!');
-      currentSettings = settingsData;
+      currentSettings = { ...currentSettings, ...settingsData };
       const bannerEmail = document.getElementById('overview-notification-email');
       if (bannerEmail) bannerEmail.textContent = settingsData.notification_email;
     } else {
@@ -998,6 +1005,28 @@ async function handleSaveSettings(e) {
     }
   } catch (err) {
     showToast('Network error saving settings', true);
+  }
+}
+
+async function handleTestSmtp() {
+  const statusEl = document.getElementById('smtp-test-status');
+  if (statusEl) {
+    statusEl.innerHTML = '<span style="color:var(--admin-gold);">Connecting & sending test email...</span>';
+  }
+
+  try {
+    const res = await fetch('api.php?action=test_smtp');
+    const data = await res.json();
+    if (data.success) {
+      if (statusEl) statusEl.innerHTML = `<span style="color:#22c55e;">✓ ${escapeHtml(data.message)}</span>`;
+      showToast(data.message);
+    } else {
+      if (statusEl) statusEl.innerHTML = `<span style="color:#ef4444;">✗ ${escapeHtml(data.error || 'Test failed')}</span>`;
+      showToast(data.error || 'Failed to send test email', true);
+    }
+  } catch (e) {
+    if (statusEl) statusEl.innerHTML = '<span style="color:#ef4444;">✗ Network error testing SMTP</span>';
+    showToast('Network error testing SMTP', true);
   }
 }
 

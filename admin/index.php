@@ -345,6 +345,34 @@ require_admin_login();
               </div>
             </div>
 
+            <!-- Gmail SMTP Section -->
+            <div style="margin-top:1.5rem;padding:1.25rem;background:rgba(201,161,61,0.06);border:1px solid rgba(201,161,61,0.25);border-radius:8px;">
+              <h4 style="margin:0 0 0.5rem 0;color:var(--admin-gold);font-size:1rem;display:flex;align-items:center;gap:6px;">
+                <svg style="width:18px;height:18px;fill:currentColor;" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                Gmail SMTP Settings (InfinityFree Live Email Dispatch)
+              </h4>
+              <p style="margin:0 0 1rem 0;font-size:0.83rem;color:var(--admin-text-muted);line-height:1.5;">
+                Enter your 16-character Google App Password for <code>brownboyscustoms@gmail.com</code> to send order receipts and customer inquiries via PHPMailer.
+              </p>
+              <div class="admin-form-row">
+                <div class="admin-form-group">
+                  <label class="admin-form-label">Gmail Address</label>
+                  <input type="email" id="setting-smtp-user" class="admin-form-control" value="brownboyscustoms@gmail.com">
+                </div>
+                <div class="admin-form-group">
+                  <label class="admin-form-label">Google App Password (16-char)</label>
+                  <input type="password" id="setting-smtp-pass" class="admin-form-control" placeholder="e.g. abcd efgh ijkl mnop">
+                </div>
+              </div>
+              <div style="margin-top:0.75rem;display:flex;align-items:center;gap:12px;">
+                <button type="button" class="btn btn-secondary" onclick="handleTestSmtp()" style="font-size:0.82rem;padding:0.45rem 0.9rem;">
+                  <svg style="width:14px;height:14px;fill:currentColor;vertical-align:-2px;margin-right:4px;" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                  Send Test Email
+                </button>
+                <span id="smtp-test-status" style="font-size:0.82rem;"></span>
+              </div>
+            </div>
+
             <div style="margin-top:1.5rem;">
               <button type="submit" class="btn btn-primary">Save Settings</button>
             </div>

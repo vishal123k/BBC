@@ -33,9 +33,17 @@ if (!empty($_POST['website_hp'])) {
     exit;
 }
 
-// 2. Extract and Sanitize Inputs
-$firstName = isset($_POST['first_name']) ? trim(strip_tags($_POST['first_name'])) : '';
-$lastName  = isset($_POST['last_name']) ? trim(strip_tags($_POST['last_name'])) : '';
+// 2. Extract and Sanitize Inputs (support JSON or form POST, first_name or fname)
+if (empty($_POST)) {
+    $rawInput = file_get_contents('php://input');
+    $jsonData = json_decode($rawInput, true);
+    if (is_array($jsonData)) {
+        $_POST = $jsonData;
+    }
+}
+
+$firstName = isset($_POST['first_name']) ? trim(strip_tags($_POST['first_name'])) : (isset($_POST['fname']) ? trim(strip_tags($_POST['fname'])) : '');
+$lastName  = isset($_POST['last_name']) ? trim(strip_tags($_POST['last_name'])) : (isset($_POST['lname']) ? trim(strip_tags($_POST['lname'])) : '');
 $email     = isset($_POST['email']) ? trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL)) : '';
 $phone     = isset($_POST['phone']) ? trim(strip_tags($_POST['phone'])) : '';
 $service   = isset($_POST['service']) ? trim(strip_tags($_POST['service'])) : (isset($_POST['subject']) ? trim(strip_tags($_POST['subject'])) : '');
@@ -108,17 +116,32 @@ $inquiryRecord = [
     'ip'        => $userIp,
     'status'    => 'new'
 ];
-// ── Atomic write with exclusive lock (safe for concurrent users) ──────────────
-$fp = fopen($inquiriesFile, 'c+');
-if ($fp) {
-    flock($fp, LOCK_EX);
-    $existingInquiries = json_decode(stream_get_contents($fp), true) ?: [];
-    array_unshift($existingInquiries, $inquiryRecord);
-    ftruncate($fp, 0);
-    rewind($fp);
-    fwrite($fp, json_encode($existingInquiries, JSON_PRETTY_PRINT));
-    flock($fp, LOCK_UN);
-    fclose($fp);
+
+// Ensure directory exists
+if (!is_dir(__DIR__ . '/data')) {
+    @mkdir(__DIR__ . '/data', 0777, true);
+}
+
+// Write inquiry with atomic file lock and fallback
+$written = false;
+if (file_exists($inquiriesFile)) {
+    $fp = @fopen($inquiriesFile, 'c+');
+    if ($fp) {
+        @flock($fp, LOCK_EX);
+        $existingInquiries = json_decode(stream_get_contents($fp), true) ?: [];
+        array_unshift($existingInquiries, $inquiryRecord);
+        ftruncate($fp, 0);
+        rewind($fp);
+        fwrite($fp, json_encode($existingInquiries, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+        @flock($fp, LOCK_UN);
+        fclose($fp);
+        $written = true;
+    }
+}
+if (!$written) {
+    $existing = file_exists($inquiriesFile) ? (json_decode(@file_get_contents($inquiriesFile), true) ?: []) : [];
+    array_unshift($existing, $inquiryRecord);
+    @file_put_contents($inquiriesFile, json_encode($existing, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 }
 
 // HTML Email Body
@@ -174,17 +197,10 @@ $htmlBody = '
 </html>
 ';
 
-// Email Headers
-$headers = [
-    'MIME-Version: 1.0',
-    'Content-Type: text/html; charset=UTF-8',
-    'From: Brown Boys Customs Web <' . $recipient . '>',
-    'Reply-To: ' . $fullName . ' <' . $cleanEmail . '>',
-    'X-Mailer: PHP/' . phpversion()
-];
-
-// 5. Send Mail
-$mailSent = @mail($recipient, $subject, $htmlBody, implode("\r\n", $headers));
+// 5. Send Mail using unified mailer (Gmail SMTP if configured, fallback to mail)
+require_once __DIR__ . '/mailer.php';
+$mailRes = send_bbc_email($recipient, 'Brown Boys Customs Admin', $subject, $htmlBody, strip_tags($htmlBody), $cleanEmail, $fullName);
+$mailSent = !empty($mailRes['success']);
 
 // 6. Handle Response
 $isAjax = (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') || (isset($_POST['ajax']) && $_POST['ajax'] === '1');

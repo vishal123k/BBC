@@ -11,5 +11,11 @@
   "hours_sat_brampton": "11:00 AM – 7:00 PM",
   "hours_sat_mississauga": "11:00 AM – 6:00 PM",
   "hours_sun_brampton": "11:00 AM – 7:00 PM",
-  "hours_sun_mississauga": "12:00 PM – 5:00 PM"
+  "hours_sun_mississauga": "12:00 PM – 5:00 PM",
+  "smtp_enabled": false,
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_secure": "tls",
+  "smtp_user": "brownboyscustoms@gmail.com",
+  "smtp_pass": ""
 }

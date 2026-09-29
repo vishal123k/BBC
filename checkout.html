@@ -2206,7 +2206,7 @@
       return isValid;
     }
 
-    function handlePlaceOrderSubmit() {
+    async function handlePlaceOrderSubmit() {
       // 1. Strict Validation Check: if any info is missing, STOP!
       if (!validateCheckoutForm()) {
         return;
@@ -2220,6 +2220,17 @@
         return;
       }
 
+      const placeBtn = document.getElementById('btn-place-order');
+      if (placeBtn) {
+        placeBtn.disabled = true;
+        placeBtn.innerHTML = `
+          <svg style="animation: spin 1s linear infinite; width:18px;height:18px;fill:currentColor;" viewBox="0 0 24 24">
+            <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0020 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 004 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/>
+          </svg>
+          <span>TRANSMITTING ORDER...</span>
+        `;
+      }
+
       const firstName = document.getElementById('billing_first_name').value.trim();
       const lastName = document.getElementById('billing_last_name').value.trim();
       const company = (document.getElementById('billing_company') ? document.getElementById('billing_company').value.trim() : '');
@@ -2231,6 +2242,7 @@
       const postcode = document.getElementById('billing_postcode').value.trim();
       const phone = document.getElementById('billing_phone').value.trim();
       const email = document.getElementById('billing_email').value.trim();
+      const orderNotes = (document.getElementById('order_comments') ? document.getElementById('order_comments').value.trim() : '');
 
       const subtotal = cart.reduce((sum, i) => sum + (i.price * i.quantity), 0);
       const province = state || 'ON';
@@ -2254,6 +2266,7 @@
         tax: tax,
         total: grandTotal,
         paymentMethod: selectedPaymentMethod,
+        orderNotes: orderNotes,
         billing: {
           firstName: firstName,
           lastName: lastName,
@@ -2273,6 +2286,20 @@
         sessionStorage.setItem('bbc_last_order', JSON.stringify(orderData));
       } catch (err) {
         console.warn('Could not save order to sessionStorage:', err);
+      }
+
+      // Record order on server in data/orders.json and send email alerts
+      try {
+        await fetch('checkout.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(orderData)
+        });
+      } catch (err) {
+        console.warn('Backend order recording notice (proceeding):', err);
       }
 
       // Clear Cart

@@ -1626,12 +1626,13 @@
     const statusBox = document.getElementById('contact-status-box');
 
     if (contactForm) {
-      contactForm.addEventListener('submit', (e) => {
+      contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         const fname = document.getElementById('contact-fname').value.trim();
         const lname = document.getElementById('contact-lname').value.trim();
         const email = document.getElementById('contact-email').value.trim();
+        const phone = document.getElementById('contact-phone') ? document.getElementById('contact-phone').value.trim() : '';
         const msg = document.getElementById('contact-msg').value.trim();
 
         if (!fname || !lname || !email || !msg) {
@@ -1653,14 +1654,40 @@
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<span>TRANSMITTING MESSAGE...</span>';
 
-        setTimeout(() => {
+        const formData = new FormData();
+        formData.append('first_name', fname);
+        formData.append('last_name', lname);
+        formData.append('email', email);
+        formData.append('phone', phone);
+        formData.append('message', msg);
+        formData.append('ajax', '1');
+
+        try {
+          const resp = await fetch('contact.php', {
+            method: 'POST',
+            body: formData
+          });
+          const res = await resp.json();
+          if (res && res.success) {
+            statusBox.className = 'form-status-box success';
+            statusBox.style.display = 'block';
+            statusBox.innerHTML = '✅ <strong>Thank you, ' + fname + '!</strong> Your message has been received. Our Brampton & Mississauga specialists will respond within 24 hours.';
+            contactForm.reset();
+          } else {
+            statusBox.className = 'form-status-box error';
+            statusBox.style.display = 'block';
+            statusBox.innerHTML = '⚠️ ' + (res.message || 'Unable to submit your message. Please try again or call 289-367-5047.');
+          }
+        } catch (err) {
+          console.error('Contact submit error:', err);
           statusBox.className = 'form-status-box success';
           statusBox.style.display = 'block';
-          statusBox.innerHTML = '✅ <strong>Thank you, ' + fname + '!</strong> Your message has been received. Our Mississauga specialists will respond within 24 hours.';
+          statusBox.innerHTML = '✅ <strong>Thank you, ' + fname + '!</strong> Your message has been submitted. For immediate service call 289-367-5047.';
           contactForm.reset();
+        } finally {
           submitBtn.disabled = false;
           submitBtn.innerHTML = '<svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg> <span>SUBMIT MESSAGE ➔</span>';
-        }, 800);
+        }
       });
     }
   </script>

@@ -323,11 +323,29 @@ switch ($action) {
             'store_address'      => trim($payload['store_address'] ?? 'Unit 20, 180 Wilkinson Road, Brampton, ON L6T 4W8 & Unit 1C30, 7215 Goreway Dr, Mississauga, ON L4T 2T9'),
             'hours_mon_fri'      => trim($payload['hours_mon_fri'] ?? '11:00 AM – 8:00 PM'),
             'hours_sat'          => trim($payload['hours_sat'] ?? '11:00 AM – 7:00 PM'),
-            'hours_sun'          => trim($payload['hours_sun'] ?? '11:00 AM – 7:00 PM')
+            'hours_sun'          => trim($payload['hours_sun'] ?? '11:00 AM – 7:00 PM'),
+            'smtp_enabled'       => !empty($payload['smtp_pass']) || !empty($payload['smtp_enabled']),
+            'smtp_host'          => trim($payload['smtp_host'] ?? ($existing['smtp_host'] ?? 'smtp.gmail.com')),
+            'smtp_port'          => intval($payload['smtp_port'] ?? ($existing['smtp_port'] ?? 587)),
+            'smtp_secure'        => trim($payload['smtp_secure'] ?? ($existing['smtp_secure'] ?? 'tls')),
+            'smtp_user'          => trim($payload['smtp_user'] ?? ($existing['smtp_user'] ?? 'brownboyscustoms@gmail.com')),
+            'smtp_pass'          => trim($payload['smtp_pass'] ?? ($existing['smtp_pass'] ?? ''))
         ]);
 
         write_json($settingsFile, $merged);
         echo json_encode(['success' => true, 'message' => 'Settings saved successfully.']);
+        break;
+
+    case 'test_smtp':
+        require_once __DIR__ . '/../mailer.php';
+        $settings = read_json($settingsFile);
+        $testRecipient = $settings['notification_email'] ?? 'brownboyscustoms@gmail.com';
+        $res = send_bbc_email($testRecipient, 'BBC Admin', 'BBC SMTP Test Email — Brown Boys Customs', '<div style="padding:24px;font-family:sans-serif;background:#0d1126;color:#fff;border-radius:8px;"><h2 style="color:#d9a044;margin:0 0 10px 0;">BBC SMTP Test Successful!</h2><p>Your Gmail SMTP connection is working perfectly on brownboyscustoms.ca.</p><p style="color:#94a3b8;font-size:12px;">Sent via PHPMailer on InfinityFree.</p></div>', 'BBC SMTP Test Successful! Your Gmail SMTP connection is working.');
+        if (!empty($res['success'])) {
+            echo json_encode(['success' => true, 'message' => "Test email successfully dispatched to {$testRecipient}! Check your inbox."]);
+        } else {
+            echo json_encode(['success' => false, 'error' => 'Failed to send test email. Please verify your 16-character Google App Password.']);
+        }
         break;
 
     case 'change_password':

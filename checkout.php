@@ -91,17 +91,31 @@ $orderRecord = [
     'orderNotes'     => $orderData['orderNotes'] ?? '',
     'status'         => 'pending',
 ];
-// ── Atomic write with exclusive lock (safe for concurrent users) ──────────────
-$fp = fopen($ordersFile, 'c+');
-if ($fp) {
-    flock($fp, LOCK_EX);                          // Wait for exclusive lock
-    $existing = json_decode(stream_get_contents($fp), true) ?: [];
-    array_unshift($existing, $orderRecord);        // Newest order first
-    ftruncate($fp, 0);
-    rewind($fp);
-    fwrite($fp, json_encode($existing, JSON_PRETTY_PRINT));
-    flock($fp, LOCK_UN);                          // Release lock
-    fclose($fp);
+// Ensure data directory exists
+if (!is_dir(__DIR__ . '/data')) {
+    @mkdir(__DIR__ . '/data', 0777, true);
+}
+
+// ── Atomic write with exclusive lock (safe for concurrent users) and fallback ──
+$saved = false;
+if (file_exists($ordersFile)) {
+    $fp = @fopen($ordersFile, 'c+');
+    if ($fp) {
+        @flock($fp, LOCK_EX);                          // Wait for exclusive lock
+        $existing = json_decode(stream_get_contents($fp), true) ?: [];
+        array_unshift($existing, $orderRecord);        // Newest order first
+        ftruncate($fp, 0);
+        rewind($fp);
+        fwrite($fp, json_encode($existing, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+        @flock($fp, LOCK_UN);                          // Release lock
+        fclose($fp);
+        $saved = true;
+    }
+}
+if (!$saved) {
+    $existing = file_exists($ordersFile) ? (json_decode(@file_get_contents($ordersFile), true) ?: []) : [];
+    array_unshift($existing, $orderRecord);
+    @file_put_contents($ordersFile, json_encode($existing, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 }
 
 // ─── Build item rows (HTML + plain-text) ─────────────────────────────────────
@@ -324,25 +338,17 @@ $adminBody   .= "TOTAL:     \${$total_fmt} CAD\n\n";
 if ($orderNotes) { $adminBody .= "NOTES:\n{$orderNotes}\n\n"; }
 $adminBody   .= "Admin Dashboard: https://brownboyscustoms.ca/admin/index.php\n";
 
-// ─── Send emails ──────────────────────────────────────────────────────────────
-$fromHeader  = 'From: Brown Boys Customs <no-reply@brownboyscustoms.ca>';
-$replyHeader = 'Reply-To: brownboyscustoms@gmail.com';
-$mailerHdr   = 'X-Mailer: PHP/' . phpversion();
+// ─── Send emails via unified mailer (Gmail SMTP if configured, fallback to mail) ───
+require_once __DIR__ . '/mailer.php';
 
-// Admin alert (plain text)
-@mail($adminEmail, $adminSubject, $adminBody, implode("\r\n", [$fromHeader, $replyHeader, $mailerHdr]));
+// Admin alert (HTML + plain text)
+$adminHtml = nl2br(htmlspecialchars($adminBody));
+send_bbc_email($adminEmail, 'Brown Boys Customs Admin', $adminSubject, $adminHtml, $adminBody, $billingEmail ?: '', $billingName ?: '');
 
-// Customer receipt (HTML)
+// Customer receipt (Luxury HTML)
 if ($billingEmail) {
     $customerSubject = "Your Brown Boys Customs Order is Confirmed! [{$orderNumber}]";
-    $htmlHeaders     = implode("\r\n", [
-        $fromHeader,
-        $replyHeader,
-        'MIME-Version: 1.0',
-        'Content-Type: text/html; charset=UTF-8',
-        $mailerHdr,
-    ]);
-    @mail($billingEmail, $customerSubject, $customerHtml, $htmlHeaders);
+    send_bbc_email($billingEmail, $billingName ?: 'Valued Customer', $customerSubject, $customerHtml, strip_tags($customerHtml), $adminEmail, 'Brown Boys Customs');
 }
 
 // ─── Return success ───────────────────────────────────────────────────────────
