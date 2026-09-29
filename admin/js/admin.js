@@ -932,7 +932,7 @@ async function loadSettings() {
         populateSettingsForm();
         const bannerEmail = document.getElementById('overview-notification-email');
         if (bannerEmail) {
-          bannerEmail.textContent = currentSettings.notification_email || 'info@brownboyscustoms.ca';
+          bannerEmail.textContent = currentSettings.notification_email || 'brownboyscustoms@gmail.com';
         }
         return;
       }
@@ -948,7 +948,7 @@ async function loadSettings() {
       populateSettingsForm();
       const bannerEmail = document.getElementById('overview-notification-email');
       if (bannerEmail) {
-        bannerEmail.textContent = currentSettings.notification_email || 'info@brownboyscustoms.ca';
+        bannerEmail.textContent = currentSettings.notification_email || 'brownboyscustoms@gmail.com';
       }
     }
   } catch (e) {
@@ -964,11 +964,11 @@ function populateSettingsForm() {
   const phoneInput = document.getElementById('setting-store-phone');
   const addrInput = document.getElementById('setting-store-address');
 
-  if (notifInput) notifInput.value = currentSettings.notification_email || 'info@brownboyscustoms.ca';
-  if (prodInput) prodInput.value = currentSettings.production_email || 'info@brownboyscustoms.ca';
+  if (notifInput) notifInput.value = currentSettings.notification_email || 'brownboyscustoms@gmail.com';
+  if (prodInput) prodInput.value = currentSettings.production_email || 'brownboyscustoms@gmail.com';
   if (currInput) currInput.value = currentSettings.currency || '$';
-  if (phoneInput) phoneInput.value = currentSettings.store_phone || '+1 (416) 825-9000';
-  if (addrInput) addrInput.value = currentSettings.store_address || '7215 Goreway Dr, Unit 1C30, Mississauga, ON L4T 2T9';
+  if (phoneInput) phoneInput.value = currentSettings.store_phone || '289-367-5047';
+  if (addrInput) addrInput.value = currentSettings.store_address || 'Unit 20, 180 Wilkinson Road, Brampton, ON L6T 4W8 & Unit 1C30, 7215 Goreway Dr, Mississauga, ON L4T 2T9';
 }
 
 async function handleSaveSettings(e) {

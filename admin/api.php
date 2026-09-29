@@ -61,7 +61,7 @@ switch ($action) {
                 'total_orders'      => count($orders),
                 'total_inquiries'   => count($inquiries),
                 'total_revenue'     => number_format($totalRevenue, 2),
-                'notification_email'=> $settings['notification_email'] ?? 'info@brownboyscustoms.ca'
+                'notification_email'=> $settings['notification_email'] ?? 'brownboyscustoms@gmail.com'
             ]
         ]);
         break;
@@ -317,13 +317,13 @@ switch ($action) {
 
         $existing = read_json($settingsFile);
         $merged = array_merge($existing, [
-            'notification_email' => trim($payload['notification_email'] ?? $existing['notification_email'] ?? 'info@brownboyscustoms.ca'),
-            'production_email'   => trim($payload['production_email'] ?? 'info@brownboyscustoms.ca'),
-            'store_phone'        => trim($payload['store_phone'] ?? '+1 647 966 0047'),
-            'store_address'      => trim($payload['store_address'] ?? '7215 Goreway Dr, Unit 1C30, Mississauga, ON L4T 2T9'),
-            'hours_mon_fri'      => trim($payload['hours_mon_fri'] ?? '10:00 AM – 9:00 PM'),
-            'hours_sat'          => trim($payload['hours_sat'] ?? '10:00 AM – 6:00 PM'),
-            'hours_sun'          => trim($payload['hours_sun'] ?? '12:00 PM – 5:00 PM')
+            'notification_email' => trim($payload['notification_email'] ?? $existing['notification_email'] ?? 'brownboyscustoms@gmail.com'),
+            'production_email'   => trim($payload['production_email'] ?? 'brownboyscustoms@gmail.com'),
+            'store_phone'        => trim($payload['store_phone'] ?? '289-367-5047'),
+            'store_address'      => trim($payload['store_address'] ?? 'Unit 20, 180 Wilkinson Road, Brampton, ON L6T 4W8 & Unit 1C30, 7215 Goreway Dr, Mississauga, ON L4T 2T9'),
+            'hours_mon_fri'      => trim($payload['hours_mon_fri'] ?? '11:00 AM – 8:00 PM'),
+            'hours_sat'          => trim($payload['hours_sat'] ?? '11:00 AM – 7:00 PM'),
+            'hours_sun'          => trim($payload['hours_sun'] ?? '11:00 AM – 7:00 PM')
         ]);
 
         write_json($settingsFile, $merged);

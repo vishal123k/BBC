@@ -89,23 +89,23 @@ function initContactPageForm() {
           data = JSON.parse(text);
         } catch (e) {
           // If PHP returned raw HTML or was run on static Python server, treat as success simulation
-          data = { success: true, message: `Thank you, ${firstNameInput.value.trim()}! Your message has been received. Our Mississauga crew will get back to you shortly.` };
+          data = { success: true, message: `Thank you, ${firstNameInput.value.trim()}! Your message has been received. Our team will get back to you shortly.` };
         }
 
         if (data.success) {
           showSuccessAlert(data.message || 'Thank you! Your message has been sent successfully.');
           form.reset();
         } else {
-          showErrorAlert(data.message || 'Unable to submit message. Please try again or call +1 647 966 0047.');
+          showErrorAlert(data.message || 'Unable to submit message. Please try again or call 289-367-5047.');
         }
       } else {
         // HTTP error or static local test fallback
-        showSuccessAlert(`Thank you, ${firstNameInput.value.trim()}! Your message has been received. You can also reach our Westwood Mall garage directly at +1 647 966 0047.`);
+        showSuccessAlert(`Thank you, ${firstNameInput.value.trim()}! Your message has been received. You can also call us directly at 289-367-5047.`);
         form.reset();
       }
     } catch (err) {
       // Offline or local static server without PHP engine
-      showSuccessAlert(`Thank you, ${firstNameInput.value.trim()}! Your message has been received. For immediate inquiries, call us 24/7 at +1 647 966 0047.`);
+      showSuccessAlert(`Thank you, ${firstNameInput.value.trim()}! Your message has been received. For immediate inquiries, call us at 289-367-5047.`);
       form.reset();
     } finally {
       if (submitBtn) {

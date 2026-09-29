@@ -1,8 +1,9 @@
 # Brown Boys Customs (BBC) — Website
 
 > Custom Car Accessories & Modifications  
-> 7215 Goreway Dr, Unit 1C30, Westwood Mall, Mississauga, ON  
-> 🌐 [brownboyscustoms.ca](https://brownboyscustoms.ca) | 📧 info@brownboyscustoms.ca | 📞 +1 647 966 0047
+> Location 1: Unit 20, 180 Wilkinson Road, Brampton, ON L6T 4W8  
+> Location 2: Unit 1C30, 7215 Goreway Dr, Mississauga, ON L4T 2T9 (Westwood Square)  
+> 🌐 [brownboyscustoms.ca](https://brownboyscustoms.ca) | 📧 brownboyscustoms@gmail.com | 📞 289-367-5047
 
 ---
 

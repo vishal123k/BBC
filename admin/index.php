@@ -121,7 +121,7 @@ require_admin_login();
               Testing Mode Active
             </div>
             <div style="color:var(--admin-text-muted);font-size:0.88rem;">
-              Customer inquiries and orders are routed to: <strong style="color:#fff;" id="overview-notification-email">info@brownboyscustoms.ca</strong>.
+              Customer inquiries and orders are routed to: <strong style="color:#fff;" id="overview-notification-email">brownboyscustoms@gmail.com</strong>.
             </div>
           </div>
           <button class="btn btn-primary" onclick="switchTab('tab-settings')" style="font-size:0.85rem;padding:0.5rem 1rem;">
@@ -319,14 +319,14 @@ require_admin_login();
               <label class="admin-form-label">Active Notification Email (Receives Orders & Inquiries)</label>
               <input type="email" id="setting-notification-email" class="admin-form-control" required>
               <div style="font-size:0.8rem;color:var(--admin-gold);margin-top:0.35rem;">
-                The notification email receives all new orders and inquiries. Currently set to <code>info@brownboyscustoms.ca</code>.
+                The notification email receives all new orders and inquiries. Currently set to <code>brownboyscustoms@gmail.com</code>.
               </div>
             </div>
 
             <div class="admin-form-row">
               <div class="admin-form-group">
                 <label class="admin-form-label">Production Email (Brand)</label>
-                <input type="email" id="setting-production-email" class="admin-form-control" value="info@brownboyscustoms.ca">
+                <input type="email" id="setting-production-email" class="admin-form-control" value="brownboyscustoms@gmail.com">
               </div>
               <div class="admin-form-group">
                 <label class="admin-form-label">Currency Symbol</label>
@@ -337,11 +337,11 @@ require_admin_login();
             <div class="admin-form-row">
               <div class="admin-form-group">
                 <label class="admin-form-label">Store Phone Number</label>
-                <input type="text" id="setting-store-phone" class="admin-form-control" value="+1 (416) 825-9000">
+                <input type="text" id="setting-store-phone" class="admin-form-control" value="289-367-5047">
               </div>
               <div class="admin-form-group">
                 <label class="admin-form-label">Store Address</label>
-                <input type="text" id="setting-store-address" class="admin-form-control" value="7215 Goreway Dr, Unit 1C30, Mississauga, ON L4T 2T9">
+                <input type="text" id="setting-store-address" class="admin-form-control" value="Unit 20, 180 Wilkinson Road, Brampton, ON L6T 4W8 & Unit 1C30, 7215 Goreway Dr, Mississauga, ON L4T 2T9">
               </div>
             </div>
 

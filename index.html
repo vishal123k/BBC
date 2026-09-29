@@ -302,17 +302,21 @@
         top: 8px !important;
         padding: 0 0.75rem !important;
       }
+
       .nav-container {
         height: 60px !important;
         padding: 0 1rem !important;
         border-radius: 9999px !important;
       }
+
       .nav-menu {
         display: none !important;
       }
+
       .nav-toggle {
         display: block !important;
       }
+
       .btn-cta-navbar {
         display: none !important;
       }
@@ -325,7 +329,7 @@
       display: flex !important;
       align-items: center !important;
       background: #070913 url('images/hero-banner.jpg') 62% 40% / cover no-repeat !important;
-      padding: 2.5rem 0 2.2rem !important;
+      padding: 95px 0 2.5rem !important;
       overflow: hidden !important;
       border-bottom: 1px solid var(--border-subtle) !important;
     }
@@ -399,22 +403,29 @@
       display: inline-block !important;
     }
 
-    /* Massive Headline: BUILT BEYOND STOCK. */
+    /* Massive Headline: PRECISION. PERFORMANCE. PERFECTION. */
     .hero-headline-massive {
       font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif !important;
-      font-size: clamp(3.2rem, 5.8vw, 6.2rem) !important;
+      font-size: clamp(2.6rem, 4.8vw, 5.2rem) !important;
       font-weight: 900 !important;
-      line-height: 0.94 !important;
+      line-height: 0.98 !important;
       letter-spacing: -0.015em !important;
       color: #ffffff !important;
       text-transform: uppercase !important;
       margin: 0 0 1.5rem 0 !important;
       text-shadow: 0 8px 24px rgba(0, 0, 0, 0.7) !important;
+      word-break: keep-all !important;
+    }
+
+    .hero-headline-massive span {
+      white-space: nowrap !important;
     }
 
     .text-gold-highlight {
       color: var(--gold-tan) !important;
-      display: inline-block;
+      display: inline-flex !important;
+      align-items: baseline !important;
+      white-space: nowrap !important;
     }
 
     /* Lead Subtitle Paragraph */
@@ -543,13 +554,15 @@
         align-items: flex-start;
         gap: 2.5rem;
       }
+
       .hero-meta-stats {
         flex-direction: row;
         gap: 2rem;
         flex-wrap: wrap;
       }
+
       .hero-banner {
-        padding: 3rem 0;
+        padding: 105px 0 2.5rem !important;
       }
     }
 
@@ -1414,6 +1427,7 @@
       -ms-overflow-style: none;
       padding-bottom: 0.5rem;
     }
+
     .services-spec-grid::-webkit-scrollbar {
       display: none;
     }
@@ -1533,7 +1547,7 @@
     /* 2. RECENT PROJECTS (5 Cards Grid with Workshop Background) */
     .portfolio-backdrop-section {
       background: linear-gradient(to bottom, rgba(7, 9, 19, 0.93) 0%, rgba(7, 9, 19, 0.96) 100%),
-                  url('images/about-workshop.jpg') center / cover no-repeat;
+        url('images/about-workshop.jpg') center / cover no-repeat;
       padding: 5.5rem 0 !important;
       position: relative;
       border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -1550,6 +1564,7 @@
       -ms-overflow-style: none;
       padding-bottom: 0.5rem;
     }
+
     .recent-projects-5grid::-webkit-scrollbar {
       display: none;
     }
@@ -1661,6 +1676,7 @@
       -ms-overflow-style: none;
       padding-bottom: 0.5rem;
     }
+
     .shop-cat-7grid::-webkit-scrollbar {
       display: none;
     }
@@ -1909,6 +1925,7 @@
         margin: 0 auto;
         text-align: center;
       }
+
       .home-cta-btns-row {
         justify-content: center;
       }
@@ -1956,11 +1973,12 @@
     /* Cursor glow */
     #cursor-glow {
       position: fixed;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 380px;
       height: 380px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(217,160,68,0.10) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(217, 160, 68, 0.10) 0%, transparent 70%);
       pointer-events: none;
       z-index: 9998;
       transform: translate(-50%, -50%);
@@ -1974,6 +1992,7 @@
       display: inline-block;
       min-width: 2ch;
     }
+
     .typewriter-cursor {
       display: inline-block;
       width: 3px;
@@ -1984,73 +2003,172 @@
       border-radius: 2px;
       animation: blink-cursor 0.75s step-end infinite;
     }
+
     @keyframes blink-cursor {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
     }
 
     /* Scroll Reveal base state */
     .reveal {
       opacity: 0;
       transform: translateY(40px);
-      transition: opacity 0.7s cubic-bezier(.22,.61,.36,1), transform 0.7s cubic-bezier(.22,.61,.36,1);
+      transition: opacity 0.7s cubic-bezier(.22, .61, .36, 1), transform 0.7s cubic-bezier(.22, .61, .36, 1);
     }
+
     .reveal.revealed {
       opacity: 1;
       transform: translateY(0);
     }
+
     .reveal-left {
       opacity: 0;
       transform: translateX(-48px);
-      transition: opacity 0.7s cubic-bezier(.22,.61,.36,1), transform 0.7s cubic-bezier(.22,.61,.36,1);
+      transition: opacity 0.7s cubic-bezier(.22, .61, .36, 1), transform 0.7s cubic-bezier(.22, .61, .36, 1);
     }
-    .reveal-left.revealed { opacity: 1; transform: translateX(0); }
+
+    .reveal-left.revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
     .reveal-right {
       opacity: 0;
       transform: translateX(48px);
-      transition: opacity 0.7s cubic-bezier(.22,.61,.36,1), transform 0.7s cubic-bezier(.22,.61,.36,1);
+      transition: opacity 0.7s cubic-bezier(.22, .61, .36, 1), transform 0.7s cubic-bezier(.22, .61, .36, 1);
     }
-    .reveal-right.revealed { opacity: 1; transform: translateX(0); }
+
+    .reveal-right.revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
     .reveal-scale {
       opacity: 0;
       transform: scale(0.88);
-      transition: opacity 0.65s cubic-bezier(.22,.61,.36,1), transform 0.65s cubic-bezier(.22,.61,.36,1);
+      transition: opacity 0.65s cubic-bezier(.22, .61, .36, 1), transform 0.65s cubic-bezier(.22, .61, .36, 1);
     }
-    .reveal-scale.revealed { opacity: 1; transform: scale(1); }
+
+    .reveal-scale.revealed {
+      opacity: 1;
+      transform: scale(1);
+    }
 
     /* Staggered children */
-    .reveal-stagger > * {
+    .reveal-stagger>* {
       opacity: 0;
       transform: translateY(30px);
-      transition: opacity 0.6s cubic-bezier(.22,.61,.36,1), transform 0.6s cubic-bezier(.22,.61,.36,1);
+      transition: opacity 0.6s cubic-bezier(.22, .61, .36, 1), transform 0.6s cubic-bezier(.22, .61, .36, 1);
     }
-    .reveal-stagger.revealed > *:nth-child(1) { opacity:1; transform:translateY(0); transition-delay:0.05s; }
-    .reveal-stagger.revealed > *:nth-child(2) { opacity:1; transform:translateY(0); transition-delay:0.15s; }
-    .reveal-stagger.revealed > *:nth-child(3) { opacity:1; transform:translateY(0); transition-delay:0.25s; }
-    .reveal-stagger.revealed > *:nth-child(4) { opacity:1; transform:translateY(0); transition-delay:0.35s; }
-    .reveal-stagger.revealed > *:nth-child(5) { opacity:1; transform:translateY(0); transition-delay:0.45s; }
-    .reveal-stagger.revealed > *:nth-child(6) { opacity:1; transform:translateY(0); transition-delay:0.55s; }
-    .reveal-stagger.revealed > *:nth-child(7) { opacity:1; transform:translateY(0); transition-delay:0.65s; }
+
+    .reveal-stagger.revealed>*:nth-child(1) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.05s;
+    }
+
+    .reveal-stagger.revealed>*:nth-child(2) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.15s;
+    }
+
+    .reveal-stagger.revealed>*:nth-child(3) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.25s;
+    }
+
+    .reveal-stagger.revealed>*:nth-child(4) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.35s;
+    }
+
+    .reveal-stagger.revealed>*:nth-child(5) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.45s;
+    }
+
+    .reveal-stagger.revealed>*:nth-child(6) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.55s;
+    }
+
+    .reveal-stagger.revealed>*:nth-child(7) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.65s;
+    }
 
     /* Hero content entrance */
-    .hero-headline-massive { animation: heroFadeUp 1s cubic-bezier(.22,.61,.36,1) both; }
-    .hero-desc-lead        { animation: heroFadeUp 1s cubic-bezier(.22,.61,.36,1) 0.25s both; }
-    .hero-cta-actions      { animation: heroFadeUp 1s cubic-bezier(.22,.61,.36,1) 0.45s both; }
-    .hero-meta-stats       { animation: heroFadeRight 1s cubic-bezier(.22,.61,.36,1) 0.55s both; }
-    .hero-meta-top         { animation: heroFadeDown 0.8s cubic-bezier(.22,.61,.36,1) 0.1s both; }
-    .hero-bottom-pills-row { animation: heroFadeUp 1s cubic-bezier(.22,.61,.36,1) 0.65s both; }
+    .hero-headline-massive {
+      animation: heroFadeUp 1s cubic-bezier(.22, .61, .36, 1) both;
+    }
+
+    .hero-desc-lead {
+      animation: heroFadeUp 1s cubic-bezier(.22, .61, .36, 1) 0.25s both;
+    }
+
+    .hero-cta-actions {
+      animation: heroFadeUp 1s cubic-bezier(.22, .61, .36, 1) 0.45s both;
+    }
+
+    .hero-meta-stats {
+      animation: heroFadeRight 1s cubic-bezier(.22, .61, .36, 1) 0.55s both;
+    }
+
+    .hero-meta-top {
+      animation: heroFadeDown 0.8s cubic-bezier(.22, .61, .36, 1) 0.1s both;
+    }
+
+    .hero-bottom-pills-row {
+      animation: heroFadeUp 1s cubic-bezier(.22, .61, .36, 1) 0.65s both;
+    }
 
     @keyframes heroFadeUp {
-      from { opacity:0; transform: translateY(36px); }
-      to   { opacity:1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(36px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     @keyframes heroFadeRight {
-      from { opacity:0; transform: translateX(36px); }
-      to   { opacity:1; transform: translateX(0); }
+      from {
+        opacity: 0;
+        transform: translateX(36px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
+
     @keyframes heroFadeDown {
-      from { opacity:0; transform: translateY(-24px); }
-      to   { opacity:1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* Gold shimmer on section title highlights */
@@ -2062,32 +2180,65 @@
       background-clip: text;
       animation: goldShimmer 3.5s linear infinite;
     }
+
     @keyframes goldShimmer {
-      0%   { background-position: 0% center; }
-      100% { background-position: 200% center; }
+      0% {
+        background-position: 0% center;
+      }
+
+      100% {
+        background-position: 200% center;
+      }
     }
 
     /* Floating gold orbs on hero */
-    .hero-orb { position: absolute; border-radius: 50%; pointer-events: none; z-index: 1; }
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
     .hero-orb-1 {
-      width: 320px; height: 320px;
-      background: radial-gradient(circle, rgba(217,160,68,0.13) 0%, transparent 70%);
-      top: 8%; right: 5%;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(217, 160, 68, 0.13) 0%, transparent 70%);
+      top: 8%;
+      right: 5%;
       animation: orbFloat1 8s ease-in-out infinite;
     }
+
     .hero-orb-2 {
-      width: 200px; height: 200px;
-      background: radial-gradient(circle, rgba(217,160,68,0.08) 0%, transparent 70%);
-      bottom: 20%; left: 3%;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(217, 160, 68, 0.08) 0%, transparent 70%);
+      bottom: 20%;
+      left: 3%;
       animation: orbFloat2 11s ease-in-out infinite;
     }
+
     @keyframes orbFloat1 {
-      0%, 100% { transform: translateY(0) scale(1); }
-      50%       { transform: translateY(-28px) scale(1.06); }
+
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-28px) scale(1.06);
+      }
     }
+
     @keyframes orbFloat2 {
-      0%, 100% { transform: translateY(0) scale(1); }
-      50%       { transform: translateY(22px) scale(1.04); }
+
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(22px) scale(1.04);
+      }
     }
 
     /* Gold accent dash before kicker text */
@@ -2104,7 +2255,7 @@
 
     /* Magnetic button */
     .btn-magnetic {
-      transition: transform 0.25s cubic-bezier(.22,.61,.36,1), box-shadow 0.25s ease !important;
+      transition: transform 0.25s cubic-bezier(.22, .61, .36, 1), box-shadow 0.25s ease !important;
     }
 
     /* Tilt cards preserve 3D */
@@ -2134,12 +2285,11 @@
       left: 34%;
       top: 57%;
       background: radial-gradient(ellipse at center,
-        rgba(255, 255, 235, 0.98) 0%,
-        rgba(200, 235, 255, 0.75)  18%,
-        rgba(160, 210, 255, 0.48) 38%,
-        rgba(120, 180, 255, 0.18) 60%,
-        transparent 80%
-      );
+          rgba(255, 255, 235, 0.98) 0%,
+          rgba(200, 235, 255, 0.75) 18%,
+          rgba(160, 210, 255, 0.48) 38%,
+          rgba(120, 180, 255, 0.18) 60%,
+          transparent 80%);
       filter: blur(10px);
       animation: headlightBlink 1.8s ease-out 0.8s 1 forwards;
     }
@@ -2151,12 +2301,11 @@
       left: 56%;
       top: 59%;
       background: radial-gradient(ellipse at center,
-        rgba(255, 255, 235, 0.95) 0%,
-        rgba(200, 235, 255, 0.72) 18%,
-        rgba(160, 210, 255, 0.44) 38%,
-        rgba(120, 180, 255, 0.15) 60%,
-        transparent 80%
-      );
+          rgba(255, 255, 235, 0.95) 0%,
+          rgba(200, 235, 255, 0.72) 18%,
+          rgba(160, 210, 255, 0.44) 38%,
+          rgba(120, 180, 255, 0.15) 60%,
+          transparent 80%);
       filter: blur(9px);
       animation: headlightBlink 1.8s ease-out 0.85s 1 forwards;
     }
@@ -2168,38 +2317,86 @@
       pointer-events: none;
       z-index: 2;
       background: radial-gradient(ellipse at 65% 68%,
-        rgba(220, 235, 255, 0.20) 0%,
-        rgba(200, 220, 255, 0.09) 40%,
-        transparent 70%
-      );
+          rgba(220, 235, 255, 0.20) 0%,
+          rgba(200, 220, 255, 0.09) 40%,
+          transparent 70%);
       opacity: 0;
       animation: headlightWash 1.8s ease-out 0.8s 1 forwards;
     }
 
     /* 2-blink keyframe: off → ON bright → fade → ON again → fade out */
     @keyframes headlightBlink {
-      0%   { opacity: 0; transform: scale(0.6); }
+      0% {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+
       /* ── Blink 1 ── */
-      8%   { opacity: 1; transform: scale(1.15); }
-      22%  { opacity: 0.15; transform: scale(0.9); }
+      8% {
+        opacity: 1;
+        transform: scale(1.15);
+      }
+
+      22% {
+        opacity: 0.15;
+        transform: scale(0.9);
+      }
+
       /* ── gap ── */
-      30%  { opacity: 0; }
+      30% {
+        opacity: 0;
+      }
+
       /* ── Blink 2 ── */
-      42%  { opacity: 1; transform: scale(1.2); }
-      62%  { opacity: 0.12; transform: scale(1); }
+      42% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+
+      62% {
+        opacity: 0.12;
+        transform: scale(1);
+      }
+
       /* ── held dim glow ── */
-      80%  { opacity: 0.05; }
-      100% { opacity: 0; transform: scale(1); }
+      80% {
+        opacity: 0.05;
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(1);
+      }
     }
 
     @keyframes headlightWash {
-      0%   { opacity: 0; }
-      8%   { opacity: 1; }
-      22%  { opacity: 0.1; }
-      30%  { opacity: 0; }
-      42%  { opacity: 0.85; }
-      62%  { opacity: 0.08; }
-      100% { opacity: 0; }
+      0% {
+        opacity: 0;
+      }
+
+      8% {
+        opacity: 1;
+      }
+
+      22% {
+        opacity: 0.1;
+      }
+
+      30% {
+        opacity: 0;
+      }
+
+      42% {
+        opacity: 0.85;
+      }
+
+      62% {
+        opacity: 0.08;
+      }
+
+      100% {
+        opacity: 0;
+      }
     }
   </style>
 </head>
@@ -2265,7 +2462,8 @@
       </div>
     </div>
     <div>
-      <a href="contact.html#quote" class="btn-cta-navbar" style="width: 100%; text-align: center; justify-content: center;" data-open-modal="quote">
+      <a href="contact.html#quote" class="btn-cta-navbar"
+        style="width: 100%; text-align: center; justify-content: center;" data-open-modal="quote">
         <span>Get a quote</span>
         <span class="cta-arrow-icon">↗</span>
       </a>
@@ -2291,22 +2489,20 @@
       <div class="hero-headlight-wash" id="hero-headlight-wash" aria-hidden="true"></div>
 
       <div class="container hero-container-rel">
-        <!-- Top Accent Row -->
-        <div class="hero-meta-top">
-          <span class="hero-meta-left">MISSISSAUGA, ONTARIO</span>
-          <span class="hero-meta-right">MADE PERSONAL. FINISHED PROPERLY.</span>
-        </div>
-
         <div class="hero-main-layout">
           <!-- Main Content Left -->
           <div class="hero-content">
             <h1 class="hero-headline-massive">
-              BUILT BEYOND<br>
-              <span class="typewriter-word" id="typewriter-target">STOCK</span><span class="typewriter-cursor"></span><span class="text-gold-highlight" aria-hidden="true">.</span>
+              <span id="tw-line-1">PRECISION.</span><br>
+              <span id="tw-line-2">PERFORMANCE.</span><br>
+              <span class="text-gold-highlight"><span class="typewriter-word"
+                  id="typewriter-target">PERFECTION</span><span class="typewriter-cursor"></span><span
+                  aria-hidden="true">.</span></span>
             </h1>
 
             <p class="hero-desc-lead">
-              Lighting, dashboard trim, decals, hangings and truck accessories — sourced, fitted and finished by our own team at Westwood Square.
+              Lighting, dashboard trim, decals, hangings and truck accessories — sourced, fitted and finished by our
+              master technicians in Brampton &amp; Mississauga.
             </p>
 
             <div class="hero-cta-actions">
@@ -2314,7 +2510,10 @@
                 EXPLORE SERVICES <span class="cta-arrow">▾</span>
               </a>
               <a href="shop.html" class="btn-hero-accessories" id="hero-shop-btn">
-                <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor; margin-right: 6px;"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor; margin-right: 6px;">
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
                 SHOP ACCESSORIES
               </a>
             </div>
@@ -2322,18 +2521,40 @@
 
           <!-- Bottom Right Floating Info Panels -->
           <div class="hero-meta-stats">
-            <div class="hero-side-card">
+            <!-- Location 1: Brampton -->
+            <div class="hero-side-card" style="margin-bottom:0.75rem;">
               <span class="hero-side-kicker">
-                <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                VISIT OUR SHOP
+                <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                BRAMPTON (LOCATION 1)
+              </span>
+              <span class="hero-side-title">180 Wilkinson Road</span>
+              <span class="hero-side-sub">Unit 20, Brampton, ON L6T 4W8<br><span
+                  style="color:var(--gold-tan); font-size:0.75rem; font-weight:600;">Mon–Fri: 11–8 &bull; Sat–Sun:
+                  11–7</span></span>
+            </div>
+
+            <!-- Location 2: Mississauga -->
+            <div class="hero-side-card" style="margin-bottom:0.75rem;">
+              <span class="hero-side-kicker">
+                <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                MISSISSAUGA (LOCATION 2)
               </span>
               <span class="hero-side-title">Westwood Square</span>
-              <span class="hero-side-sub">7215 Goreway Dr, Unit 1C30<br>Mississauga, ON L4T 2T9</span>
+              <span class="hero-side-sub">Unit 1C30, 7215 Goreway Dr, Mississauga ON L4T 2T9<br><span
+                  style="color:var(--gold-tan); font-size:0.75rem; font-weight:600;">Mon–Fri: 11–8 &bull; Sat: 11–6
+                  &bull; Sun: 12–5</span></span>
             </div>
 
             <div class="hero-serving-badge-box">
-              <span style="font-family: var(--font-display); font-size: 0.72rem; font-weight: 800; color: var(--gold-tan); letter-spacing: 0.15em; text-transform: uppercase; display: block; margin-bottom: 2px;">SERVING</span>
-              <strong style="font-family: var(--font-display); font-size: 0.88rem; font-weight: 900; color: #ffffff; letter-spacing: 0.06em; text-transform: uppercase; display: block;">THE GREATER TORONTO AREA</strong>
+              <span class="serving-kicker-text">PHONE &amp; WHATSAPP</span>
+              <strong class="serving-main-text" style="font-size:0.98rem;"><a href="tel:2893675047"
+                  style="color:#ffffff; text-decoration:none;">289-367-5047</a></strong>
             </div>
           </div>
         </div>
@@ -2342,7 +2563,10 @@
         <div class="hero-bottom-pills-row">
           <div class="hero-feature-badge-item">
             <div class="badge-icon-ring">
-              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
             </div>
             <div class="badge-text-wrap">
               <strong>PREMIUM QUALITY</strong>
@@ -2352,7 +2576,10 @@
 
           <div class="hero-feature-badge-item">
             <div class="badge-icon-ring">
-              <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z" />
+              </svg>
             </div>
             <div class="badge-text-wrap">
               <strong>EXPERT INSTALLATION</strong>
@@ -2362,7 +2589,10 @@
 
           <div class="hero-feature-badge-item">
             <div class="badge-icon-ring">
-              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
             </div>
             <div class="badge-text-wrap">
               <strong>ONE SHOP SOLUTION</strong>
@@ -2372,7 +2602,10 @@
 
           <div class="hero-feature-badge-item">
             <div class="badge-icon-ring">
-              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+              </svg>
             </div>
             <div class="badge-text-wrap">
               <strong>SOUTH-ASIAN OWNED</strong>
@@ -2391,13 +2624,16 @@
           <div class="section-header-left">
             <span class="section-kicker">OUR EXPERTISE</span>
             <h2 class="section-title-luxury">SERVICES &amp; <span class="text-gold-highlight">SPECIALTIES</span></h2>
-            <p class="section-subtitle-lead">From lighting to interior upgrades, we bring your vision to life with premium materials and expert craftsmanship.</p>
+            <p class="section-subtitle-lead">From lighting to interior upgrades, we bring your vision to life with
+              premium materials and expert craftsmanship.</p>
           </div>
           <div class="section-header-right">
             <a href="about.html" class="section-view-all btn-magnetic">VIEW ALL SERVICES ➔</a>
             <div class="slider-arrow-btns">
-              <button class="slider-nav-btn prev btn-magnetic" aria-label="Previous" onclick="document.getElementById('services-grid').scrollBy({ left: -320, behavior: 'smooth' })">‹</button>
-              <button class="slider-nav-btn next btn-magnetic" aria-label="Next" onclick="document.getElementById('services-grid').scrollBy({ left: 320, behavior: 'smooth' })">›</button>
+              <button class="slider-nav-btn prev btn-magnetic" aria-label="Previous"
+                onclick="document.getElementById('services-grid').scrollBy({ left: -320, behavior: 'smooth' })">‹</button>
+              <button class="slider-nav-btn next btn-magnetic" aria-label="Next"
+                onclick="document.getElementById('services-grid').scrollBy({ left: 320, behavior: 'smooth' })">›</button>
             </div>
           </div>
         </div>
@@ -2410,7 +2646,10 @@
             </div>
             <div class="service-spec-body">
               <div class="service-icon-box">
-                <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM4 12c0-.55.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1zm5.5 4.5c-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-1.41 1.41c-.39.39-1.03.39-1.41 0zm0-9c.39-.39 1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41s-1.02.39-1.41 0L9.5 8.91c-.39-.38-.39-1.02 0-1.41zM12 9c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM4 12c0-.55.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1zm5.5 4.5c-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-1.41 1.41c-.39.39-1.03.39-1.41 0zm0-9c.39-.39 1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41s-1.02.39-1.41 0L9.5 8.91c-.39-.38-.39-1.02 0-1.41zM12 9c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z" />
+                </svg>
               </div>
               <h3 class="service-spec-title">LIGHTING &amp; LED SYSTEMS</h3>
               <p class="service-spec-desc">Headlights, ambient lighting, starlight kits and more.</p>
@@ -2425,7 +2664,10 @@
             </div>
             <div class="service-spec-body">
               <div class="service-icon-box">
-                <svg viewBox="0 0 24 24"><path d="M4 18v3h3v-3h10v3h3v-3c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2zm2-10h12v6H6V8z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 18v3h3v-3h10v3h3v-3c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2zm2-10h12v6H6V8z" />
+                </svg>
               </div>
               <h3 class="service-spec-title">INTERIOR &amp; AMBIENT FLOW</h3>
               <p class="service-spec-desc">Custom ambient lighting, trim and interior upgrades.</p>
@@ -2440,7 +2682,10 @@
             </div>
             <div class="service-spec-body">
               <div class="service-icon-box">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.89.15-1.74.42-2.54l3.22 1.86c-.09.22-.14.45-.14.68 0 2.48 2.02 4.5 4.5 4.5s4.5-2.02 4.5-4.5c0-.23-.05-.46-.14-.68l3.22-1.86c.27.8.42 1.65.42 2.54 0 4.41-3.59 8-8 8zm0-9.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.89.15-1.74.42-2.54l3.22 1.86c-.09.22-.14.45-.14.68 0 2.48 2.02 4.5 4.5 4.5s4.5-2.02 4.5-4.5c0-.23-.05-.46-.14-.68l3.22-1.86c.27.8.42 1.65.42 2.54 0 4.41-3.59 8-8 8zm0-9.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                </svg>
               </div>
               <h3 class="service-spec-title">CUSTOM STEERING WHEELS</h3>
               <p class="service-spec-desc">Premium hand-built steering wheels with unique finishes.</p>
@@ -2455,7 +2700,10 @@
             </div>
             <div class="service-spec-body">
               <div class="service-icon-box">
-                <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                </svg>
               </div>
               <h3 class="service-spec-title">TRUCK &amp; CULTURAL ACCENTS</h3>
               <p class="service-spec-desc">Grill lights, emblems, bumper stickers and more.</p>
@@ -2470,7 +2718,10 @@
             </div>
             <div class="service-spec-body">
               <div class="service-icon-box">
-                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                </svg>
               </div>
               <h3 class="service-spec-title">CUSTOM DECALS &amp; VINYL</h3>
               <p class="service-spec-desc">Premium wraps, decals and graphic solutions.</p>
@@ -2485,7 +2736,10 @@
             </div>
             <div class="service-spec-body">
               <div class="service-icon-box">
-                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                </svg>
               </div>
               <h3 class="service-spec-title">9H CERAMIC COATINGS</h3>
               <p class="service-spec-desc">Long-lasting protection and showroom shine.</p>
@@ -2508,8 +2762,10 @@
           <div class="section-header-right">
             <a href="about.html" class="section-view-all btn-magnetic">VIEW FULL GALLERY ➔</a>
             <div class="slider-arrow-btns">
-              <button class="slider-nav-btn prev btn-magnetic" aria-label="Previous" onclick="document.getElementById('projects-grid').scrollBy({ left: -320, behavior: 'smooth' })">‹</button>
-              <button class="slider-nav-btn next btn-magnetic" aria-label="Next" onclick="document.getElementById('projects-grid').scrollBy({ left: 320, behavior: 'smooth' })">›</button>
+              <button class="slider-nav-btn prev btn-magnetic" aria-label="Previous"
+                onclick="document.getElementById('projects-grid').scrollBy({ left: -320, behavior: 'smooth' })">‹</button>
+              <button class="slider-nav-btn next btn-magnetic" aria-label="Next"
+                onclick="document.getElementById('projects-grid').scrollBy({ left: 320, behavior: 'smooth' })">›</button>
             </div>
           </div>
         </div>
@@ -2600,8 +2856,10 @@
           <div class="section-header-right">
             <a href="shop.html" class="section-view-all">ALL CATEGORIES ➔</a>
             <div class="slider-arrow-btns">
-              <button class="slider-nav-btn prev" aria-label="Previous" onclick="document.getElementById('categories-grid').scrollBy({ left: -300, behavior: 'smooth' })">‹</button>
-              <button class="slider-nav-btn next" aria-label="Next" onclick="document.getElementById('categories-grid').scrollBy({ left: 300, behavior: 'smooth' })">›</button>
+              <button class="slider-nav-btn prev" aria-label="Previous"
+                onclick="document.getElementById('categories-grid').scrollBy({ left: -300, behavior: 'smooth' })">‹</button>
+              <button class="slider-nav-btn next" aria-label="Next"
+                onclick="document.getElementById('categories-grid').scrollBy({ left: 300, behavior: 'smooth' })">›</button>
             </div>
           </div>
         </div>
@@ -2614,7 +2872,10 @@
             </div>
             <div class="cat-card-body">
               <div class="cat-icon-badge">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" />
+                </svg>
               </div>
               <div class="cat-bottom-row">
                 <div class="cat-info-col">
@@ -2633,7 +2894,10 @@
             </div>
             <div class="cat-card-body">
               <div class="cat-icon-badge">
-                <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z" />
+                </svg>
               </div>
               <div class="cat-bottom-row">
                 <div class="cat-info-col">
@@ -2652,7 +2916,10 @@
             </div>
             <div class="cat-card-body">
               <div class="cat-icon-badge">
-                <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-4.66l.12-.34h13.77l.11.34V17z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-4.66l.12-.34h13.77l.11.34V17z" />
+                </svg>
               </div>
               <div class="cat-bottom-row">
                 <div class="cat-info-col">
@@ -2671,7 +2938,10 @@
             </div>
             <div class="cat-card-body">
               <div class="cat-icon-badge">
-                <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z" />
+                </svg>
               </div>
               <div class="cat-bottom-row">
                 <div class="cat-info-col">
@@ -2690,7 +2960,10 @@
             </div>
             <div class="cat-card-body">
               <div class="cat-icon-badge">
-                <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                </svg>
               </div>
               <div class="cat-bottom-row">
                 <div class="cat-info-col">
@@ -2709,7 +2982,10 @@
             </div>
             <div class="cat-card-body">
               <div class="cat-icon-badge">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm0-4h-2V7h2v7z" />
+                </svg>
               </div>
               <div class="cat-bottom-row">
                 <div class="cat-info-col">
@@ -2728,7 +3004,9 @@
             </div>
             <div class="cat-card-body">
               <div class="cat-icon-badge">
-                <svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z" />
+                </svg>
               </div>
               <div class="cat-bottom-row">
                 <div class="cat-info-col">
@@ -2758,7 +3036,10 @@
             <span class="section-kicker">ABOUT BROWN BOYS CUSTOMS</span>
             <h3>WHO WE ARE</h3>
             <p>
-              Brown Boys Customs started at Westwood Square with a simple vision — to bring world-class, bespoke automotive customization to the Greater Toronto Area. We specialize in lighting, dashboard builds, custom decals, truck accessories and more. Every build is handled in-house with precision, passion and attention to detail.
+              Brown Boys Customs started at Westwood Square with a simple vision — to bring world-class, bespoke
+              automotive customization to the Greater Toronto Area. We specialize in lighting, dashboard builds, custom
+              decals, truck accessories and more. Every build is handled in-house with precision, passion and attention
+              to detail.
             </p>
             <a href="about.html" class="btn-hero-explore">
               LEARN MORE ABOUT BBC ➔
@@ -2769,7 +3050,10 @@
           <div class="who-features-stack">
             <div class="who-feature-row">
               <div class="badge-icon-ring">
-                <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z" />
+                </svg>
               </div>
               <div class="badge-text-wrap">
                 <strong>CUSTOM BUILDS</strong>
@@ -2779,7 +3063,10 @@
 
             <div class="who-feature-row">
               <div class="badge-icon-ring">
-                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                </svg>
               </div>
               <div class="badge-text-wrap">
                 <strong>QUALITY PARTS</strong>
@@ -2789,7 +3076,10 @@
 
             <div class="who-feature-row">
               <div class="badge-icon-ring">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+                </svg>
               </div>
               <div class="badge-text-wrap">
                 <strong>CUSTOMER FIRST</strong>
@@ -2801,19 +3091,23 @@
           <!-- Part 4: Visit Card with Map -->
           <div class="who-visit-card">
             <span class="hero-side-kicker">
-              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
               VISIT OUR SHOP
             </span>
             <span class="hero-side-title" style="font-size: 0.9rem;">Westwood Square</span>
-            <span class="hero-side-sub" style="font-size: 0.76rem;">7215 Goreway Dr, Unit 1C30<br>Mississauga, ON L4T 2T9</span>
+            <span class="hero-side-sub" style="font-size: 0.76rem;">7215 Goreway Dr, Unit 1C30<br>Mississauga, ON L4T
+              2T9</span>
             <div class="who-map-preview">
               <iframe
                 src="https://maps.google.com/maps?q=7215%20Goreway%20Dr,%20Mississauga,%20ON%20L4T%202T9&t=&z=14&ie=UTF8&iwloc=&output=embed"
-                title="BBC Map Preview"
-                loading="lazy">
+                title="BBC Map Preview" loading="lazy">
               </iframe>
             </div>
-            <a href="contact.html" class="btn-clean-cart" style="justify-content: center; text-decoration: none; border-radius: 4px; padding: 0.55rem; font-size: 0.78rem;">
+            <a href="contact.html" class="btn-clean-cart"
+              style="justify-content: center; text-decoration: none; border-radius: 4px; padding: 0.55rem; font-size: 0.78rem;">
               GET DIRECTIONS ➔
             </a>
           </div>
@@ -2830,7 +3124,8 @@
           <span class="section-kicker">TRANSFORM YOUR RIDE TODAY</span>
           <h2 class="home-cta-title">READY TO BRING YOUR AUTOMOTIVE VISION TO LIFE?</h2>
           <p class="home-cta-desc">
-            Whether you're ordering accessories or booking a full starlight installation and ambient interior build, our crew is ready to assist.
+            Whether you're ordering accessories or booking a full starlight installation and ambient interior build in
+            Brampton or Mississauga, our crew is ready to assist.
           </p>
           <div class="home-cta-btns-row">
             <a href="shop.html" class="btn-hero-explore">
@@ -2839,8 +3134,8 @@
             <a href="contact.html#quote" class="btn-hero-accessories" data-open-modal="quote">
               REQUEST A FREE QUOTE
             </a>
-            <a href="tel:+16479660047" class="btn-hero-accessories">
-              CALL +1 647 966 0047
+            <a href="tel:2893675047" class="btn-hero-accessories">
+              CALL 289-367-5047
             </a>
           </div>
         </div>
@@ -2849,7 +3144,7 @@
   </main>
 
   <!-- ================= 10. REUSABLE GLOBAL FOOTER ================= -->
-    <!-- ================= SITE FOOTER ================= -->
+  <!-- ================= SITE FOOTER ================= -->
   <footer class="site-footer" id="site-footer">
     <div class="footer-top">
       <div class="container footer-grid">
@@ -2860,17 +3155,34 @@
             <img src="images/logo.png" alt="BBC - Brown Boys Customs" class="footer-logo-img">
           </a>
           <p class="footer-brand-desc">
-            Brown Boys Customs (BBC) is Mississauga's premier automotive styling studio, located inside Westwood Mall. We specialize in custom starlight headliners, dynamic ambient lighting, bespoke carbon fiber steering wheels, and 9H ceramic coatings.
+            Brown Boys Customs (BBC) is Ontario's premier automotive styling studio with workshops in Brampton and
+            Mississauga. We specialize in custom starlight headliners, dynamic ambient lighting, bespoke carbon fiber
+            steering wheels, and premium accessories.
           </p>
-          <div class="footer-address-box">
+          <div class="footer-address-box" style="margin-bottom: 0.75rem;">
             <div class="footer-address-icon">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="#d9a044">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
               </svg>
             </div>
             <div class="footer-address-text">
-              <span class="footer-address-title">Westwood Mall / Westwood Square</span>
-              <span class="footer-address-sub">7215 Goreway Dr, Unit 1C30, Mississauga, ON L4T 2T9</span>
+              <span class="footer-address-title" style="color:#ffffff; font-weight:700;">Location 1 (Brampton):</span>
+              <span class="footer-address-sub">Unit 20, 180 Wilkinson Road, Brampton, ON L6T 4W8</span>
+            </div>
+          </div>
+          <div class="footer-address-box">
+            <div class="footer-address-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#d9a044">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+            </div>
+            <div class="footer-address-text">
+              <span class="footer-address-title" style="color:#ffffff; font-weight:700;">Location 2
+                (Mississauga):</span>
+              <span class="footer-address-sub">Unit 1C30, 7215 Goreway Dr, Mississauga, ON L4T 2T9 (Westwood
+                Square)</span>
             </div>
           </div>
         </div>
@@ -2882,7 +3194,9 @@
             <li>
               <a href="about.html">
                 <span class="f-link-left">
-                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                  <svg class="f-link-icon" viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                  </svg>
                   <span>About Us</span>
                 </span>
                 <span class="f-link-chevron">›</span>
@@ -2891,7 +3205,10 @@
             <li>
               <a href="shop.html">
                 <span class="f-link-left">
-                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"/></svg>
+                  <svg class="f-link-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z" />
+                  </svg>
                   <span>Shop</span>
                 </span>
                 <span class="f-link-chevron">›</span>
@@ -2900,7 +3217,10 @@
             <li>
               <a href="privacy.html">
                 <span class="f-link-left">
-                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                  <svg class="f-link-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+                  </svg>
                   <span>Privacy Policy</span>
                 </span>
                 <span class="f-link-chevron">›</span>
@@ -2909,7 +3229,10 @@
             <li>
               <a href="terms.html">
                 <span class="f-link-left">
-                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                  <svg class="f-link-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                  </svg>
                   <span>Terms &amp; Conditions</span>
                 </span>
                 <span class="f-link-chevron">›</span>
@@ -2918,7 +3241,10 @@
             <li>
               <a href="shipping.html">
                 <span class="f-link-left">
-                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                  <svg class="f-link-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                  </svg>
                   <span>Shipping Policy</span>
                 </span>
                 <span class="f-link-chevron">›</span>
@@ -2927,7 +3253,10 @@
             <li>
               <a href="returns.html">
                 <span class="f-link-left">
-                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0020 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 004 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+                  <svg class="f-link-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0020 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 004 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z" />
+                  </svg>
                   <span>Return/Cancellation Policy</span>
                 </span>
                 <span class="f-link-chevron">›</span>
@@ -2944,7 +3273,10 @@
               <img src="images/blog/car-decals-style.jpg" alt="Car Decals" class="f-news-thumb">
               <div class="f-news-info">
                 <div class="f-news-meta">
-                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <svg viewBox="0 0 24 24" class="f-news-cal">
+                    <path
+                      d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                  </svg>
                   <span>JULY 20, 2023</span>
                 </div>
                 <h5 class="f-news-title">UNIQUE WAYS TO USE CAR DECALS TO EXPRESS YOUR STYLE AND PASSIONS</h5>
@@ -2955,7 +3287,10 @@
               <img src="images/blog/decal-culture-canada.jpg" alt="Decal Culture" class="f-news-thumb">
               <div class="f-news-info">
                 <div class="f-news-meta">
-                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <svg viewBox="0 0 24 24" class="f-news-cal">
+                    <path
+                      d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                  </svg>
                   <span>JULY 28, 2023</span>
                 </div>
                 <h5 class="f-news-title">CANADA'S CAR DECAL CULTURE: A LOOK INTO THE TRENDS AND INSPIRATIONS</h5>
@@ -2966,10 +3301,14 @@
               <img src="images/blog/accessories-guide.jpg" alt="Accessories Guide" class="f-news-thumb">
               <div class="f-news-info">
                 <div class="f-news-meta">
-                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <svg viewBox="0 0 24 24" class="f-news-cal">
+                    <path
+                      d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                  </svg>
                   <span>JULY 15, 2023</span>
                 </div>
-                <h5 class="f-news-title">THE ULTIMATE CAR ACCESSORIES GUIDE: ELEVATE YOUR RIDE WITH BROWN BOYS CUSTOMS</h5>
+                <h5 class="f-news-title">THE ULTIMATE CAR ACCESSORIES GUIDE: ELEVATE YOUR RIDE WITH BROWN BOYS CUSTOMS
+                </h5>
               </div>
             </a>
           </div>
@@ -2977,68 +3316,103 @@
 
         <!-- Column 4: SERVICES HOUR & CONTACT -->
         <div class="footer-hours-col">
-          <h4 class="footer-col-title">SERVICES HOUR</h4>
+          <h4 class="footer-col-title">STORE HOURS</h4>
           <div class="footer-hours-table">
             <div class="f-hour-row">
               <div class="f-hour-day">
-                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                <span>Monday – Friday</span>
+                <svg viewBox="0 0 24 24" class="f-hour-clock">
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                </svg>
+                <span>Mon – Fri (Both)</span>
               </div>
-              <span class="f-hour-time">10:00 AM – 9:00 PM</span>
+              <span class="f-hour-time">11:00 AM – 8:00 PM</span>
             </div>
             <div class="f-hour-row">
               <div class="f-hour-day">
-                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <svg viewBox="0 0 24 24" class="f-hour-clock">
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                </svg>
                 <span>Saturday</span>
               </div>
-              <span class="f-hour-time">10:00 AM – 6:00 PM</span>
+              <span class="f-hour-time">11–7 (Brampton)<br>11–6 (Mississauga)</span>
             </div>
             <div class="f-hour-row">
               <div class="f-hour-day">
-                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <svg viewBox="0 0 24 24" class="f-hour-clock">
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                </svg>
                 <span>Sunday</span>
               </div>
-              <span class="f-hour-time">12:00 PM – 5:00 PM</span>
+              <span class="f-hour-time">11–7 (Brampton)<br>12–5 (Mississauga)</span>
             </div>
           </div>
 
           <div class="footer-contact-actions">
-            <a href="tel:+16479660047" class="f-contact-btn">
+            <a href="tel:2893675047" class="f-contact-btn">
               <div class="f-contact-circle">
-                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
               </div>
               <div>
-                <span class="f-contact-main">+1 647 966 0047</span>
-                <span class="f-contact-sub">Call Us 24/7</span>
+                <span class="f-contact-main">289-367-5047</span>
+                <span class="f-contact-sub">Call / WhatsApp</span>
               </div>
             </a>
 
-            <a href="mailto:info@brownboyscustoms.ca" class="f-contact-btn">
+            <a href="mailto:brownboyscustoms@gmail.com" class="f-contact-btn">
               <div class="f-contact-circle">
-                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
               </div>
               <div>
-                <span class="f-contact-main">info@brownboyscustoms.ca</span>
+                <span class="f-contact-main" style="font-size: 0.82rem;">brownboyscustoms@gmail.com</span>
                 <span class="f-contact-sub">Send Us an Email</span>
               </div>
             </a>
           </div>
 
           <div class="footer-social-row">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Instagram">
-              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="f-social-icon"
+              aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Facebook">
-              <svg viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="f-social-icon"
+              aria-label="Facebook">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+              </svg>
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="YouTube">
-              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="f-social-icon"
+              aria-label="YouTube">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
             </a>
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="TikTok">
-              <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.58c.02 1.94-.52 3.9-1.67 5.43-1.37 1.83-3.57 2.97-5.86 2.97-2.67.06-5.32-1.35-6.66-3.66-1.4-2.38-1.24-5.5.39-7.72 1.57-2.14 4.27-3.23 6.9-2.73v4.11c-1.36-.37-2.89.04-3.83 1.05-.98 1.03-1.19 2.67-.52 3.94.67 1.25 2.13 2.01 3.54 1.84 1.34-.14 2.51-1.07 2.87-2.37.13-.5.18-1.02.18-1.54V.02h.67z"/></svg>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="f-social-icon"
+              aria-label="TikTok">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.58c.02 1.94-.52 3.9-1.67 5.43-1.37 1.83-3.57 2.97-5.86 2.97-2.67.06-5.32-1.35-6.66-3.66-1.4-2.38-1.24-5.5.39-7.72 1.57-2.14 4.27-3.23 6.9-2.73v4.11c-1.36-.37-2.89.04-3.83 1.05-.98 1.03-1.19 2.67-.52 3.94.67 1.25 2.13 2.01 3.54 1.84 1.34-.14 2.51-1.07 2.87-2.37.13-.5.18-1.02.18-1.54V.02h.67z" />
+              </svg>
             </a>
-            <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Google">
-              <svg viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+            <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="f-social-icon"
+              aria-label="Google">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -3125,8 +3499,8 @@
             SUBMIT QUOTE REQUEST
           </button>
           <p style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.75rem;">
-            Or call us directly 24/7 at <a href="tel:+16479660047"
-              style="color: var(--gold-tan); font-weight: 700;">+1 647 966 0047</a>
+            Or call us directly 24/7 at <a href="tel:2893675047"
+              style="color: var(--gold-tan); font-weight: 700;">289-367-5047</a>
           </p>
         </form>
       </div>
@@ -3141,187 +3515,234 @@
        ============================================================ -->
   <div id="cursor-glow"></div>
   <script>
-  (function() {
-    'use strict';
+    (function () {
+      'use strict';
 
-    /* ---- 1. CURSOR GLOW ---- */
-    const glow = document.getElementById('cursor-glow');
-    if (glow) {
-      let mx = -9999, my = -9999;
-      let glowX = -9999, glowY = -9999;
-      document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-      function animateGlow() {
-        glowX += (mx - glowX) * 0.08;
-        glowY += (my - glowY) * 0.08;
-        glow.style.left = glowX + 'px';
-        glow.style.top  = glowY + 'px';
-        requestAnimationFrame(animateGlow);
-      }
-      animateGlow();
-      document.addEventListener('mouseleave', () => glow.style.opacity = '0');
-      document.addEventListener('mouseenter', () => glow.style.opacity = '1');
-    }
-
-    /* ---- 2. TYPEWRITER ---- */
-    const tw = document.getElementById('typewriter-target');
-    if (tw) {
-      const words = ['STOCK', 'CUSTOM', 'PREMIUM', 'UNIQUE', 'ICONIC', 'YOURS'];
-      let wi = 0, ci = 0, deleting = false;
-      const SPEED_TYPE = 90, SPEED_DEL = 50, PAUSE = 1800;
-      function tick() {
-        const word = words[wi];
-        if (!deleting) {
-          ci++;
-          tw.textContent = word.slice(0, ci);
-          if (ci === word.length) {
-            setTimeout(() => { deleting = true; tick(); }, PAUSE);
-            return;
-          }
-        } else {
-          ci--;
-          tw.textContent = word.slice(0, ci);
-          if (ci === 0) {
-            deleting = false;
-            wi = (wi + 1) % words.length;
-          }
+      /* ---- 1. CURSOR GLOW ---- */
+      const glow = document.getElementById('cursor-glow');
+      if (glow) {
+        let mx = -9999, my = -9999;
+        let glowX = -9999, glowY = -9999;
+        document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+        function animateGlow() {
+          glowX += (mx - glowX) * 0.08;
+          glowY += (my - glowY) * 0.08;
+          glow.style.left = glowX + 'px';
+          glow.style.top = glowY + 'px';
+          requestAnimationFrame(animateGlow);
         }
-        setTimeout(tick, deleting ? SPEED_DEL : SPEED_TYPE);
+        animateGlow();
+        document.addEventListener('mouseleave', () => glow.style.opacity = '0');
+        document.addEventListener('mouseenter', () => glow.style.opacity = '1');
       }
-      setTimeout(tick, 1200);
-    }
 
-    /* ---- 3. SCROLL REVEAL (IntersectionObserver) ---- */
-    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-stagger');
-    if ('IntersectionObserver' in window) {
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-            obs.unobserve(entry.target);
+      /* ---- 2. TYPEWRITER (Sequential Entrance & Continuous Rotation) ---- */
+      const twLine1 = document.getElementById('tw-line-1');
+      const twLine2 = document.getElementById('tw-line-2');
+      const tw = document.getElementById('typewriter-target');
+      if (tw) {
+        const text1 = 'PRECISION';
+        const text2 = 'PERFORMANCE';
+        const text3 = 'PERFECTION';
+        const cycleWords = ['CUSTOM BUILDS', 'EXCELLENCE', 'PERFECTION'];
+        let wi = 0, ci = text3.length, deleting = false;
+        const SPEED_TYPE = 80, SPEED_DEL = 45, PAUSE = 2600;
+
+        function startLoop() {
+          function tick() {
+            const word = cycleWords[wi];
+            if (!deleting) {
+              ci++;
+              tw.textContent = word.slice(0, ci);
+              if (ci === word.length) {
+                setTimeout(() => { deleting = true; tick(); }, PAUSE);
+                return;
+              }
+            } else {
+              ci--;
+              tw.textContent = word.slice(0, ci);
+              if (ci === 0) {
+                deleting = false;
+                wi = (wi + 1) % cycleWords.length;
+              }
+            }
+            setTimeout(tick, deleting ? SPEED_DEL : SPEED_TYPE);
           }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-      revealEls.forEach(el => obs.observe(el));
-    } else {
-      revealEls.forEach(el => el.classList.add('revealed'));
-    }
+          setTimeout(() => { deleting = true; tick(); }, PAUSE);
+        }
 
-    /* ---- 4. PARTICLE CANVAS ---- */
-    const canvas = document.getElementById('hero-particle-canvas');
-    if (canvas) {
-      const ctx = canvas.getContext('2d');
-      let W, H, particles = [];
-      const PARTICLE_COUNT = 55;
+        if (twLine1 && twLine2) {
+          twLine1.textContent = '';
+          twLine2.textContent = '';
+          tw.textContent = '';
 
-      function resize() {
-        const hero = document.getElementById('hero');
-        W = canvas.width = hero ? hero.offsetWidth : window.innerWidth;
-        H = canvas.height = hero ? hero.offsetHeight : window.innerHeight;
-      }
-      window.addEventListener('resize', resize);
-      resize();
-
-      function randomParticle() {
-        return {
-          x: Math.random() * W,
-          y: Math.random() * H,
-          r: Math.random() * 1.6 + 0.4,
-          vx: (Math.random() - 0.5) * 0.35,
-          vy: -(Math.random() * 0.35 + 0.1),
-          alpha: Math.random() * 0.5 + 0.15,
-          life: Math.random()
-        };
-      }
-      for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(randomParticle());
-
-      function drawParticles() {
-        ctx.clearRect(0, 0, W, H);
-        particles.forEach(p => {
-          p.x += p.vx;
-          p.y += p.vy;
-          p.life += 0.003;
-          if (p.life > 1) { Object.assign(p, randomParticle(), { y: H + 5 }); p.life = 0; }
-          if (p.y < -5) { Object.assign(p, randomParticle()); }
-          const pulse = Math.sin(p.life * Math.PI) * p.alpha;
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(217,160,68,${pulse})`;
-          ctx.fill();
-        });
-        requestAnimationFrame(drawParticles);
-      }
-      drawParticles();
-    }
-
-    /* ---- 5. MAGNETIC BUTTON EFFECT ---- */
-    document.querySelectorAll('.btn-magnetic').forEach(btn => {
-      btn.addEventListener('mousemove', e => {
-        const r = btn.getBoundingClientRect();
-        const dx = e.clientX - (r.left + r.width / 2);
-        const dy = e.clientY - (r.top + r.height / 2);
-        btn.style.transform = `translate(${dx * 0.22}px, ${dy * 0.22}px)`;
-      });
-      btn.addEventListener('mouseleave', () => {
-        btn.style.transform = '';
-      });
-    });
-
-    /* ---- 6. CARD TILT ON HOVER ---- */
-    const tiltCards = document.querySelectorAll('.service-spec-card, .project-card-clean, .cat-card-modern');
-    tiltCards.forEach(card => {
-      card.addEventListener('mousemove', e => {
-        const r = card.getBoundingClientRect();
-        const x = (e.clientX - r.left) / r.width  - 0.5;
-        const y = (e.clientY - r.top)  / r.height - 0.5;
-        card.style.transform = `translateY(-6px) rotateX(${-y * 6}deg) rotateY(${x * 6}deg)`;
-        card.style.boxShadow = `0 18px 40px rgba(0,0,0,0.55), 0 0 22px rgba(217,160,68,${0.1 + Math.abs(x) * 0.15})`;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-        card.style.boxShadow = '';
-      });
-    });
-
-    /* ---- 7. HERO PARALLAX ---- */
-    const heroBanner = document.getElementById('hero');
-    if (heroBanner) {
-      window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        const overlay = heroBanner.querySelector('.hero-overlay');
-        if (overlay) overlay.style.transform = `translateY(${scrolled * 0.25}px)`;
-      }, { passive: true });
-    }
-
-    /* ---- 8. SECTION COUNT-UP NUMBERS ---- */
-    function animateCounter(el, target, duration) {
-      const start = performance.now();
-      function update(now) {
-        const t = Math.min((now - start) / duration, 1);
-        const ease = 1 - Math.pow(1 - t, 3);
-        el.textContent = Math.round(ease * target);
-        if (t < 1) requestAnimationFrame(update);
-      }
-      requestAnimationFrame(update);
-    }
-    if ('IntersectionObserver' in window) {
-      const counterObs = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const el = entry.target;
-            animateCounter(el, parseInt(el.dataset.target, 10), 1600);
-            counterObs.unobserve(el);
+          let i1 = 0, i2 = 0, i3 = 0;
+          function type1() {
+            if (i1 < text1.length) {
+              twLine1.textContent += text1.charAt(i1);
+              i1++;
+              setTimeout(type1, 45);
+            } else {
+              setTimeout(type2, 90);
+            }
           }
-        });
-      }, { threshold: 0.5 });
-      document.querySelectorAll('[data-target]').forEach(el => counterObs.observe(el));
-    }
+          function type2() {
+            if (i2 < text2.length) {
+              twLine2.textContent += text2.charAt(i2);
+              i2++;
+              setTimeout(type2, 45);
+            } else {
+              setTimeout(type3, 90);
+            }
+          }
+          function type3() {
+            if (i3 < text3.length) {
+              tw.textContent += text3.charAt(i3);
+              i3++;
+              setTimeout(type3, 55);
+            } else {
+              ci = text3.length;
+              startLoop();
+            }
+          }
+          setTimeout(type1, 200);
+        } else {
+          startLoop();
+        }
+      }
 
-    /* ---- 9. HERO BUTTONS RIPPLE ---- */
-    document.querySelectorAll('.btn-hero-explore, .btn-hero-accessories, .btn-cta-navbar').forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        const ripple = document.createElement('span');
-        const r = btn.getBoundingClientRect();
-        ripple.style.cssText = `
+      /* ---- 3. SCROLL REVEAL (IntersectionObserver) ---- */
+      const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-stagger');
+      if ('IntersectionObserver' in window) {
+        const obs = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => obs.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('revealed'));
+      }
+
+      /* ---- 4. PARTICLE CANVAS ---- */
+      const canvas = document.getElementById('hero-particle-canvas');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let W, H, particles = [];
+        const PARTICLE_COUNT = 55;
+
+        function resize() {
+          const hero = document.getElementById('hero');
+          W = canvas.width = hero ? hero.offsetWidth : window.innerWidth;
+          H = canvas.height = hero ? hero.offsetHeight : window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        function randomParticle() {
+          return {
+            x: Math.random() * W,
+            y: Math.random() * H,
+            r: Math.random() * 1.6 + 0.4,
+            vx: (Math.random() - 0.5) * 0.35,
+            vy: -(Math.random() * 0.35 + 0.1),
+            alpha: Math.random() * 0.5 + 0.15,
+            life: Math.random()
+          };
+        }
+        for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(randomParticle());
+
+        function drawParticles() {
+          ctx.clearRect(0, 0, W, H);
+          particles.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+            p.life += 0.003;
+            if (p.life > 1) { Object.assign(p, randomParticle(), { y: H + 5 }); p.life = 0; }
+            if (p.y < -5) { Object.assign(p, randomParticle()); }
+            const pulse = Math.sin(p.life * Math.PI) * p.alpha;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(217,160,68,${pulse})`;
+            ctx.fill();
+          });
+          requestAnimationFrame(drawParticles);
+        }
+        drawParticles();
+      }
+
+      /* ---- 5. MAGNETIC BUTTON EFFECT ---- */
+      document.querySelectorAll('.btn-magnetic').forEach(btn => {
+        btn.addEventListener('mousemove', e => {
+          const r = btn.getBoundingClientRect();
+          const dx = e.clientX - (r.left + r.width / 2);
+          const dy = e.clientY - (r.top + r.height / 2);
+          btn.style.transform = `translate(${dx * 0.22}px, ${dy * 0.22}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+          btn.style.transform = '';
+        });
+      });
+
+      /* ---- 6. CARD TILT ON HOVER ---- */
+      const tiltCards = document.querySelectorAll('.service-spec-card, .project-card-clean, .cat-card-modern');
+      tiltCards.forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const r = card.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width - 0.5;
+          const y = (e.clientY - r.top) / r.height - 0.5;
+          card.style.transform = `translateY(-6px) rotateX(${-y * 6}deg) rotateY(${x * 6}deg)`;
+          card.style.boxShadow = `0 18px 40px rgba(0,0,0,0.55), 0 0 22px rgba(217,160,68,${0.1 + Math.abs(x) * 0.15})`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+          card.style.boxShadow = '';
+        });
+      });
+
+      /* ---- 7. HERO PARALLAX ---- */
+      const heroBanner = document.getElementById('hero');
+      if (heroBanner) {
+        window.addEventListener('scroll', () => {
+          const scrolled = window.scrollY;
+          const overlay = heroBanner.querySelector('.hero-overlay');
+          if (overlay) overlay.style.transform = `translateY(${scrolled * 0.25}px)`;
+        }, { passive: true });
+      }
+
+      /* ---- 8. SECTION COUNT-UP NUMBERS ---- */
+      function animateCounter(el, target, duration) {
+        const start = performance.now();
+        function update(now) {
+          const t = Math.min((now - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - t, 3);
+          el.textContent = Math.round(ease * target);
+          if (t < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+      }
+      if ('IntersectionObserver' in window) {
+        const counterObs = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const el = entry.target;
+              animateCounter(el, parseInt(el.dataset.target, 10), 1600);
+              counterObs.unobserve(el);
+            }
+          });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('[data-target]').forEach(el => counterObs.observe(el));
+      }
+
+      /* ---- 9. HERO BUTTONS RIPPLE ---- */
+      document.querySelectorAll('.btn-hero-explore, .btn-hero-accessories, .btn-cta-navbar').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          const ripple = document.createElement('span');
+          const r = btn.getBoundingClientRect();
+          ripple.style.cssText = `
           position:absolute; border-radius:50%;
           width:6px; height:6px;
           background:rgba(255,255,255,0.45);
@@ -3330,19 +3751,19 @@
           left:${e.clientX - r.left}px; top:${e.clientY - r.top}px;
           pointer-events:none;
         `;
-        if (!btn.style.position || btn.style.position === 'static') btn.style.position = 'relative';
-        btn.appendChild(ripple);
-        setTimeout(() => ripple.remove(), 600);
+          if (!btn.style.position || btn.style.position === 'static') btn.style.position = 'relative';
+          btn.appendChild(ripple);
+          setTimeout(() => ripple.remove(), 600);
+        });
       });
-    });
-    if (!document.getElementById('ripple-style')) {
-      const s = document.createElement('style');
-      s.id = 'ripple-style';
-      s.textContent = '@keyframes rippleAnim { to { transform:translate(-50%,-50%) scale(60); opacity:0; } }';
-      document.head.appendChild(s);
-    }
+      if (!document.getElementById('ripple-style')) {
+        const s = document.createElement('style');
+        s.id = 'ripple-style';
+        s.textContent = '@keyframes rippleAnim { to { transform:translate(-50%,-50%) scale(60); opacity:0; } }';
+        document.head.appendChild(s);
+      }
 
-  })();
+    })();
   </script>
 </body>
 

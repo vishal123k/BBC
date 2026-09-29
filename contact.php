@@ -11,7 +11,7 @@ ini_set('display_errors', '0');
 // Response defaults
 $response = [
     'success' => false,
-    'message' => 'An unexpected error occurred. Please try again or call us directly at +1 647 966 0047.'
+    'message' => 'An unexpected error occurred. Please try again or call us directly at 289-367-5047.'
 ];
 
 // Check request method
@@ -82,7 +82,7 @@ if (!empty($errors)) {
 
 // 4. Construct Email
 $settingsFile = __DIR__ . '/data/settings.json';
-$recipient = 'info@brownboyscustoms.ca'; // Production recipient — overridden by settings.json
+$recipient = 'brownboyscustoms@gmail.com'; // Production recipient — overridden by settings.json
 if (file_exists($settingsFile)) {
     $settingsData = json_decode(file_get_contents($settingsFile), true);
     if (!empty($settingsData['notification_email'])) {
@@ -207,7 +207,7 @@ if ($mailSent) {
         header('Content-Type: application/json');
         echo json_encode([
             'success' => true, // Return friendly success acknowledgment to user
-            'message' => 'Thank you, ' . htmlspecialchars($cleanFirstName) . '! Your inquiry has been logged. You can also call us directly 24/7 at +1 647 966 0047.'
+            'message' => 'Thank you, ' . htmlspecialchars($cleanFirstName) . '! Your inquiry has been logged. You can also reach us directly at 289-367-5047.'
         ]);
         exit;
     } else {

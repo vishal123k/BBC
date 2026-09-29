@@ -157,8 +157,8 @@ function renderProductDetails(p) {
   // Direct WhatsApp Button link
   const waBtn = document.querySelector('#btn-whatsapp-direct');
   if (waBtn) {
-    const waText = encodeURIComponent(`Hi Brown Boys Customs, I am interested in ordering: "${p.name}" ($${p.price.toFixed(2)} CAD). Is it available for pickup at Westwood Mall Unit 1C30?`);
-    waBtn.href = `https://wa.me/16479660047?text=${waText}`;
+    const waText = encodeURIComponent(`Hi Brown Boys Customs, I am interested in ordering: "${p.name}" ($${p.price.toFixed(2)} CAD).`);
+    waBtn.href = `https://wa.me/12893675047?text=${waText}`;
   }
 
   // Update Quote Modal hidden / prefilled values
@@ -738,8 +738,8 @@ function renderCartDrawer() {
   if (waOrderBtn) {
     waOrderBtn.style.display = 'inline-flex';
     const itemsList = cart.map(i => `• ${i.quantity}x ${i.name} ($${(i.price * i.quantity).toFixed(2)})`).join('\n');
-    const msg = encodeURIComponent(`Hi Brown Boys Customs, I would like to place an order:\n\n${itemsList}\n\nTotal: $${subtotal.toFixed(2)} CAD\nPickup: Westwood Mall Unit 1C30`);
-    waOrderBtn.href = `https://wa.me/16479660047?text=${msg}`;
+    const msg = encodeURIComponent(`Hi Brown Boys Customs, I would like to place an order:\n\n${itemsList}\n\nTotal: $${subtotal.toFixed(2)} CAD`);
+    waOrderBtn.href = `https://wa.me/12893675047?text=${msg}`;
   }
 }
 

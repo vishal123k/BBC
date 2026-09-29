@@ -1,12 +1,15 @@
 {
   "store_name": "Brown Boys Customs",
   "store_domain": "brownboyscustoms.ca",
-  "notification_email": "info@brownboyscustoms.ca",
-  "production_email": "info@brownboyscustoms.ca",
-  "store_phone": "+1 647 966 0047",
-  "store_address": "7215 Goreway Dr, Unit 1C30, Mississauga, ON L4T 2T9",
-  "store_location_name": "Westwood Mall / Westwood Square",
-  "hours_mon_fri": "10:00 AM – 9:00 PM",
-  "hours_sat": "10:00 AM – 6:00 PM",
-  "hours_sun": "12:00 PM – 5:00 PM"
+  "notification_email": "brownboyscustoms@gmail.com",
+  "production_email": "brownboyscustoms@gmail.com",
+  "store_phone": "289-367-5047",
+  "store_address_brampton": "Unit 20, 180 Wilkinson Road, Brampton, ON L6T 4W8",
+  "store_address_mississauga": "Unit 1C30, 7215 Goreway Drive, Mississauga, ON L4T 2T9 (Westwood Square)",
+  "store_address": "Unit 20, 180 Wilkinson Road, Brampton, ON L6T 4W8 & Unit 1C30, 7215 Goreway Dr, Mississauga, ON L4T 2T9",
+  "hours_mon_fri": "11:00 AM – 8:00 PM (Both Locations)",
+  "hours_sat_brampton": "11:00 AM – 7:00 PM",
+  "hours_sat_mississauga": "11:00 AM – 6:00 PM",
+  "hours_sun_brampton": "11:00 AM – 7:00 PM",
+  "hours_sun_mississauga": "12:00 PM – 5:00 PM"
 }

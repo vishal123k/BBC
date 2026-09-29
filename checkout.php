@@ -260,12 +260,12 @@ $customerHtml = "<!DOCTYPE html>
   <tr>
     <td style='padding:0 40px 28px;'>
       <div style='background:linear-gradient(135deg,#1a1500 0%,#2a2000 100%);border-radius:10px;padding:22px;border:1px solid #c8a951;text-align:center;'>
-        <p style='margin:0 0 8px;color:#c8a951;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;'>Pickup Location</p>
-        <p style='margin:0 0 4px;color:#e8e8e8;font-size:14px;font-weight:600;'>Westwood Mall &mdash; Unit 1C30</p>
-        <p style='margin:0 0 4px;color:#b0b0b0;font-size:13px;'>7215 Goreway Dr, Mississauga, ON L4T 2T9</p>
+        <p style='margin:0 0 8px;color:#c8a951;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;'>Pickup Locations</p>
+        <p style='margin:0 0 4px;color:#e8e8e8;font-size:13px;font-weight:600;'><strong>Location 1 (Brampton):</strong> Unit 20, 180 Wilkinson Rd, Brampton, ON L6T 4W8</p>
+        <p style='margin:0 0 8px;color:#e8e8e8;font-size:13px;font-weight:600;'><strong>Location 2 (Mississauga):</strong> Unit 1C30, 7215 Goreway Dr, Mississauga, ON L4T 2T9</p>
         <p style='margin:14px 0 4px;color:#c8a951;font-size:13px;font-weight:600;'>Store Hours</p>
-        <p style='margin:0;color:#b0b0b0;font-size:12px;line-height:1.8;'>Mon &ndash; Fri: 10AM &ndash; 9PM &nbsp;|&nbsp; Sat: 10AM &ndash; 6PM &nbsp;|&nbsp; Sun: 12PM &ndash; 5PM</p>
-        <p style='margin:14px 0 0;'><a href='tel:+16479660047' style='color:#c8a951;font-size:14px;font-weight:700;text-decoration:none;'>+1 647 966 0047</a></p>
+        <p style='margin:0;color:#b0b0b0;font-size:12px;line-height:1.8;'>Mon &ndash; Fri: 11AM &ndash; 8PM &nbsp;|&nbsp; Sat: 11AM &ndash; 7PM (Brampton) / 11AM &ndash; 6PM (Mississauga) &nbsp;|&nbsp; Sun: 11AM &ndash; 7PM (Brampton) / 12PM &ndash; 5PM (Mississauga)</p>
+        <p style='margin:14px 0 0;'><a href='tel:2893675047' style='color:#c8a951;font-size:14px;font-weight:700;text-decoration:none;'>289-367-5047</a></p>
       </div>
     </td>
   </tr>
@@ -274,10 +274,10 @@ $customerHtml = "<!DOCTYPE html>
   <tr>
     <td style='background:#0d0d0d;padding:30px 40px;text-align:center;border-top:1px solid #2a2a2a;'>
       <div style='display:inline-block;background:#c8a951;color:#0a0a0a;font-size:16px;font-weight:800;letter-spacing:3px;padding:7px 18px;border-radius:4px;margin-bottom:16px;'>BBC</div>
-      <p style='margin:0 0 6px;color:#888;font-size:12px;'>Brown Boys Customs &mdash; Custom Car Accessories &amp; Modifications</p>
+      <p style='margin:0 0 6px;color:#888;font-size:12px;'>Brown Boys Customs &mdash; Precision, Performance, Perfection</p>
       <p style='margin:0 0 6px;color:#555;font-size:11px;'>
         <a href='https://brownboyscustoms.ca' style='color:#c8a951;text-decoration:none;'>brownboyscustoms.ca</a>
-        &nbsp;&bull;&nbsp; Unit 1C30, Westwood Mall, Mississauga
+        &nbsp;&bull;&nbsp; Brampton &amp; Mississauga, Ontario
       </p>
       <p style='margin:12px 0 0;color:#444;font-size:10px;'>
         &copy; {$year} Brown Boys Customs. All rights reserved.<br>
@@ -294,7 +294,7 @@ $customerHtml = "<!DOCTYPE html>
 
 // ─── ADMIN PLAIN-TEXT NOTIFICATION ───────────────────────────────────────────
 $settingsFile = __DIR__ . '/data/settings.json';
-$adminEmail   = 'info@brownboyscustoms.ca'; // fallback — set in Admin > Settings
+$adminEmail   = 'brownboyscustoms@gmail.com'; // fallback — set in Admin > Settings
 if (file_exists($settingsFile)) {
     $settings = json_decode(file_get_contents($settingsFile), true) ?: [];
     if (!empty($settings['notification_email'])) {
@@ -326,7 +326,7 @@ $adminBody   .= "Admin Dashboard: https://brownboyscustoms.ca/admin/index.php\n"
 
 // ─── Send emails ──────────────────────────────────────────────────────────────
 $fromHeader  = 'From: Brown Boys Customs <no-reply@brownboyscustoms.ca>';
-$replyHeader = 'Reply-To: info@brownboyscustoms.ca';
+$replyHeader = 'Reply-To: brownboyscustoms@gmail.com';
 $mailerHdr   = 'X-Mailer: PHP/' . phpversion();
 
 // Admin alert (plain text)
