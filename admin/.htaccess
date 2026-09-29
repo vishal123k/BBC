@@ -1,0 +1,24 @@
+# ─── Admin Directory Security ─────────────────────────────────────────────────
+
+# Block direct access to all .html files in admin (force PHP login check)
+<FilesMatch "^(index|login)\.html$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Block access to auth.php directly
+<FilesMatch "^auth\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Disable directory listing
+Options -Indexes
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
+    Header set Pragma "no-cache"
+</IfModule>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#090d20"/>
+  <!-- Underglow Neon Light Kit Illustration -->
+  <path d="M100 240 Q300 160 500 240 L480 270 L120 270 Z" fill="#0d1430" stroke="#1f294d"/>
+  <!-- Vibrant RGB Underglow Bar -->
+  <rect x="120" y="270" width="360" height="12" rx="6" fill="url(#underglowGrad)" filter="drop-shadow(0 0 16px #c9a13d)"/>
+  <ellipse cx="300" cy="310" rx="200" ry="25" fill="url(#underglowFloor)" opacity="0.6"/>
+  <!-- LED Light Strips coiled on sides -->
+  <rect x="150" y="110" width="130" height="10" rx="4" fill="#38bdf8"/>
+  <rect x="320" y="110" width="130" height="10" rx="4" fill="#c9a13d"/>
+  <rect x="150" y="130" width="130" height="10" rx="4" fill="#ec4899"/>
+  <rect x="320" y="130" width="130" height="10" rx="4" fill="#22c55e"/>
+  <text x="300" y="360" font-family="'Barlow Condensed', sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">APP-CONTROLLED UNDERGLOW SUITE</text>
+  <defs>
+    <linearGradient id="underglowGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="35%" stop-color="#a855f7"/>
+      <stop offset="70%" stop-color="#c9a13d"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <radialGradient id="underglowFloor" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c9a13d" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#090d20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

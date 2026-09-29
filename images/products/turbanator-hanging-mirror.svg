@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="windshield-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="60%" stop-color="#0a102b"/>
+      <stop offset="100%" stop-color="#141a38"/>
+    </linearGradient>
+    <linearGradient id="city-bokeh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eab308" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Windshield / Cabin View -->
+  <rect width="600" height="400" fill="url(#windshield-bg)"/>
+  
+  <!-- City Bokeh Lights through Windshield -->
+  <circle cx="120" cy="180" r="40" fill="url(#city-bokeh)" filter="blur(8px)"/>
+  <circle cx="480" cy="160" r="50" fill="url(#city-bokeh)" filter="blur(10px)"/>
+  <circle cx="340" cy="220" r="25" fill="#eab308" fill-opacity="0.2" filter="blur(6px)"/>
+  <circle cx="210" cy="140" r="30" fill="#38bdf8" fill-opacity="0.2" filter="blur(6px)"/>
+
+  <!-- Rearview Mirror Bracket -->
+  <path d="M285 0 L315 0 L308 55 L292 55 Z" fill="#1b2030"/>
+  <!-- Mirror Body -->
+  <rect x="190" y="55" width="220" height="48" rx="8" fill="#111624" stroke="#2a334e" stroke-width="2"/>
+  <rect x="194" y="59" width="212" height="40" rx="5" fill="#1a2238" fill-opacity="0.8"/>
+  <line x1="200" y1="65" x2="400" y2="93" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2"/>
+
+  <!-- Mirror Hanging Cord -->
+  <line x1="300" y1="103" x2="300" y2="180" stroke="#c9a13d" stroke-width="3" stroke-dasharray="5 2"/>
+  
+  <!-- Turbanator Ornament (In-Car Angle) -->
+  <g transform="translate(300, 220)">
+    <circle cx="0" cy="0" r="44" fill="#0d132b" stroke="#c9a13d" stroke-width="3"/>
+    <path d="M-30 0 C-30 -30 30 -30 30 0 Z" fill="#eab308"/>
+    <path d="M-22 -8 C-15 -22 15 -22 22 -8 Z" fill="#c9a13d"/>
+    <circle cx="0" cy="6" r="12" fill="#090d20"/>
+    <rect x="-14" y="2" width="12" height="6" rx="1.5" fill="#000" stroke="#c9a13d" stroke-width="1"/>
+    <rect x="2" y="2" width="12" height="6" rx="1.5" fill="#000" stroke="#c9a13d" stroke-width="1"/>
+    
+    <!-- Tassel -->
+    <path d="M-10 44 L10 44 L16 95 L-16 95 Z" fill="#c9a13d" opacity="0.95"/>
+    <line x1="0" y1="44" x2="0" y2="95" stroke="#ffe082" stroke-width="1.5"/>
+  </g>
+
+  <!-- Tag / Overlay info -->
+  <rect x="20" y="340" width="230" height="40" rx="6" fill="#0b0f24" fill-opacity="0.85" stroke="#c9a13d" stroke-width="1"/>
+  <text x="135" y="365" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" fill="#c9a13d" text-anchor="middle">IN-VEHICLE CABIN FITMENT</text>
+</svg>

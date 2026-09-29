@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="vid-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02040a"/>
+      <stop offset="50%" stop-color="#090f24"/>
+      <stop offset="100%" stop-color="#111833"/>
+    </linearGradient>
+    <radialGradient id="play-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c9a13d" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#c9a13d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#vid-bg)"/>
+
+  <!-- Subtle ambient road lighting overlay -->
+  <path d="M0 400 L250 200 L350 200 L600 400 Z" fill="#080c1c" opacity="0.6"/>
+  
+  <!-- Hanging ornament in motion -->
+  <g transform="translate(300, 160)">
+    <!-- Cord -->
+    <line x1="0" y1="-120" x2="0" y2="-40" stroke="#c9a13d" stroke-width="2.5" stroke-dasharray="4 2"/>
+    <circle cx="0" cy="0" r="45" fill="#0e1430" stroke="#c9a13d" stroke-width="2.5"/>
+    <path d="M-30 0 C-30 -32 30 -32 30 0 Z" fill="#eab308"/>
+    <circle cx="0" cy="6" r="12" fill="#090d20"/>
+    <rect x="-14" y="2" width="12" height="6" rx="1.5" fill="#000" stroke="#c9a13d" stroke-width="1"/>
+    <rect x="2" y="2" width="12" height="6" rx="1.5" fill="#000" stroke="#c9a13d" stroke-width="1"/>
+    <!-- Tassel with motion angle -->
+    <path d="M-10 45 L10 45 L18 100 L-14 100 Z" fill="#c9a13d"/>
+  </g>
+
+  <!-- Big Play Button Overlay -->
+  <circle cx="300" cy="200" r="54" fill="url(#play-glow)"/>
+  <circle cx="300" cy="200" r="36" fill="#0b0f24" stroke="#c9a13d" stroke-width="2.5"/>
+  <polygon points="293,186 314,200 293,214" fill="#c9a13d"/>
+
+  <!-- Live Video Tag -->
+  <rect x="24" y="24" width="130" height="28" rx="14" fill="#0f172a" fill-opacity="0.9" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="38" cy="38" r="5" fill="#ef4444"/>
+  <text x="50" y="42" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1">PRODUCT VIDEO</text>
+
+  <!-- Video Duration Badge -->
+  <rect x="520" y="352" width="56" height="24" rx="4" fill="#000000" fill-opacity="0.8"/>
+  <text x="548" y="368" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">0:45 HD</text>
+
+  <!-- Video Title Overlay Bar -->
+  <rect x="24" y="344" width="320" height="32" rx="6" fill="#000000" fill-opacity="0.75"/>
+  <text x="36" y="365" font-family="'Outfit', sans-serif" font-size="12" font-weight="600" fill="#ffffff">Watch Being Turbanator in 4K Vehicle Motion</text>
+</svg>

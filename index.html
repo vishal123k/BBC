@@ -1,0 +1,3349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brown Boys Customs (BBC) — Built Beyond Stock | Mississauga</title>
+  <meta name="description"
+    content="Brown Boys Customs (BBC) is Mississauga's premier automotive studio. Rolls-Royce style starlight headliners, ambient lighting, custom carbon fiber wheels, and truck accessories at Westwood Square.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css?v=13.0">
+
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       BBC PREMIUM LUXURY THEME — EXACT MATCH FOR CLIENT REFERENCE
+       ========================================================================== */
+    :root {
+      --bg-dark: #070913;
+      --bg-surface: #0a0e1c;
+      --bg-card: #0c1224;
+      --bg-card-hover: #111933;
+      --gold-tan: #d9a044;
+      --gold-tan-hover: #e5af57;
+      --gold-tan-glow: rgba(217, 160, 68, 0.28);
+      --bbc-bg: #070913;
+      --bbc-surface: #0a0e1c;
+      --bbc-card: #0c1224;
+      --bbc-card-border: rgba(255, 255, 255, 0.08);
+      --bbc-gold: #d9a044;
+      --bbc-gold-hover: #e5af57;
+      --bbc-gold-light: rgba(217, 160, 68, 0.15);
+      --bbc-text-white: #ffffff;
+      --bbc-text-lead: #cbd5e1;
+      --bbc-text-muted: #8e9bb0;
+      --text-pure: #ffffff;
+      --text-lead: #cbd5e1;
+      --text-muted: #8e9bb0;
+      --text-dark: #070913;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-gold-subtle: rgba(217, 160, 68, 0.35);
+      --font-display: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Outfit', sans-serif;
+      --font-text: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'Space Mono', monospace, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark) !important;
+      color: var(--text-lead) !important;
+      font-family: var(--font-text) !important;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Hide redundant old top bar for clean cinematic look */
+    .top-bar {
+      display: none !important;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1360px !important;
+      margin: 0 auto !important;
+      padding: 0 1.8rem !important;
+    }
+
+    /* ================= 1. FLOATING MODERN CAPSULE NAVBAR ================= */
+    .site-header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+      background: transparent !important;
+      border-bottom: 1px solid transparent !important;
+      box-shadow: none !important;
+      padding: 12px 1.25rem !important;
+      pointer-events: auto !important;
+      transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, padding 0.25s ease !important;
+    }
+
+    /* When page is scrolled, provide a 100% solid dark barrier so content disappears behind it cleanly */
+    .site-header.scrolled {
+      background: #070913 !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      padding: 10px 1.25rem !important;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.75) !important;
+    }
+
+    .nav-container {
+      pointer-events: auto !important;
+      max-width: 1240px !important;
+      margin: 0 auto !important;
+      background: #0c0d12 !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-radius: 9999px !important;
+      height: 68px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 0 1.5rem !important;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.65) !important;
+    }
+
+    .site-logo {
+      display: inline-flex !important;
+      align-items: center !important;
+      text-decoration: none !important;
+      gap: 0.75rem !important;
+      flex-shrink: 0 !important;
+    }
+
+    .brand-logo-img {
+      height: 38px !important;
+      max-height: 38px !important;
+      width: auto !important;
+      object-fit: contain !important;
+      display: block !important;
+    }
+
+    .nav-menu {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.75rem !important;
+    }
+
+    /* Sentence case links with smooth pill active state */
+    .nav-link {
+      color: #cbd5e1 !important;
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif !important;
+      font-size: 0.95rem !important;
+      font-weight: 500 !important;
+      letter-spacing: 0 !important;
+      text-transform: none !important;
+      text-decoration: none !important;
+      padding: 8px 18px !important;
+      border-radius: 9999px !important;
+      position: relative !important;
+      transition: all 0.22s ease !important;
+      display: inline-block !important;
+    }
+
+    .nav-link::after {
+      display: none !important;
+    }
+
+    .nav-link:hover {
+      color: #ffffff !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+    }
+
+    /* Solid Gold Pill Active State */
+    .nav-link.active {
+      background: var(--gold-tan, #d9a044) !important;
+      color: #070913 !important;
+      font-weight: 600 !important;
+      box-shadow: 0 2px 10px rgba(217, 160, 68, 0.25) !important;
+    }
+
+    .nav-link.active:hover {
+      background: var(--gold-tan-hover, #e5af57) !important;
+      color: #000000 !important;
+    }
+
+    .nav-actions {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+
+    /* Outlined Circular Cart Button */
+    .header-cart-circle-btn {
+      position: relative !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 44px !important;
+      height: 44px !important;
+      border-radius: 50% !important;
+      border: 1px solid rgba(255, 255, 255, 0.22) !important;
+      background: rgba(255, 255, 255, 0.03) !important;
+      color: #ffffff !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
+      flex-shrink: 0 !important;
+    }
+
+    .header-cart-circle-btn:hover {
+      border-color: var(--gold-tan, #d9a044) !important;
+      color: var(--gold-tan, #d9a044) !important;
+      background: rgba(217, 160, 68, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .header-cart-circle-btn svg {
+      width: 19px !important;
+      height: 19px !important;
+      stroke: currentColor !important;
+      fill: none !important;
+      stroke-width: 2 !important;
+      stroke-linecap: round !important;
+      stroke-linejoin: round !important;
+    }
+
+    /* Overlapping Circular Badge */
+    .header-cart-badge-pill {
+      position: absolute !important;
+      top: -4px !important;
+      right: -4px !important;
+      background: var(--gold-tan, #d9a044) !important;
+      color: #070913 !important;
+      font-family: 'Outfit', sans-serif !important;
+      font-size: 0.72rem !important;
+      font-weight: 800 !important;
+      min-width: 20px !important;
+      height: 20px !important;
+      border-radius: 50% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border: 2px solid #0c0d12 !important;
+      line-height: 1 !important;
+      padding: 0 4px !important;
+    }
+
+    /* Tightened CTA button with directional arrow */
+    .btn-cta-navbar {
+      background: var(--gold-tan, #d9a044) !important;
+      color: #070913 !important;
+      font-family: 'Outfit', sans-serif !important;
+      font-size: 0.92rem !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.01em !important;
+      padding: 9px 20px !important;
+      border-radius: 10px !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      border: 1px solid var(--gold-tan, #d9a044) !important;
+      box-shadow: 0 4px 14px rgba(217, 160, 68, 0.22) !important;
+      transition: all 0.25s ease !important;
+      white-space: nowrap !important;
+    }
+
+    .btn-cta-navbar:hover {
+      background: var(--gold-tan-hover, #e5af57) !important;
+      border-color: var(--gold-tan-hover, #e5af57) !important;
+      color: #000000 !important;
+      transform: translateY(-1px) !important;
+      box-shadow: 0 6px 20px rgba(217, 160, 68, 0.35) !important;
+    }
+
+    .btn-cta-navbar .cta-arrow-icon {
+      font-size: 1.05rem !important;
+      font-weight: 700 !important;
+      line-height: 1 !important;
+      display: inline-block !important;
+      transition: transform 0.2s ease !important;
+    }
+
+    .btn-cta-navbar:hover .cta-arrow-icon {
+      transform: translate(2px, -2px) !important;
+    }
+
+    /* Mobile Nav Toggle */
+    .nav-toggle {
+      display: none !important;
+      background: transparent !important;
+      border: none !important;
+      cursor: pointer !important;
+      padding: 8px !important;
+    }
+
+    .nav-toggle span {
+      display: block !important;
+      width: 22px !important;
+      height: 2px !important;
+      background: #ffffff !important;
+      margin: 4px 0 !important;
+      transition: all 0.2s ease !important;
+    }
+
+    @media (max-width: 992px) {
+      .site-header {
+        top: 8px !important;
+        padding: 0 0.75rem !important;
+      }
+      .nav-container {
+        height: 60px !important;
+        padding: 0 1rem !important;
+        border-radius: 9999px !important;
+      }
+      .nav-menu {
+        display: none !important;
+      }
+      .nav-toggle {
+        display: block !important;
+      }
+      .btn-cta-navbar {
+        display: none !important;
+      }
+    }
+
+    /* ================= 2. HERO SECTION ================= */
+    .hero-banner {
+      position: relative !important;
+      min-height: calc(100vh - 80px) !important;
+      display: flex !important;
+      align-items: center !important;
+      background: #070913 url('images/hero-banner.jpg') 62% 40% / cover no-repeat !important;
+      padding: 2.5rem 0 2.2rem !important;
+      overflow: hidden !important;
+      border-bottom: 1px solid var(--border-subtle) !important;
+    }
+
+    /* Deep moody vignette & light scrim */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, #070913 0%, rgba(7, 9, 19, 0.94) 36%, rgba(7, 9, 19, 0.35) 70%, rgba(7, 9, 19, 0.65) 100%),
+        linear-gradient(180deg, rgba(7, 9, 19, 0.35) 0%, transparent 25%, transparent 75%, #070913 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-container-rel {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    /* Top Metadata Line inside Hero */
+    .hero-meta-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .hero-meta-left {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      color: rgba(255, 255, 255, 0.45);
+      text-transform: uppercase;
+    }
+
+    .hero-meta-right {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+    }
+
+    /* Hero Two-Column Layout */
+    .hero-main-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 3.5rem;
+    }
+
+    .hero-content {
+      max-width: 780px;
+    }
+
+    /* Golden Sub-tagline */
+    .hero-subhead-accent {
+      font-family: 'Montserrat', sans-serif !important;
+      font-size: 0.95rem !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.22em !important;
+      color: var(--gold-tan) !important;
+      text-transform: uppercase !important;
+      margin-bottom: 1.1rem !important;
+      display: inline-block !important;
+    }
+
+    /* Massive Headline: BUILT BEYOND STOCK. */
+    .hero-headline-massive {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif !important;
+      font-size: clamp(3.2rem, 5.8vw, 6.2rem) !important;
+      font-weight: 900 !important;
+      line-height: 0.94 !important;
+      letter-spacing: -0.015em !important;
+      color: #ffffff !important;
+      text-transform: uppercase !important;
+      margin: 0 0 1.5rem 0 !important;
+      text-shadow: 0 8px 24px rgba(0, 0, 0, 0.7) !important;
+    }
+
+    .text-gold-highlight {
+      color: var(--gold-tan) !important;
+      display: inline-block;
+    }
+
+    /* Lead Subtitle Paragraph */
+    .hero-desc-lead {
+      font-family: var(--font-text) !important;
+      font-size: 1.15rem !important;
+      line-height: 1.6 !important;
+      color: #cbd5e1 !important;
+      max-width: 650px !important;
+      margin-bottom: 2.2rem !important;
+    }
+
+    /* CTA Button Group */
+    .hero-cta-actions {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1.2rem !important;
+      flex-wrap: wrap !important;
+    }
+
+    /* Primary Tan/Gold CTA */
+    .btn-hero-explore {
+      background: var(--gold-tan) !important;
+      color: var(--text-dark) !important;
+      font-family: 'Montserrat', sans-serif !important;
+      font-size: 0.92rem !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      padding: 0.9rem 2.2rem !important;
+      border-radius: 2px !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.6rem !important;
+      border: 1px solid var(--gold-tan) !important;
+      box-shadow: 0 4px 20px rgba(217, 160, 68, 0.25) !important;
+      transition: all 0.25s ease !important;
+    }
+
+    .btn-hero-explore:hover {
+      background: var(--gold-tan-hover) !important;
+      border-color: var(--gold-tan-hover) !important;
+      color: #000000 !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 8px 26px rgba(217, 160, 68, 0.42) !important;
+    }
+
+    .btn-hero-explore .cta-arrow {
+      font-size: 1.15rem;
+      font-weight: 900;
+      line-height: 1;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-hero-explore:hover .cta-arrow {
+      transform: translate(2px, 2px);
+    }
+
+    /* Secondary Transparent Button */
+    .btn-hero-accessories {
+      background: rgba(7, 9, 19, 0.7) !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.25) !important;
+      font-family: 'Montserrat', sans-serif !important;
+      font-size: 0.92rem !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      padding: 0.9rem 2.2rem !important;
+      border-radius: 2px !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      backdrop-filter: blur(8px) !important;
+      transition: all 0.25s ease !important;
+    }
+
+    .btn-hero-accessories:hover {
+      background: rgba(255, 255, 255, 0.12) !important;
+      border-color: #ffffff !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) !important;
+    }
+
+    /* Bottom-Right Hero Info Panels */
+    .hero-meta-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-bottom: 0.75rem;
+      min-width: 260px;
+      text-align: left;
+    }
+
+    .hero-stat-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      border-left: 2px solid rgba(217, 160, 68, 0.45);
+      padding-left: 1rem;
+    }
+
+    .hero-stat-kicker {
+      font-family: var(--font-display);
+      color: var(--gold-tan);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .hero-stat-label {
+      font-family: var(--font-display);
+      color: #ffffff;
+      font-size: 0.96rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      .hero-main-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+      }
+      .hero-meta-stats {
+        flex-direction: row;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      .hero-banner {
+        padding: 3rem 0;
+      }
+    }
+
+    /* ================= 3. SECTIONS COMMON STYLING ================= */
+    .section-dark {
+      background-color: var(--bg-surface) !important;
+      color: var(--text-lead) !important;
+      padding: 5rem 0 !important;
+      border-bottom: 1px solid var(--border-subtle) !important;
+    }
+
+    .section-darker {
+      background-color: var(--bg-dark) !important;
+      color: var(--text-lead) !important;
+      padding: 5rem 0 !important;
+      border-bottom: 1px solid var(--border-subtle) !important;
+    }
+
+    .section-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 2.8rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .section-kicker {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      color: var(--gold-tan);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+
+    .section-title-luxury {
+      font-family: var(--font-display) !important;
+      font-size: clamp(2rem, 3.8vw, 3rem) !important;
+      font-weight: 900 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.04em !important;
+      color: #ffffff !important;
+      line-height: 1 !important;
+      margin: 0 !important;
+    }
+
+    .section-view-all {
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-tan);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .section-view-all:hover {
+      color: var(--gold-tan-hover);
+      transform: translateX(3px);
+    }
+
+    /* ================= 4. SERVICES SHOWCASE ================= */
+    .services-grid-luxury {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+    }
+
+    @media (max-width: 1024px) {
+      .services-grid-luxury {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .services-grid-luxury {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .service-card-luxury {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      padding: 2.2rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card-luxury::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--gold-tan);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card-luxury:hover {
+      border-color: var(--border-gold-subtle);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+      background: var(--bg-card-hover);
+    }
+
+    .service-card-luxury:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-num {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gold-tan);
+      letter-spacing: 0.15em;
+      margin-bottom: 1.2rem;
+      display: block;
+    }
+
+    .service-title {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.8rem;
+      line-height: 1.2;
+    }
+
+    .service-desc {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .service-btn-link {
+      font-family: var(--font-display);
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--gold-tan);
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .service-btn-link:hover {
+      color: #ffffff;
+      transform: translateX(4px);
+    }
+
+    /* ================= 5. REAL WORK / PORTFOLIO ================= */
+    .realwork-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      .realwork-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .realwork-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .realwork-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+
+    .realwork-card:hover {
+      border-color: var(--border-gold-subtle);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .realwork-img-box {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      background: #090c14;
+    }
+
+    .realwork-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .realwork-card:hover .realwork-img-box img {
+      transform: scale(1.06);
+    }
+
+    .realwork-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(8, 9, 13, 0.85);
+      backdrop-filter: blur(4px);
+      color: var(--gold-tan);
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 2px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .realwork-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .realwork-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      line-height: 1.25;
+    }
+
+    .realwork-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    /* ================= 6. CATEGORIES ================= */
+    .cat-clean-grid {
+      display: grid !important;
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+      gap: 1.5rem !important;
+    }
+
+    @media (max-width: 1024px) {
+      .cat-clean-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cat-clean-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    .cat-clean-card {
+      background: var(--bg-card) !important;
+      border: 1px solid var(--border-subtle) !important;
+      border-radius: 4px !important;
+      padding: 1.8rem 1.5rem !important;
+      text-decoration: none !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      min-height: 150px !important;
+      transition: all 0.25s ease !important;
+    }
+
+    .cat-clean-card:hover {
+      border-color: var(--gold-tan) !important;
+      transform: translateY(-3px) !important;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4) !important;
+      background: var(--bg-card-hover) !important;
+    }
+
+    .cat-clean-title {
+      font-family: var(--font-display) !important;
+      font-size: 1.25rem !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.05em !important;
+      color: #ffffff !important;
+      margin-bottom: 0.4rem !important;
+    }
+
+    .cat-clean-items {
+      font-size: 0.88rem !important;
+      color: var(--text-muted) !important;
+      line-height: 1.5 !important;
+      margin-bottom: 1.2rem !important;
+    }
+
+    .cat-clean-arrow {
+      font-family: var(--font-display) !important;
+      font-size: 0.88rem !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+      color: var(--gold-tan) !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 4px !important;
+    }
+
+    /* ================= 7. BEST SELLERS ================= */
+    .bestsellers-grid {
+      display: grid !important;
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+      gap: 1.6rem !important;
+    }
+
+    @media (max-width: 1024px) {
+      .bestsellers-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .bestsellers-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    .product-clean-card {
+      background: var(--bg-card) !important;
+      border: 1px solid var(--border-subtle) !important;
+      border-radius: 4px !important;
+      overflow: hidden !important;
+      display: flex !important;
+      flex-direction: column !important;
+      transition: all 0.25s ease !important;
+    }
+
+    .product-clean-card:hover {
+      border-color: var(--gold-tan) !important;
+      transform: translateY(-4px) !important;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .product-clean-img-wrap {
+      position: relative !important;
+      width: 100% !important;
+      height: 220px !important;
+      background: #090c14 !important;
+      overflow: hidden !important;
+    }
+
+    .product-clean-img-wrap img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      transition: transform 0.4s ease !important;
+    }
+
+    .product-clean-card:hover .product-clean-img-wrap img {
+      transform: scale(1.05) !important;
+    }
+
+    .product-badge-sale {
+      position: absolute !important;
+      top: 10px !important;
+      right: 10px !important;
+      background: var(--gold-tan) !important;
+      color: #090a0f !important;
+      font-family: var(--font-display) !important;
+      font-size: 0.72rem !important;
+      font-weight: 900 !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+      padding: 4px 10px !important;
+      border-radius: 2px !important;
+      z-index: 5 !important;
+    }
+
+    .product-clean-body {
+      padding: 1.25rem !important;
+      display: flex !important;
+      flex-direction: column !important;
+      flex-grow: 1 !important;
+    }
+
+    .product-clean-name {
+      font-family: var(--font-display) !important;
+      font-size: 1.12rem !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.05em !important;
+      margin-bottom: 0.5rem !important;
+      line-height: 1.3 !important;
+    }
+
+    .product-clean-name a {
+      color: #ffffff !important;
+      text-decoration: none !important;
+      transition: color 0.2s ease !important;
+    }
+
+    .product-clean-name a:hover {
+      color: var(--gold-tan) !important;
+    }
+
+    .product-clean-price-row {
+      margin-bottom: 1.2rem !important;
+      display: flex !important;
+      align-items: baseline !important;
+      gap: 0.6rem !important;
+    }
+
+    .product-clean-old-price {
+      text-decoration: line-through !important;
+      color: #64748b !important;
+      font-size: 0.95rem !important;
+    }
+
+    .product-clean-price {
+      font-size: 1.3rem !important;
+      font-weight: 800 !important;
+      color: var(--gold-tan) !important;
+    }
+
+    .btn-clean-cart {
+      width: 100% !important;
+      background: rgba(255, 255, 255, 0.06) !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      border-radius: 2px !important;
+      padding: 0.8rem 1rem !important;
+      font-family: var(--font-display) !important;
+      font-size: 0.92rem !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.5rem !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+      margin-top: auto !important;
+    }
+
+    .btn-clean-cart svg {
+      width: 16px !important;
+      height: 16px !important;
+      fill: currentColor !important;
+    }
+
+    .btn-clean-cart:hover {
+      background: var(--gold-tan) !important;
+      border-color: var(--gold-tan) !important;
+      color: #080b18 !important;
+    }
+
+    /* ================= 8. WHO WE ARE ================= */
+    .who-we-are-wrap {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 4rem !important;
+      align-items: center !important;
+    }
+
+    @media (max-width: 900px) {
+      .who-we-are-wrap {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+    }
+
+    .who-we-are-img {
+      width: 100% !important;
+      height: auto !important;
+      border-radius: 4px !important;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5) !important;
+      display: block !important;
+      object-fit: cover !important;
+      border: 1px solid var(--border-subtle) !important;
+    }
+
+    .who-we-are-content h2 {
+      font-family: var(--font-display) !important;
+      font-size: clamp(2rem, 3.5vw, 2.8rem) !important;
+      font-weight: 900 !important;
+      text-transform: uppercase !important;
+      color: #ffffff !important;
+      margin-bottom: 1.5rem !important;
+    }
+
+    .who-we-are-content p {
+      color: var(--text-muted) !important;
+      font-size: 1.05rem !important;
+      line-height: 1.7 !important;
+      margin-bottom: 1.4rem !important;
+    }
+
+    /* ================= 9. JOURNAL / BLOG ================= */
+    .blog-clean-grid {
+      display: grid !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      gap: 1.8rem !important;
+    }
+
+    @media (max-width: 900px) {
+      .blog-clean-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    .blog-clean-card {
+      background: var(--bg-card) !important;
+      border: 1px solid var(--border-subtle) !important;
+      border-radius: 4px !important;
+      padding: 2rem 1.8rem !important;
+      display: flex !important;
+      flex-direction: column !important;
+      transition: all 0.25s ease !important;
+    }
+
+    .blog-clean-card:hover {
+      border-color: var(--gold-tan) !important;
+      transform: translateY(-3px) !important;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4) !important;
+      background: var(--bg-card-hover) !important;
+    }
+
+    .blog-clean-date {
+      color: var(--gold-tan) !important;
+      font-family: var(--font-display) !important;
+      font-size: 0.85rem !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.15em !important;
+      text-transform: uppercase !important;
+      margin-bottom: 0.8rem !important;
+      display: block !important;
+    }
+
+    .blog-clean-title {
+      font-family: var(--font-display) !important;
+      font-size: 1.3rem !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      color: #ffffff !important;
+      line-height: 1.3 !important;
+      margin-bottom: 0.8rem !important;
+    }
+
+    .blog-clean-title a {
+      color: #ffffff !important;
+      text-decoration: none !important;
+      transition: color 0.2s ease !important;
+    }
+
+    .blog-clean-title a:hover {
+      color: var(--gold-tan) !important;
+    }
+
+    .blog-clean-excerpt {
+      color: var(--text-muted) !important;
+      font-size: 0.95rem !important;
+      line-height: 1.6 !important;
+      margin-bottom: 1.5rem !important;
+    }
+
+    .blog-clean-link {
+      font-family: var(--font-display) !important;
+      font-size: 0.88rem !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+      color: var(--gold-tan) !important;
+      text-decoration: none !important;
+      margin-top: auto !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 4px !important;
+    }
+
+    .blog-clean-link:hover {
+      color: #ffffff !important;
+      transform: translateX(4px) !important;
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ==========================================================================
+       HOMEPAGE EXACT SCREENSHOT COMPONENT STYLING
+       ========================================================================== */
+    /* Book an Install Button */
+    .btn-book-install {
+      background: var(--gold-tan) !important;
+      color: #08090d !important;
+      font-family: var(--font-display) !important;
+      font-size: 0.92rem !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      padding: 0.7rem 1.4rem !important;
+      border-radius: 6px !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.4rem !important;
+      transition: all 0.25s ease !important;
+      border: 1px solid var(--gold-tan) !important;
+      white-space: nowrap !important;
+    }
+
+    .btn-book-install:hover {
+      background: var(--gold-tan-hover) !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 6px 18px rgba(217, 160, 68, 0.35) !important;
+    }
+
+    /* Hero Floating Side Badges */
+    .hero-side-card {
+      background: rgba(7, 9, 19, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      padding: 1.1rem 1.3rem;
+      backdrop-filter: blur(10px);
+      margin-bottom: 1rem;
+    }
+
+    .hero-side-kicker {
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--gold-tan);
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 0.35rem;
+    }
+
+    .hero-side-title {
+      font-family: var(--font-text);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #ffffff;
+      display: block;
+    }
+
+    .hero-side-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .hero-serving-badge-box {
+      border: 1px solid rgba(217, 160, 68, 0.45);
+      border-radius: 6px;
+      padding: 0.9rem 1.2rem;
+      background: rgba(7, 9, 19, 0.8);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Hero Bottom 4 Feature Badges */
+    .hero-bottom-pills-row {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .hero-feature-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .badge-icon-ring {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--gold-tan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-tan);
+      flex-shrink: 0;
+    }
+
+    .badge-icon-ring svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .badge-text-wrap strong {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .badge-text-wrap span {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       EXACT REPLICA OF USER REFERENCE DESIGN — SERVICES, PROJECTS & CATEGORIES
+       ========================================================================== */
+
+    /* Section Header Row with Subtitle & Slider Arrows */
+    .section-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 2.2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      padding-bottom: 1.4rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .section-header-left {
+      max-width: 680px;
+    }
+
+    .section-kicker {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #d9a044;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+
+    .section-title-luxury {
+      font-family: var(--font-display, 'Barlow Condensed', sans-serif);
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .section-title-luxury .text-gold-highlight {
+      color: #d9a044;
+    }
+
+    .section-subtitle-lead {
+      font-size: 0.88rem;
+      color: #8e9bb0;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .section-header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-view-all {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #d9a044;
+      padding: 9px 20px;
+      border: 1px solid rgba(217, 160, 68, 0.45);
+      border-radius: 999px;
+      background: rgba(217, 160, 68, 0.05);
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+
+    .section-view-all:hover {
+      background: #d9a044;
+      color: #070913;
+      border-color: #d9a044;
+      box-shadow: 0 0 16px rgba(217, 160, 68, 0.4);
+      transform: translateX(3px);
+    }
+
+    .slider-arrow-btns {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .slider-nav-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(12, 18, 36, 0.7);
+      color: #cbd5e1;
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .slider-nav-btn:hover {
+      border-color: #d9a044;
+      color: #d9a044;
+      background: rgba(217, 160, 68, 0.15);
+      box-shadow: 0 0 12px rgba(217, 160, 68, 0.35);
+    }
+
+    /* 1. SERVICES & SPECIALTIES (6 Cards Grid) */
+    .services-spec-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(240px, 240px));
+      gap: 1.15rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding-bottom: 0.5rem;
+    }
+    .services-spec-grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 1400px) {
+      .services-spec-grid {
+        grid-template-columns: repeat(6, minmax(240px, 240px));
+      }
+    }
+
+    .service-spec-card {
+      background: #0a0e1c;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      scroll-snap-align: start;
+    }
+
+    .service-spec-card:hover {
+      border-color: rgba(217, 160, 68, 0.55);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), 0 0 20px rgba(217, 160, 68, 0.15);
+    }
+
+    .service-spec-media {
+      width: 100%;
+      height: 180px;
+      background: #090c14;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .service-spec-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .service-spec-card:hover .service-spec-media img {
+      transform: scale(1.08);
+    }
+
+    .service-spec-body {
+      padding: 1.25rem 1.15rem 1.15rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-icon-box {
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(217, 160, 68, 0.5);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(217, 160, 68, 0.08);
+      margin-bottom: 0.9rem;
+      flex-shrink: 0;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+
+    .service-spec-card:hover .service-icon-box {
+      background: rgba(217, 160, 68, 0.2);
+      box-shadow: 0 0 12px rgba(217, 160, 68, 0.35);
+    }
+
+    .service-icon-box svg {
+      width: 20px;
+      height: 20px;
+      fill: #d9a044;
+    }
+
+    .service-spec-title {
+      font-family: var(--font-display, 'Barlow Condensed', sans-serif);
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.45rem;
+      line-height: 1.2;
+    }
+
+    .service-spec-desc {
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: #8e9bb0;
+      margin-bottom: 1.2rem;
+      flex-grow: 1;
+    }
+
+    .service-explore-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #d9a044;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .service-spec-card:hover .service-explore-link {
+      color: #e5af57;
+      transform: translateX(4px);
+    }
+
+    /* 2. RECENT PROJECTS (5 Cards Grid with Workshop Background) */
+    .portfolio-backdrop-section {
+      background: linear-gradient(to bottom, rgba(7, 9, 19, 0.93) 0%, rgba(7, 9, 19, 0.96) 100%),
+                  url('images/about-workshop.jpg') center / cover no-repeat;
+      padding: 5.5rem 0 !important;
+      position: relative;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .recent-projects-5grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(280px, 280px));
+      gap: 1.15rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding-bottom: 0.5rem;
+    }
+    .recent-projects-5grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 1400px) {
+      .recent-projects-5grid {
+        grid-template-columns: repeat(5, minmax(280px, 280px));
+      }
+    }
+
+    .project-card-clean {
+      background: #0a0e1c;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      scroll-snap-align: start;
+    }
+
+    .project-card-clean:hover {
+      border-color: rgba(217, 160, 68, 0.55);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), 0 0 20px rgba(217, 160, 68, 0.15);
+    }
+
+    .project-card-media {
+      width: 100%;
+      height: 195px;
+      background: #090c14;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .project-card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card-clean:hover .project-card-media img {
+      transform: scale(1.08);
+    }
+
+    .project-card-body {
+      padding: 1.15rem 1.15rem 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-grow: 1;
+    }
+
+    .project-info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .project-title {
+      font-family: var(--font-display, 'Barlow Condensed', sans-serif);
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+    }
+
+    .project-sub {
+      font-size: 0.78rem;
+      color: #8e9bb0;
+      line-height: 1.4;
+    }
+
+    .project-arrow-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid rgba(217, 160, 68, 0.5);
+      color: #d9a044;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+    }
+
+    .project-card-clean:hover .project-arrow-circle {
+      background: #d9a044;
+      color: #070913;
+      border-color: #d9a044;
+      transform: translateX(3px);
+      box-shadow: 0 0 10px rgba(217, 160, 68, 0.4);
+    }
+
+    /* 3. SHOP BY CATEGORY (7 Cards Grid) */
+    .shop-cat-7grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(210px, 210px));
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding-bottom: 0.5rem;
+    }
+    .shop-cat-7grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 1400px) {
+      .shop-cat-7grid {
+        grid-template-columns: repeat(7, minmax(210px, 210px));
+      }
+    }
+
+    .cat-card-modern {
+      background: #0a0e1c;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      scroll-snap-align: start;
+    }
+
+    .cat-card-modern:hover {
+      border-color: rgba(217, 160, 68, 0.55);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), 0 0 20px rgba(217, 160, 68, 0.15);
+    }
+
+    .cat-card-thumb {
+      width: 100%;
+      height: 155px;
+      background: #090c14;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cat-card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .cat-card-modern:hover .cat-card-thumb img {
+      transform: scale(1.08);
+    }
+
+    .cat-card-body {
+      padding: 1.1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .cat-icon-badge {
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(217, 160, 68, 0.5);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(217, 160, 68, 0.08);
+      margin-bottom: 0.8rem;
+      flex-shrink: 0;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+
+    .cat-card-modern:hover .cat-icon-badge {
+      background: rgba(217, 160, 68, 0.2);
+      box-shadow: 0 0 10px rgba(217, 160, 68, 0.3);
+    }
+
+    .cat-icon-badge svg {
+      width: 18px;
+      height: 18px;
+      fill: #d9a044;
+    }
+
+    .cat-bottom-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-top: auto;
+    }
+
+    .cat-info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .cat-title-text {
+      font-family: var(--font-display, 'Barlow Condensed', sans-serif);
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+    }
+
+    .cat-sub-text {
+      font-size: 0.74rem;
+      color: #8e9bb0;
+      line-height: 1.35;
+    }
+
+    .cat-circle-arrow {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid rgba(217, 160, 68, 0.5);
+      color: #d9a044;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+    }
+
+    .cat-card-modern:hover .cat-circle-arrow {
+      background: #d9a044;
+      color: #070913;
+      border-color: #d9a044;
+      transform: translateX(2px);
+    }
+
+    /* ================= WHO WE ARE 4-PART LAYOUT ================= */
+    .who-we-are-4col-grid {
+      display: grid;
+      grid-template-columns: 320px 1.2fr 240px 320px;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @media (max-width: 1200px) {
+      .who-we-are-4col-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .who-we-are-4col-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .who-main-photo {
+      width: 100%;
+      height: 280px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .who-main-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .who-story-text h3 {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+
+    .who-story-text p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .who-features-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .who-feature-row {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .who-visit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .who-map-preview {
+      width: 100%;
+      height: 120px;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .who-map-preview iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* ================= BOTTOM CTA HERO BANNER ================= */
+    .home-cta-hero {
+      position: relative;
+      padding: 5rem 0;
+      background: #060812 url('images/products/dodge-rear.jpg') center center no-repeat;
+      background-size: cover;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+    }
+
+    .home-cta-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 65% 50%, rgba(7, 9, 19, 0.85) 0%, rgba(7, 9, 19, 0.98) 100%);
+      pointer-events: none;
+    }
+
+    .home-cta-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+      margin-left: auto;
+    }
+
+    @media (max-width: 800px) {
+      .home-cta-inner {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .home-cta-btns-row {
+        justify-content: center;
+      }
+    }
+
+    .home-cta-title {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 0.8rem;
+    }
+
+    .home-cta-desc {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .home-cta-btns-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* =========================================================
+       HOME PAGE ANIMATIONS
+       ========================================================= */
+
+    /* Particle Canvas */
+    #hero-particle-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.55;
+    }
+
+    /* Cursor glow */
+    #cursor-glow {
+      position: fixed;
+      top: 0; left: 0;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(217,160,68,0.10) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.4s ease;
+      mix-blend-mode: screen;
+    }
+
+    /* Typewriter cursor blink */
+    .typewriter-word {
+      color: #d9a044;
+      display: inline-block;
+      min-width: 2ch;
+    }
+    .typewriter-cursor {
+      display: inline-block;
+      width: 3px;
+      height: 0.85em;
+      background: #d9a044;
+      margin-left: 3px;
+      vertical-align: middle;
+      border-radius: 2px;
+      animation: blink-cursor 0.75s step-end infinite;
+    }
+    @keyframes blink-cursor {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* Scroll Reveal base state */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.7s cubic-bezier(.22,.61,.36,1), transform 0.7s cubic-bezier(.22,.61,.36,1);
+    }
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-48px);
+      transition: opacity 0.7s cubic-bezier(.22,.61,.36,1), transform 0.7s cubic-bezier(.22,.61,.36,1);
+    }
+    .reveal-left.revealed { opacity: 1; transform: translateX(0); }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(48px);
+      transition: opacity 0.7s cubic-bezier(.22,.61,.36,1), transform 0.7s cubic-bezier(.22,.61,.36,1);
+    }
+    .reveal-right.revealed { opacity: 1; transform: translateX(0); }
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.88);
+      transition: opacity 0.65s cubic-bezier(.22,.61,.36,1), transform 0.65s cubic-bezier(.22,.61,.36,1);
+    }
+    .reveal-scale.revealed { opacity: 1; transform: scale(1); }
+
+    /* Staggered children */
+    .reveal-stagger > * {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s cubic-bezier(.22,.61,.36,1), transform 0.6s cubic-bezier(.22,.61,.36,1);
+    }
+    .reveal-stagger.revealed > *:nth-child(1) { opacity:1; transform:translateY(0); transition-delay:0.05s; }
+    .reveal-stagger.revealed > *:nth-child(2) { opacity:1; transform:translateY(0); transition-delay:0.15s; }
+    .reveal-stagger.revealed > *:nth-child(3) { opacity:1; transform:translateY(0); transition-delay:0.25s; }
+    .reveal-stagger.revealed > *:nth-child(4) { opacity:1; transform:translateY(0); transition-delay:0.35s; }
+    .reveal-stagger.revealed > *:nth-child(5) { opacity:1; transform:translateY(0); transition-delay:0.45s; }
+    .reveal-stagger.revealed > *:nth-child(6) { opacity:1; transform:translateY(0); transition-delay:0.55s; }
+    .reveal-stagger.revealed > *:nth-child(7) { opacity:1; transform:translateY(0); transition-delay:0.65s; }
+
+    /* Hero content entrance */
+    .hero-headline-massive { animation: heroFadeUp 1s cubic-bezier(.22,.61,.36,1) both; }
+    .hero-desc-lead        { animation: heroFadeUp 1s cubic-bezier(.22,.61,.36,1) 0.25s both; }
+    .hero-cta-actions      { animation: heroFadeUp 1s cubic-bezier(.22,.61,.36,1) 0.45s both; }
+    .hero-meta-stats       { animation: heroFadeRight 1s cubic-bezier(.22,.61,.36,1) 0.55s both; }
+    .hero-meta-top         { animation: heroFadeDown 0.8s cubic-bezier(.22,.61,.36,1) 0.1s both; }
+    .hero-bottom-pills-row { animation: heroFadeUp 1s cubic-bezier(.22,.61,.36,1) 0.65s both; }
+
+    @keyframes heroFadeUp {
+      from { opacity:0; transform: translateY(36px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+    @keyframes heroFadeRight {
+      from { opacity:0; transform: translateX(36px); }
+      to   { opacity:1; transform: translateX(0); }
+    }
+    @keyframes heroFadeDown {
+      from { opacity:0; transform: translateY(-24px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+
+    /* Gold shimmer on section title highlights */
+    .text-gold-highlight {
+      background: linear-gradient(90deg, #d9a044 0%, #f7d58b 45%, #d9a044 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: goldShimmer 3.5s linear infinite;
+    }
+    @keyframes goldShimmer {
+      0%   { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    /* Floating gold orbs on hero */
+    .hero-orb { position: absolute; border-radius: 50%; pointer-events: none; z-index: 1; }
+    .hero-orb-1 {
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(217,160,68,0.13) 0%, transparent 70%);
+      top: 8%; right: 5%;
+      animation: orbFloat1 8s ease-in-out infinite;
+    }
+    .hero-orb-2 {
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(217,160,68,0.08) 0%, transparent 70%);
+      bottom: 20%; left: 3%;
+      animation: orbFloat2 11s ease-in-out infinite;
+    }
+    @keyframes orbFloat1 {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50%       { transform: translateY(-28px) scale(1.06); }
+    }
+    @keyframes orbFloat2 {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50%       { transform: translateY(22px) scale(1.04); }
+    }
+
+    /* Gold accent dash before kicker text */
+    .section-kicker::before {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 2px;
+      background: #d9a044;
+      vertical-align: middle;
+      margin-right: 7px;
+      border-radius: 2px;
+    }
+
+    /* Magnetic button */
+    .btn-magnetic {
+      transition: transform 0.25s cubic-bezier(.22,.61,.36,1), box-shadow 0.25s ease !important;
+    }
+
+    /* Tilt cards preserve 3D */
+    .service-spec-card,
+    .project-card-clean,
+    .cat-card-modern {
+      transform-style: preserve-3d;
+    }
+
+    /* =========================================================
+       CAR HEADLIGHT BLINK ANIMATION
+       ========================================================= */
+
+    /* Individual headlight glow spots */
+    .car-headlight-glow {
+      position: absolute;
+      pointer-events: none;
+      z-index: 3;
+      border-radius: 50%;
+      opacity: 0;
+    }
+
+    /* Left headlight — positioned over BMW left DRL */
+    #headlight-left {
+      width: 200px;
+      height: 90px;
+      left: 34%;
+      top: 57%;
+      background: radial-gradient(ellipse at center,
+        rgba(255, 255, 235, 0.98) 0%,
+        rgba(200, 235, 255, 0.75)  18%,
+        rgba(160, 210, 255, 0.48) 38%,
+        rgba(120, 180, 255, 0.18) 60%,
+        transparent 80%
+      );
+      filter: blur(10px);
+      animation: headlightBlink 1.8s ease-out 0.8s 1 forwards;
+    }
+
+    /* Right headlight — positioned over BMW right DRL */
+    #headlight-right {
+      width: 180px;
+      height: 80px;
+      left: 56%;
+      top: 59%;
+      background: radial-gradient(ellipse at center,
+        rgba(255, 255, 235, 0.95) 0%,
+        rgba(200, 235, 255, 0.72) 18%,
+        rgba(160, 210, 255, 0.44) 38%,
+        rgba(120, 180, 255, 0.15) 60%,
+        transparent 80%
+      );
+      filter: blur(9px);
+      animation: headlightBlink 1.8s ease-out 0.85s 1 forwards;
+    }
+
+    /* Full scene ambient light wash — like garage lights turning on */
+    .hero-headlight-wash {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 2;
+      background: radial-gradient(ellipse at 65% 68%,
+        rgba(220, 235, 255, 0.20) 0%,
+        rgba(200, 220, 255, 0.09) 40%,
+        transparent 70%
+      );
+      opacity: 0;
+      animation: headlightWash 1.8s ease-out 0.8s 1 forwards;
+    }
+
+    /* 2-blink keyframe: off → ON bright → fade → ON again → fade out */
+    @keyframes headlightBlink {
+      0%   { opacity: 0; transform: scale(0.6); }
+      /* ── Blink 1 ── */
+      8%   { opacity: 1; transform: scale(1.15); }
+      22%  { opacity: 0.15; transform: scale(0.9); }
+      /* ── gap ── */
+      30%  { opacity: 0; }
+      /* ── Blink 2 ── */
+      42%  { opacity: 1; transform: scale(1.2); }
+      62%  { opacity: 0.12; transform: scale(1); }
+      /* ── held dim glow ── */
+      80%  { opacity: 0.05; }
+      100% { opacity: 0; transform: scale(1); }
+    }
+
+    @keyframes headlightWash {
+      0%   { opacity: 0; }
+      8%   { opacity: 1; }
+      22%  { opacity: 0.1; }
+      30%  { opacity: 0; }
+      42%  { opacity: 0.85; }
+      62%  { opacity: 0.08; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= 1. FLOATING MODERN CAPSULE NAVBAR ================= -->
+  <header class="site-header" id="main-header">
+    <div class="nav-container">
+      <!-- Brand Logo (BBC original logo kept intact) -->
+      <a href="index.html" class="site-logo" aria-label="Brown Boys Customs Home">
+        <img src="images/logo.png" alt="BBC - Brown Boys Customs" class="brand-logo-img">
+      </a>
+
+      <!-- Center Nav Links (Sentence case, solid pill active state) -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About us</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Outlined circular cart button with badge, tightened CTA button with directional arrow) -->
+      <div class="nav-actions">
+        <!-- Outlined Circular Cart Button -->
+        <a href="cart.html" class="header-cart-circle-btn" aria-label="View Shopping Cart">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="header-cart-badge header-cart-badge-pill" data-cart-badge>0</span>
+        </a>
+
+        <!-- Tightened CTA Button with Arrow -->
+        <a href="contact.html#quote" class="btn-cta-navbar" data-open-modal="quote">
+          <span>Get a quote</span>
+          <span class="cta-arrow-icon">↗</span>
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button class="nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div style="margin-bottom: 2rem;">
+        <img src="images/logo.png" alt="BBC Logo" style="height: 38px; width: auto; object-fit: contain;">
+      </div>
+      <div class="mobile-menu-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About us</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div>
+      <a href="contact.html#quote" class="btn-cta-navbar" style="width: 100%; text-align: center; justify-content: center;" data-open-modal="quote">
+        <span>Get a quote</span>
+        <span class="cta-arrow-icon">↗</span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ================= 2. HERO SECTION (BUILT BEYOND STOCK) ================= -->
+    <section class="hero-banner" id="hero">
+      <div class="hero-overlay"></div>
+      <!-- Floating ambient orbs -->
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <!-- Particle Canvas -->
+      <canvas id="hero-particle-canvas"></canvas>
+
+      <!-- ===== CAR HEADLIGHT BLINK (2x on load) ===== -->
+      <!-- Left headlight (driver side LED strip) -->
+      <div class="car-headlight-glow" id="headlight-left" aria-hidden="true"></div>
+      <!-- Right headlight (passenger side LED strip) -->
+      <div class="car-headlight-glow" id="headlight-right" aria-hidden="true"></div>
+      <!-- Full-hero flash wash (ambient room light flicker) -->
+      <div class="hero-headlight-wash" id="hero-headlight-wash" aria-hidden="true"></div>
+
+      <div class="container hero-container-rel">
+        <!-- Top Accent Row -->
+        <div class="hero-meta-top">
+          <span class="hero-meta-left">MISSISSAUGA, ONTARIO</span>
+          <span class="hero-meta-right">MADE PERSONAL. FINISHED PROPERLY.</span>
+        </div>
+
+        <div class="hero-main-layout">
+          <!-- Main Content Left -->
+          <div class="hero-content">
+            <h1 class="hero-headline-massive">
+              BUILT BEYOND<br>
+              <span class="typewriter-word" id="typewriter-target">STOCK</span><span class="typewriter-cursor"></span><span class="text-gold-highlight" aria-hidden="true">.</span>
+            </h1>
+
+            <p class="hero-desc-lead">
+              Lighting, dashboard trim, decals, hangings and truck accessories — sourced, fitted and finished by our own team at Westwood Square.
+            </p>
+
+            <div class="hero-cta-actions">
+              <a href="#services" class="btn-hero-explore" id="hero-services-btn">
+                EXPLORE SERVICES <span class="cta-arrow">▾</span>
+              </a>
+              <a href="shop.html" class="btn-hero-accessories" id="hero-shop-btn">
+                <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor; margin-right: 6px;"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                SHOP ACCESSORIES
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Right Floating Info Panels -->
+          <div class="hero-meta-stats">
+            <div class="hero-side-card">
+              <span class="hero-side-kicker">
+                <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                VISIT OUR SHOP
+              </span>
+              <span class="hero-side-title">Westwood Square</span>
+              <span class="hero-side-sub">7215 Goreway Dr, Unit 1C30<br>Mississauga, ON L4T 2T9</span>
+            </div>
+
+            <div class="hero-serving-badge-box">
+              <span style="font-family: var(--font-display); font-size: 0.72rem; font-weight: 800; color: var(--gold-tan); letter-spacing: 0.15em; text-transform: uppercase; display: block; margin-bottom: 2px;">SERVING</span>
+              <strong style="font-family: var(--font-display); font-size: 0.88rem; font-weight: 900; color: #ffffff; letter-spacing: 0.06em; text-transform: uppercase; display: block;">THE GREATER TORONTO AREA</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Bottom 4 Feature Badges Row -->
+        <div class="hero-bottom-pills-row">
+          <div class="hero-feature-badge-item">
+            <div class="badge-icon-ring">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <div class="badge-text-wrap">
+              <strong>PREMIUM QUALITY</strong>
+              <span>Top brands &amp; materials</span>
+            </div>
+          </div>
+
+          <div class="hero-feature-badge-item">
+            <div class="badge-icon-ring">
+              <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+            </div>
+            <div class="badge-text-wrap">
+              <strong>EXPERT INSTALLATION</strong>
+              <span>By certified technicians</span>
+            </div>
+          </div>
+
+          <div class="hero-feature-badge-item">
+            <div class="badge-icon-ring">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div class="badge-text-wrap">
+              <strong>ONE SHOP SOLUTION</strong>
+              <span>Parts + Install + Support</span>
+            </div>
+          </div>
+
+          <div class="hero-feature-badge-item">
+            <div class="badge-icon-ring">
+              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <div class="badge-text-wrap">
+              <strong>SOUTH-ASIAN OWNED</strong>
+              <span>Built on culture &amp; community</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 3. SERVICES & SPECIALTIES (6 Cards Grid) ================= -->
+    <section class="section-dark" id="services" data-home-section>
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div class="section-header-left">
+            <span class="section-kicker">OUR EXPERTISE</span>
+            <h2 class="section-title-luxury">SERVICES &amp; <span class="text-gold-highlight">SPECIALTIES</span></h2>
+            <p class="section-subtitle-lead">From lighting to interior upgrades, we bring your vision to life with premium materials and expert craftsmanship.</p>
+          </div>
+          <div class="section-header-right">
+            <a href="about.html" class="section-view-all btn-magnetic">VIEW ALL SERVICES ➔</a>
+            <div class="slider-arrow-btns">
+              <button class="slider-nav-btn prev btn-magnetic" aria-label="Previous" onclick="document.getElementById('services-grid').scrollBy({ left: -320, behavior: 'smooth' })">‹</button>
+              <button class="slider-nav-btn next btn-magnetic" aria-label="Next" onclick="document.getElementById('services-grid').scrollBy({ left: 320, behavior: 'smooth' })">›</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-spec-grid reveal-stagger" id="services-grid">
+          <!-- Card 1: Lighting & LED Systems -->
+          <div class="service-spec-card">
+            <div class="service-spec-media">
+              <img src="images/blog/decal-culture-canada.jpg" alt="Lighting &amp; LED Systems" loading="lazy">
+            </div>
+            <div class="service-spec-body">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM4 12c0-.55.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1zm5.5 4.5c-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-1.41 1.41c-.39.39-1.03.39-1.41 0zm0-9c.39-.39 1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41s-1.02.39-1.41 0L9.5 8.91c-.39-.38-.39-1.02 0-1.41zM12 9c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/></svg>
+              </div>
+              <h3 class="service-spec-title">LIGHTING &amp; LED SYSTEMS</h3>
+              <p class="service-spec-desc">Headlights, ambient lighting, starlight kits and more.</p>
+              <a href="shop.html?cat=lights-led" class="service-explore-link">EXPLORE ➔</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Interior & Ambient Flow -->
+          <div class="service-spec-card">
+            <div class="service-spec-media">
+              <img src="images/products/amg-dashboard-accessories.jpg" alt="Interior &amp; Ambient Flow" loading="lazy">
+            </div>
+            <div class="service-spec-body">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M4 18v3h3v-3h10v3h3v-3c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2zm2-10h12v6H6V8z"/></svg>
+              </div>
+              <h3 class="service-spec-title">INTERIOR &amp; AMBIENT FLOW</h3>
+              <p class="service-spec-desc">Custom ambient lighting, trim and interior upgrades.</p>
+              <a href="shop.html?cat=lights-led" class="service-explore-link">EXPLORE ➔</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Custom Steering Wheels -->
+          <div class="service-spec-card">
+            <div class="service-spec-media">
+              <img src="images/products/carbon-fiber-steering-wheel.jpg" alt="Custom Steering Wheels" loading="lazy">
+            </div>
+            <div class="service-spec-body">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.89.15-1.74.42-2.54l3.22 1.86c-.09.22-.14.45-.14.68 0 2.48 2.02 4.5 4.5 4.5s4.5-2.02 4.5-4.5c0-.23-.05-.46-.14-.68l3.22-1.86c.27.8.42 1.65.42 2.54 0 4.41-3.59 8-8 8zm0-9.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+              </div>
+              <h3 class="service-spec-title">CUSTOM STEERING WHEELS</h3>
+              <p class="service-spec-desc">Premium hand-built steering wheels with unique finishes.</p>
+              <a href="shop.html?cat=car-accessories" class="service-explore-link">EXPLORE ➔</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Truck & Cultural Accents -->
+          <div class="service-spec-card">
+            <div class="service-spec-media">
+              <img src="images/products/raptor-truck-sunset.jpg" alt="Truck &amp; Cultural Accents" loading="lazy">
+            </div>
+            <div class="service-spec-body">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+              </div>
+              <h3 class="service-spec-title">TRUCK &amp; CULTURAL ACCENTS</h3>
+              <p class="service-spec-desc">Grill lights, emblems, bumper stickers and more.</p>
+              <a href="shop.html?cat=truck-accessories" class="service-explore-link">EXPLORE ➔</a>
+            </div>
+          </div>
+
+          <!-- Card 5: Custom Decals & Vinyl -->
+          <div class="service-spec-card">
+            <div class="service-spec-media">
+              <img src="images/blog/car-decals-style.jpg" alt="Custom Decals &amp; Vinyl" loading="lazy">
+            </div>
+            <div class="service-spec-body">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </div>
+              <h3 class="service-spec-title">CUSTOM DECALS &amp; VINYL</h3>
+              <p class="service-spec-desc">Premium wraps, decals and graphic solutions.</p>
+              <a href="blog.html" class="service-explore-link">EXPLORE ➔</a>
+            </div>
+          </div>
+
+          <!-- Card 6: 9H Ceramic Coatings -->
+          <div class="service-spec-card">
+            <div class="service-spec-media">
+              <img src="images/products/wheel-yellow-caliper.jpg" alt="9H Ceramic Coatings" loading="lazy">
+            </div>
+            <div class="service-spec-body">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              </div>
+              <h3 class="service-spec-title">9H CERAMIC COATINGS</h3>
+              <p class="service-spec-desc">Long-lasting protection and showroom shine.</p>
+              <a href="contact.html#quote" class="service-explore-link" data-open-modal="quote">EXPLORE ➔</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. RECENT PROJECTS (5 Cards Grid with Workshop Background) ================= -->
+    <section class="portfolio-backdrop-section" id="portfolio" data-home-section>
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div class="section-header-left">
+            <span class="section-kicker">REAL WORK, REAL BUILDS</span>
+            <h2 class="section-title-luxury">RECENT <span class="text-gold-highlight">PROJECTS</span></h2>
+            <p class="section-subtitle-lead">Take a look at some of our latest custom builds and installations.</p>
+          </div>
+          <div class="section-header-right">
+            <a href="about.html" class="section-view-all btn-magnetic">VIEW FULL GALLERY ➔</a>
+            <div class="slider-arrow-btns">
+              <button class="slider-nav-btn prev btn-magnetic" aria-label="Previous" onclick="document.getElementById('projects-grid').scrollBy({ left: -320, behavior: 'smooth' })">‹</button>
+              <button class="slider-nav-btn next btn-magnetic" aria-label="Next" onclick="document.getElementById('projects-grid').scrollBy({ left: 320, behavior: 'smooth' })">›</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-projects-5grid reveal-stagger" id="projects-grid">
+          <!-- Project 1: Custom Carbon Lab -->
+          <div class="project-card-clean">
+            <div class="project-card-media">
+              <img src="images/products/black-sedan-workshop.jpg" alt="Custom Carbon Lab" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <div class="project-info-col">
+                <span class="project-title">CUSTOM CARBON LAB</span>
+                <span class="project-sub">Carbon fiber interior &amp; exterior</span>
+              </div>
+              <span class="project-arrow-circle">➔</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Starlight Ceiling -->
+          <div class="project-card-clean">
+            <div class="project-card-media">
+              <img src="images/products/starlight-headliner.jpg" alt="Starlight Ceiling" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <div class="project-info-col">
+                <span class="project-title">STARLIGHT CEILING</span>
+                <span class="project-sub">Full interior starlight installation</span>
+              </div>
+              <span class="project-arrow-circle">➔</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Cultural Truck Build -->
+          <div class="project-card-clean">
+            <div class="project-card-media">
+              <img src="images/products/raptor-truck-sunset.jpg" alt="Cultural Truck Build" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <div class="project-info-col">
+                <span class="project-title">CULTURAL TRUCK BUILD</span>
+                <span class="project-sub">Custom accents &amp; lighting</span>
+              </div>
+              <span class="project-arrow-circle">➔</span>
+            </div>
+          </div>
+
+          <!-- Project 4: Custom Interior Trim -->
+          <div class="project-card-clean">
+            <div class="project-card-media">
+              <img src="images/products/amg-dashboard-accessories.jpg" alt="Custom Interior Trim" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <div class="project-info-col">
+                <span class="project-title">CUSTOM INTERIOR TRIM</span>
+                <span class="project-sub">Ambient lighting &amp; carbon trim</span>
+              </div>
+              <span class="project-arrow-circle">➔</span>
+            </div>
+          </div>
+
+          <!-- Project 5: Paint Protection -->
+          <div class="project-card-clean">
+            <div class="project-card-media">
+              <img src="images/products/dodge-rear.jpg" alt="Paint Protection" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <div class="project-info-col">
+                <span class="project-title">PAINT PROTECTION</span>
+                <span class="project-sub">Ceramic coating &amp; detailing</span>
+              </div>
+              <span class="project-arrow-circle">➔</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. SHOP BY CATEGORY (7 Cards Grid) ================= -->
+    <section class="section-dark" id="categories">
+      <div class="container">
+        <div class="section-header-row">
+          <div class="section-header-left">
+            <span class="section-kicker">BROWSE ACCESSORIES</span>
+            <h2 class="section-title-luxury">SHOP BY <span class="text-gold-highlight">CATEGORY</span></h2>
+            <p class="section-subtitle-lead">Explore our wide range of premium accessories to customize your ride.</p>
+          </div>
+          <div class="section-header-right">
+            <a href="shop.html" class="section-view-all">ALL CATEGORIES ➔</a>
+            <div class="slider-arrow-btns">
+              <button class="slider-nav-btn prev" aria-label="Previous" onclick="document.getElementById('categories-grid').scrollBy({ left: -300, behavior: 'smooth' })">‹</button>
+              <button class="slider-nav-btn next" aria-label="Next" onclick="document.getElementById('categories-grid').scrollBy({ left: 300, behavior: 'smooth' })">›</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-cat-7grid" id="categories-grid">
+          <!-- Cat 1: Accessories -->
+          <a href="shop.html?cat=car-accessories" class="cat-card-modern">
+            <div class="cat-card-thumb">
+              <img src="images/products/wheel-yellow-caliper.jpg" alt="Accessories" loading="lazy">
+            </div>
+            <div class="cat-card-body">
+              <div class="cat-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/></svg>
+              </div>
+              <div class="cat-bottom-row">
+                <div class="cat-info-col">
+                  <span class="cat-title-text">ACCESSORIES</span>
+                  <span class="cat-sub-text">Wheels, emblems, and more</span>
+                </div>
+                <span class="cat-circle-arrow">➔</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Cat 2: Dashboard Accessories -->
+          <a href="shop.html?cat=dashboard-accessories" class="cat-card-modern">
+            <div class="cat-card-thumb">
+              <img src="images/products/android-screens.jpg" alt="Dashboard Accessories" loading="lazy">
+            </div>
+            <div class="cat-card-body">
+              <div class="cat-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+              </div>
+              <div class="cat-bottom-row">
+                <div class="cat-info-col">
+                  <span class="cat-title-text">DASHBOARD ACCESSORIES</span>
+                  <span class="cat-sub-text">Screens, trim, and gadgets</span>
+                </div>
+                <span class="cat-circle-arrow">➔</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Cat 3: Die-Cast Products -->
+          <a href="shop.html?cat=die-cast-products" class="cat-card-modern">
+            <div class="cat-card-thumb">
+              <img src="images/products/1969-dodge-challenger.jpg" alt="Die-Cast Products" loading="lazy">
+            </div>
+            <div class="cat-card-body">
+              <div class="cat-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-4.66l.12-.34h13.77l.11.34V17z"/></svg>
+              </div>
+              <div class="cat-bottom-row">
+                <div class="cat-info-col">
+                  <span class="cat-title-text">DIE-CAST PRODUCTS</span>
+                  <span class="cat-sub-text">Collectibles &amp; models</span>
+                </div>
+                <span class="cat-circle-arrow">➔</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Cat 4: Lights / LED -->
+          <a href="shop.html?cat=lights-led" class="cat-card-modern">
+            <div class="cat-card-thumb">
+              <img src="images/products/aircraft-light-piece.jpg" alt="Lights / LED" loading="lazy">
+            </div>
+            <div class="cat-card-body">
+              <div class="cat-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+              </div>
+              <div class="cat-bottom-row">
+                <div class="cat-info-col">
+                  <span class="cat-title-text">LIGHTS / LED</span>
+                  <span class="cat-sub-text">Interior &amp; exterior lighting</span>
+                </div>
+                <span class="cat-circle-arrow">➔</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Cat 5: Truck Accessories -->
+          <a href="shop.html?cat=truck-accessories" class="cat-card-modern">
+            <div class="cat-card-thumb">
+              <img src="images/products/raptor-truck-sunset.jpg" alt="Truck Accessories" loading="lazy">
+            </div>
+            <div class="cat-card-body">
+              <div class="cat-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+              </div>
+              <div class="cat-bottom-row">
+                <div class="cat-info-col">
+                  <span class="cat-title-text">TRUCK ACCESSORIES</span>
+                  <span class="cat-sub-text">Racks, bumpers &amp; more</span>
+                </div>
+                <span class="cat-circle-arrow">➔</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Cat 6: Vehicle & Bikes -->
+          <a href="shop.html?cat=vehicles" class="cat-card-modern">
+            <div class="cat-card-thumb">
+              <img src="images/blog/decal-culture-canada.jpg" alt="Vehicle &amp; Bikes" loading="lazy">
+            </div>
+            <div class="cat-card-body">
+              <div class="cat-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg>
+              </div>
+              <div class="cat-bottom-row">
+                <div class="cat-info-col">
+                  <span class="cat-title-text">VEHICLE &amp; BIKES</span>
+                  <span class="cat-sub-text">Parts for all rides</span>
+                </div>
+                <span class="cat-circle-arrow">➔</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Cat 7: View at the Store -->
+          <a href="shop.html" class="cat-card-modern">
+            <div class="cat-card-thumb">
+              <img src="images/about-workshop.jpg" alt="View at the Store" loading="lazy">
+            </div>
+            <div class="cat-card-body">
+              <div class="cat-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>
+              </div>
+              <div class="cat-bottom-row">
+                <div class="cat-info-col">
+                  <span class="cat-title-text">VIEW AT THE STORE</span>
+                  <span class="cat-sub-text">Visit our showroom</span>
+                </div>
+                <span class="cat-circle-arrow">➔</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. WHO WE ARE (4-Part Layout) ================= -->
+    <section class="section-darker" id="who-we-are">
+      <div class="container">
+        <div class="who-we-are-4col-grid">
+
+          <!-- Part 1: Detailing Photo -->
+          <div class="who-main-photo">
+            <img src="images/about-workshop.jpg" alt="BBC Detailing Workshop Bay" loading="lazy">
+          </div>
+
+          <!-- Part 2: Story Text -->
+          <div class="who-story-text">
+            <span class="section-kicker">ABOUT BROWN BOYS CUSTOMS</span>
+            <h3>WHO WE ARE</h3>
+            <p>
+              Brown Boys Customs started at Westwood Square with a simple vision — to bring world-class, bespoke automotive customization to the Greater Toronto Area. We specialize in lighting, dashboard builds, custom decals, truck accessories and more. Every build is handled in-house with precision, passion and attention to detail.
+            </p>
+            <a href="about.html" class="btn-hero-explore">
+              LEARN MORE ABOUT BBC ➔
+            </a>
+          </div>
+
+          <!-- Part 3: 3 Stacked Badges -->
+          <div class="who-features-stack">
+            <div class="who-feature-row">
+              <div class="badge-icon-ring">
+                <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+              </div>
+              <div class="badge-text-wrap">
+                <strong>CUSTOM BUILDS</strong>
+                <span>Tailored to your style</span>
+              </div>
+            </div>
+
+            <div class="who-feature-row">
+              <div class="badge-icon-ring">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              </div>
+              <div class="badge-text-wrap">
+                <strong>QUALITY PARTS</strong>
+                <span>Trusted brands only</span>
+              </div>
+            </div>
+
+            <div class="who-feature-row">
+              <div class="badge-icon-ring">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+              </div>
+              <div class="badge-text-wrap">
+                <strong>CUSTOMER FIRST</strong>
+                <span>Satisfaction always</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 4: Visit Card with Map -->
+          <div class="who-visit-card">
+            <span class="hero-side-kicker">
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              VISIT OUR SHOP
+            </span>
+            <span class="hero-side-title" style="font-size: 0.9rem;">Westwood Square</span>
+            <span class="hero-side-sub" style="font-size: 0.76rem;">7215 Goreway Dr, Unit 1C30<br>Mississauga, ON L4T 2T9</span>
+            <div class="who-map-preview">
+              <iframe
+                src="https://maps.google.com/maps?q=7215%20Goreway%20Dr,%20Mississauga,%20ON%20L4T%202T9&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                title="BBC Map Preview"
+                loading="lazy">
+              </iframe>
+            </div>
+            <a href="contact.html" class="btn-clean-cart" style="justify-content: center; text-decoration: none; border-radius: 4px; padding: 0.55rem; font-size: 0.78rem;">
+              GET DIRECTIONS ➔
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. BOTTOM CTA HERO BANNER ================= -->
+    <section class="home-cta-hero">
+      <div class="home-cta-overlay"></div>
+      <div class="container">
+        <div class="home-cta-inner">
+          <span class="section-kicker">TRANSFORM YOUR RIDE TODAY</span>
+          <h2 class="home-cta-title">READY TO BRING YOUR AUTOMOTIVE VISION TO LIFE?</h2>
+          <p class="home-cta-desc">
+            Whether you're ordering accessories or booking a full starlight installation and ambient interior build, our crew is ready to assist.
+          </p>
+          <div class="home-cta-btns-row">
+            <a href="shop.html" class="btn-hero-explore">
+              EXPLORE CUSTOM SHOP ➔
+            </a>
+            <a href="contact.html#quote" class="btn-hero-accessories" data-open-modal="quote">
+              REQUEST A FREE QUOTE
+            </a>
+            <a href="tel:+16479660047" class="btn-hero-accessories">
+              CALL +1 647 966 0047
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= 10. REUSABLE GLOBAL FOOTER ================= -->
+    <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <!-- Column 1: Brand & Address -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo-link" aria-label="Brown Boys Customs Home">
+            <img src="images/logo.png" alt="BBC - Brown Boys Customs" class="footer-logo-img">
+          </a>
+          <p class="footer-brand-desc">
+            Brown Boys Customs (BBC) is Mississauga's premier automotive styling studio, located inside Westwood Mall. We specialize in custom starlight headliners, dynamic ambient lighting, bespoke carbon fiber steering wheels, and 9H ceramic coatings.
+          </p>
+          <div class="footer-address-box">
+            <div class="footer-address-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#d9a044">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+            <div class="footer-address-text">
+              <span class="footer-address-title">Westwood Mall / Westwood Square</span>
+              <span class="footer-address-sub">7215 Goreway Dr, Unit 1C30, Mississauga, ON L4T 2T9</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: QUICK LINKS -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-quick-links">
+            <li>
+              <a href="about.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                  <span>About Us</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="shop.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"/></svg>
+                  <span>Shop</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="privacy.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                  <span>Privacy Policy</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="terms.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                  <span>Terms &amp; Conditions</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="shipping.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                  <span>Shipping Policy</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="returns.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0020 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 004 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+                  <span>Return/Cancellation Policy</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: LATEST NEWS -->
+        <div class="footer-news-col">
+          <h4 class="footer-col-title">LATEST NEWS</h4>
+          <div class="footer-news-wrap">
+            <a href="post.html?id=car-decals-style" class="footer-news-row">
+              <img src="images/blog/car-decals-style.jpg" alt="Car Decals" class="f-news-thumb">
+              <div class="f-news-info">
+                <div class="f-news-meta">
+                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span>JULY 20, 2023</span>
+                </div>
+                <h5 class="f-news-title">UNIQUE WAYS TO USE CAR DECALS TO EXPRESS YOUR STYLE AND PASSIONS</h5>
+              </div>
+            </a>
+
+            <a href="post.html?id=decal-culture-canada" class="footer-news-row">
+              <img src="images/blog/decal-culture-canada.jpg" alt="Decal Culture" class="f-news-thumb">
+              <div class="f-news-info">
+                <div class="f-news-meta">
+                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span>JULY 28, 2023</span>
+                </div>
+                <h5 class="f-news-title">CANADA'S CAR DECAL CULTURE: A LOOK INTO THE TRENDS AND INSPIRATIONS</h5>
+              </div>
+            </a>
+
+            <a href="post.html?id=accessories-guide" class="footer-news-row">
+              <img src="images/blog/accessories-guide.jpg" alt="Accessories Guide" class="f-news-thumb">
+              <div class="f-news-info">
+                <div class="f-news-meta">
+                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span>JULY 15, 2023</span>
+                </div>
+                <h5 class="f-news-title">THE ULTIMATE CAR ACCESSORIES GUIDE: ELEVATE YOUR RIDE WITH BROWN BOYS CUSTOMS</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 4: SERVICES HOUR & CONTACT -->
+        <div class="footer-hours-col">
+          <h4 class="footer-col-title">SERVICES HOUR</h4>
+          <div class="footer-hours-table">
+            <div class="f-hour-row">
+              <div class="f-hour-day">
+                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Monday – Friday</span>
+              </div>
+              <span class="f-hour-time">10:00 AM – 9:00 PM</span>
+            </div>
+            <div class="f-hour-row">
+              <div class="f-hour-day">
+                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Saturday</span>
+              </div>
+              <span class="f-hour-time">10:00 AM – 6:00 PM</span>
+            </div>
+            <div class="f-hour-row">
+              <div class="f-hour-day">
+                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Sunday</span>
+              </div>
+              <span class="f-hour-time">12:00 PM – 5:00 PM</span>
+            </div>
+          </div>
+
+          <div class="footer-contact-actions">
+            <a href="tel:+16479660047" class="f-contact-btn">
+              <div class="f-contact-circle">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <span class="f-contact-main">+1 647 966 0047</span>
+                <span class="f-contact-sub">Call Us 24/7</span>
+              </div>
+            </a>
+
+            <a href="mailto:info@brownboyscustoms.ca" class="f-contact-btn">
+              <div class="f-contact-circle">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <span class="f-contact-main">info@brownboyscustoms.ca</span>
+                <span class="f-contact-sub">Send Us an Email</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.58c.02 1.94-.52 3.9-1.67 5.43-1.37 1.83-3.57 2.97-5.86 2.97-2.67.06-5.32-1.35-6.66-3.66-1.4-2.38-1.24-5.5.39-7.72 1.57-2.14 4.27-3.23 6.9-2.73v4.11c-1.36-.37-2.89.04-3.83 1.05-.98 1.03-1.19 2.67-.52 3.94.67 1.25 2.13 2.01 3.54 1.84 1.34-.14 2.51-1.07 2.87-2.37.13-.5.18-1.02.18-1.54V.02h.67z"/></svg>
+            </a>
+            <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Google">
+              <svg viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Radiant Gold Accent Bar & Bottom Legal -->
+    <div class="footer-bottom-gold-divider"></div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-layout">
+        <div class="footer-copyright">
+          &copy; <span class="dynamic-year">2024</span> Brown Boys Customs. All rights reserved.
+        </div>
+        <div class="footer-bottom-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="f-pipe">|</span>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <span class="f-pipe">|</span>
+          <a href="shipping.html">Shipping Policy</a>
+          <span class="f-pipe">|</span>
+          <a href="returns.html">Return/Cancellation Policy</a>
+        </div>
+        <div class="footer-made-in">
+          Made with <span class="f-heart">❤️</span> in Canada
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= INTERACTIVE QUOTE MODAL ================= -->
+  <div class="quote-modal-backdrop" id="quote-modal-backdrop" role="dialog" aria-modal="true"
+    aria-labelledby="modal-quote-title">
+    <div class="quote-modal">
+      <div class="quote-modal-header">
+        <div>
+          <span class="section-subtitle">BBC CUSTOM INQUIRY</span>
+          <h3 id="modal-quote-title" style="color: var(--text-white); font-size: 1.6rem; margin-top: 0.2rem;">GET A
+            CUSTOM QUOTE</h3>
+        </div>
+        <button class="quote-modal-close" aria-label="Close quote modal">&times;</button>
+      </div>
+      <div class="quote-modal-body">
+        <form id="quote-form">
+          <div class="form-group">
+            <label class="form-label" for="quote-name">Full Name *</label>
+            <input type="text" id="quote-name" class="form-control" placeholder="e.g. Navjot Singh" required>
+          </div>
+          <div class="grid-2">
+            <div class="form-group">
+              <label class="form-label" for="quote-phone">Phone Number *</label>
+              <input type="tel" id="quote-phone" class="form-control" placeholder="+1 (647) 000-0000" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-email">Email Address *</label>
+              <input type="email" id="quote-email" class="form-control" placeholder="name@domain.com" required>
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="form-group">
+              <label class="form-label" for="quote-vehicle">Vehicle Make, Model &amp; Year *</label>
+              <input type="text" id="quote-vehicle" class="form-control" placeholder="e.g. 2024 Honda Civic Type R"
+                required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-service">Service Desired *</label>
+              <select id="quote-service" class="form-control" required>
+                <option value="">Select Service...</option>
+                <option value="starlight">Starlight Headliner Installation</option>
+                <option value="ambient">Symphony Ambient Interior Lighting</option>
+                <option value="carbon-wheel">Custom Carbon Fiber Steering Wheel</option>
+                <option value="ceramic">9H Graphene Ceramic Coating</option>
+                <option value="underglow">RGB Chassis Underglow Lighting</option>
+                <option value="accessories">Other Custom Accessories</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="quote-notes">Project Details / Special Requests</label>
+            <textarea id="quote-notes" rows="3" class="form-control"
+              placeholder="Describe star density, color theme, timeline, or specific requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-quote" style="width: 100%; font-size: 1.15rem; padding: 0.9rem;">
+            SUBMIT QUOTE REQUEST
+          </button>
+          <p style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.75rem;">
+            Or call us directly 24/7 at <a href="tel:+16479660047"
+              style="color: var(--gold-tan); font-weight: 700;">+1 647 966 0047</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/cart-core.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- ============================================================
+       HOME PAGE ANIMATION ENGINE (index.html only)
+       ============================================================ -->
+  <div id="cursor-glow"></div>
+  <script>
+  (function() {
+    'use strict';
+
+    /* ---- 1. CURSOR GLOW ---- */
+    const glow = document.getElementById('cursor-glow');
+    if (glow) {
+      let mx = -9999, my = -9999;
+      let glowX = -9999, glowY = -9999;
+      document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+      function animateGlow() {
+        glowX += (mx - glowX) * 0.08;
+        glowY += (my - glowY) * 0.08;
+        glow.style.left = glowX + 'px';
+        glow.style.top  = glowY + 'px';
+        requestAnimationFrame(animateGlow);
+      }
+      animateGlow();
+      document.addEventListener('mouseleave', () => glow.style.opacity = '0');
+      document.addEventListener('mouseenter', () => glow.style.opacity = '1');
+    }
+
+    /* ---- 2. TYPEWRITER ---- */
+    const tw = document.getElementById('typewriter-target');
+    if (tw) {
+      const words = ['STOCK', 'CUSTOM', 'PREMIUM', 'UNIQUE', 'ICONIC', 'YOURS'];
+      let wi = 0, ci = 0, deleting = false;
+      const SPEED_TYPE = 90, SPEED_DEL = 50, PAUSE = 1800;
+      function tick() {
+        const word = words[wi];
+        if (!deleting) {
+          ci++;
+          tw.textContent = word.slice(0, ci);
+          if (ci === word.length) {
+            setTimeout(() => { deleting = true; tick(); }, PAUSE);
+            return;
+          }
+        } else {
+          ci--;
+          tw.textContent = word.slice(0, ci);
+          if (ci === 0) {
+            deleting = false;
+            wi = (wi + 1) % words.length;
+          }
+        }
+        setTimeout(tick, deleting ? SPEED_DEL : SPEED_TYPE);
+      }
+      setTimeout(tick, 1200);
+    }
+
+    /* ---- 3. SCROLL REVEAL (IntersectionObserver) ---- */
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-stagger');
+    if ('IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => obs.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('revealed'));
+    }
+
+    /* ---- 4. PARTICLE CANVAS ---- */
+    const canvas = document.getElementById('hero-particle-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let W, H, particles = [];
+      const PARTICLE_COUNT = 55;
+
+      function resize() {
+        const hero = document.getElementById('hero');
+        W = canvas.width = hero ? hero.offsetWidth : window.innerWidth;
+        H = canvas.height = hero ? hero.offsetHeight : window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      function randomParticle() {
+        return {
+          x: Math.random() * W,
+          y: Math.random() * H,
+          r: Math.random() * 1.6 + 0.4,
+          vx: (Math.random() - 0.5) * 0.35,
+          vy: -(Math.random() * 0.35 + 0.1),
+          alpha: Math.random() * 0.5 + 0.15,
+          life: Math.random()
+        };
+      }
+      for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(randomParticle());
+
+      function drawParticles() {
+        ctx.clearRect(0, 0, W, H);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.life += 0.003;
+          if (p.life > 1) { Object.assign(p, randomParticle(), { y: H + 5 }); p.life = 0; }
+          if (p.y < -5) { Object.assign(p, randomParticle()); }
+          const pulse = Math.sin(p.life * Math.PI) * p.alpha;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(217,160,68,${pulse})`;
+          ctx.fill();
+        });
+        requestAnimationFrame(drawParticles);
+      }
+      drawParticles();
+    }
+
+    /* ---- 5. MAGNETIC BUTTON EFFECT ---- */
+    document.querySelectorAll('.btn-magnetic').forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const r = btn.getBoundingClientRect();
+        const dx = e.clientX - (r.left + r.width / 2);
+        const dy = e.clientY - (r.top + r.height / 2);
+        btn.style.transform = `translate(${dx * 0.22}px, ${dy * 0.22}px)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = '';
+      });
+    });
+
+    /* ---- 6. CARD TILT ON HOVER ---- */
+    const tiltCards = document.querySelectorAll('.service-spec-card, .project-card-clean, .cat-card-modern');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width  - 0.5;
+        const y = (e.clientY - r.top)  / r.height - 0.5;
+        card.style.transform = `translateY(-6px) rotateX(${-y * 6}deg) rotateY(${x * 6}deg)`;
+        card.style.boxShadow = `0 18px 40px rgba(0,0,0,0.55), 0 0 22px rgba(217,160,68,${0.1 + Math.abs(x) * 0.15})`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.boxShadow = '';
+      });
+    });
+
+    /* ---- 7. HERO PARALLAX ---- */
+    const heroBanner = document.getElementById('hero');
+    if (heroBanner) {
+      window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        const overlay = heroBanner.querySelector('.hero-overlay');
+        if (overlay) overlay.style.transform = `translateY(${scrolled * 0.25}px)`;
+      }, { passive: true });
+    }
+
+    /* ---- 8. SECTION COUNT-UP NUMBERS ---- */
+    function animateCounter(el, target, duration) {
+      const start = performance.now();
+      function update(now) {
+        const t = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - t, 3);
+        el.textContent = Math.round(ease * target);
+        if (t < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+    if ('IntersectionObserver' in window) {
+      const counterObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            animateCounter(el, parseInt(el.dataset.target, 10), 1600);
+            counterObs.unobserve(el);
+          }
+        });
+      }, { threshold: 0.5 });
+      document.querySelectorAll('[data-target]').forEach(el => counterObs.observe(el));
+    }
+
+    /* ---- 9. HERO BUTTONS RIPPLE ---- */
+    document.querySelectorAll('.btn-hero-explore, .btn-hero-accessories, .btn-cta-navbar').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const ripple = document.createElement('span');
+        const r = btn.getBoundingClientRect();
+        ripple.style.cssText = `
+          position:absolute; border-radius:50%;
+          width:6px; height:6px;
+          background:rgba(255,255,255,0.45);
+          transform:translate(-50%,-50%) scale(0);
+          animation:rippleAnim 0.55s linear;
+          left:${e.clientX - r.left}px; top:${e.clientY - r.top}px;
+          pointer-events:none;
+        `;
+        if (!btn.style.position || btn.style.position === 'static') btn.style.position = 'relative';
+        btn.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+    if (!document.getElementById('ripple-style')) {
+      const s = document.createElement('style');
+      s.id = 'ripple-style';
+      s.textContent = '@keyframes rippleAnim { to { transform:translate(-50%,-50%) scale(60); opacity:0; } }';
+      document.head.appendChild(s);
+    }
+
+  })();
+  </script>
+</body>
+
+</html>

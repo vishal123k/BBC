@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Shop — Brown Boys Customs (BBC) | Mississauga</title>
+  <meta name="description"
+    content="Explore our complete catalogue of custom car accessories, LED lighting, die-cast collector pieces and details made for drivers who want more than stock.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css?v=13.0">
+
+  <!-- Premium Typography matching Home Page Reference -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       BBC SHOP PAGE LUXURY DARK THEME — MATCHING CLIENT REFERENCE
+       ========================================================================== */
+    :root {
+      --bg-dark: #070913;
+      --bg-surface: #0a0e1c;
+      --bg-card: #0c1224;
+      --bg-card-hover: #111933;
+      --gold-tan: #d9a044;
+      --gold-tan-hover: #e5af57;
+      --gold-tan-glow: rgba(217, 160, 68, 0.28);
+      --bbc-bg: #070913;
+      --bbc-surface: #0a0e1c;
+      --bbc-card: #0c1224;
+      --bbc-card-border: rgba(255, 255, 255, 0.08);
+      --bbc-gold: #d9a044;
+      --bbc-gold-hover: #e5af57;
+      --bbc-gold-light: rgba(217, 160, 68, 0.15);
+      --bbc-text-white: #ffffff;
+      --bbc-text-lead: #cbd5e1;
+      --bbc-text-muted: #8e9bb0;
+      --text-pure: #ffffff;
+      --text-lead: #cbd5e1;
+      --text-muted: #8e9bb0;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-gold-subtle: rgba(217, 160, 68, 0.35);
+      --font-display: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Outfit', sans-serif;
+      --font-condensed: 'Barlow Condensed', sans-serif;
+      --font-text: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'Space Mono', monospace, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark) !important;
+      color: var(--text-lead) !important;
+      font-family: var(--font-text) !important;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1380px !important;
+      margin: 0 auto !important;
+      padding: 0 1.8rem !important;
+    }
+
+    /* Top Bar hidden for modern dark luxury header */
+    .top-bar {
+      display: none !important;
+    }
+
+    /* ================= 1. HEADER ================= */
+    /* ================= 1. FLOATING MODERN CAPSULE NAVBAR ================= */
+    .site-header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+      background: transparent !important;
+      border-bottom: 1px solid transparent !important;
+      box-shadow: none !important;
+      padding: 12px 1.25rem !important;
+      pointer-events: auto !important;
+      transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, padding 0.25s ease !important;
+    }
+
+    /* When page is scrolled, provide a 100% solid dark barrier so content disappears behind it cleanly */
+    .site-header.scrolled {
+      background: #070913 !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      padding: 10px 1.25rem !important;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.75) !important;
+    }
+
+    .nav-container {
+      pointer-events: auto !important;
+      max-width: 1240px !important;
+      margin: 0 auto !important;
+      background: #0c0d12 !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-radius: 9999px !important;
+      height: 68px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 0 1.5rem !important;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.65) !important;
+    }
+
+    .site-logo {
+      display: inline-flex !important;
+      align-items: center !important;
+      text-decoration: none !important;
+      gap: 0.75rem !important;
+      flex-shrink: 0 !important;
+    }
+
+    .brand-logo-img {
+      height: 38px !important;
+      max-height: 38px !important;
+      width: auto !important;
+      object-fit: contain !important;
+      display: block !important;
+    }
+
+    .nav-menu {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.75rem !important;
+    }
+
+    /* Sentence case links with smooth pill active state */
+    .nav-link {
+      color: #cbd5e1 !important;
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif !important;
+      font-size: 0.95rem !important;
+      font-weight: 500 !important;
+      letter-spacing: 0 !important;
+      text-transform: none !important;
+      text-decoration: none !important;
+      padding: 8px 18px !important;
+      border-radius: 9999px !important;
+      position: relative !important;
+      transition: all 0.22s ease !important;
+      display: inline-block !important;
+    }
+
+    .nav-link::after {
+      display: none !important;
+    }
+
+    .nav-link:hover {
+      color: #ffffff !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+    }
+
+    /* Solid Gold Pill Active State */
+    .nav-link.active {
+      background: var(--gold-tan, #d9a044) !important;
+      color: #070913 !important;
+      font-weight: 600 !important;
+      box-shadow: 0 2px 10px rgba(217, 160, 68, 0.25) !important;
+    }
+
+    .nav-link.active:hover {
+      background: var(--gold-tan-hover, #e5af57) !important;
+      color: #000000 !important;
+    }
+
+    .nav-actions {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+
+    /* Outlined Circular Cart Button */
+    .header-cart-circle-btn {
+      position: relative !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 44px !important;
+      height: 44px !important;
+      border-radius: 50% !important;
+      border: 1px solid rgba(255, 255, 255, 0.22) !important;
+      background: rgba(255, 255, 255, 0.03) !important;
+      color: #ffffff !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
+      flex-shrink: 0 !important;
+    }
+
+    .header-cart-circle-btn:hover {
+      border-color: var(--gold-tan, #d9a044) !important;
+      color: var(--gold-tan, #d9a044) !important;
+      background: rgba(217, 160, 68, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .header-cart-circle-btn svg {
+      width: 19px !important;
+      height: 19px !important;
+      stroke: currentColor !important;
+      fill: none !important;
+      stroke-width: 2 !important;
+      stroke-linecap: round !important;
+      stroke-linejoin: round !important;
+    }
+
+    /* Overlapping Circular Badge */
+    .header-cart-badge-pill {
+      position: absolute !important;
+      top: -4px !important;
+      right: -4px !important;
+      background: var(--gold-tan, #d9a044) !important;
+      color: #070913 !important;
+      font-family: 'Outfit', sans-serif !important;
+      font-size: 0.72rem !important;
+      font-weight: 800 !important;
+      min-width: 20px !important;
+      height: 20px !important;
+      border-radius: 50% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border: 2px solid #0c0d12 !important;
+      line-height: 1 !important;
+      padding: 0 4px !important;
+    }
+
+    /* Tightened CTA button with directional arrow */
+    .btn-cta-navbar {
+      background: var(--gold-tan, #d9a044) !important;
+      color: #070913 !important;
+      font-family: 'Outfit', sans-serif !important;
+      font-size: 0.92rem !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.01em !important;
+      padding: 9px 20px !important;
+      border-radius: 10px !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      border: 1px solid var(--gold-tan, #d9a044) !important;
+      box-shadow: 0 4px 14px rgba(217, 160, 68, 0.22) !important;
+      transition: all 0.25s ease !important;
+      white-space: nowrap !important;
+    }
+
+    .btn-cta-navbar:hover {
+      background: var(--gold-tan-hover, #e5af57) !important;
+      border-color: var(--gold-tan-hover, #e5af57) !important;
+      color: #000000 !important;
+      transform: translateY(-1px) !important;
+      box-shadow: 0 6px 20px rgba(217, 160, 68, 0.35) !important;
+    }
+
+    .btn-cta-navbar .cta-arrow-icon {
+      font-size: 1.05rem !important;
+      font-weight: 700 !important;
+      line-height: 1 !important;
+      display: inline-block !important;
+      transition: transform 0.2s ease !important;
+    }
+
+    .btn-cta-navbar:hover .cta-arrow-icon {
+      transform: translate(2px, -2px) !important;
+    }
+
+    /* Mobile Nav Toggle */
+    .nav-toggle {
+      display: none !important;
+      background: transparent !important;
+      border: none !important;
+      cursor: pointer !important;
+      padding: 8px !important;
+    }
+
+    .nav-toggle span {
+      display: block !important;
+      width: 22px !important;
+      height: 2px !important;
+      background: #ffffff !important;
+      margin: 4px 0 !important;
+      transition: all 0.2s ease !important;
+    }
+
+    @media (max-width: 992px) {
+      .site-header {
+        top: 8px !important;
+        padding: 0 0.75rem !important;
+      }
+      .nav-container {
+        height: 60px !important;
+        padding: 0 1rem !important;
+        border-radius: 9999px !important;
+      }
+      .nav-menu {
+        display: none !important;
+      }
+      .nav-toggle {
+        display: block !important;
+      }
+      .btn-cta-navbar {
+        display: none !important;
+      }
+    }
+
+    /* ================= 2. SHOP HERO BANNER ================= */
+    .shop-hero-section {
+      background: #070913;
+      padding: 4rem 0 3.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      position: relative;
+    }
+
+    .shop-hero-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .shop-hero-kicker {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      color: var(--gold-tan);
+      text-transform: uppercase;
+      margin-bottom: 0.9rem;
+      display: block;
+    }
+
+    .shop-hero-title {
+      font-family: var(--font-display) !important;
+      font-size: clamp(3.2rem, 5.8vw, 5.5rem) !important;
+      font-weight: 900 !important;
+      line-height: 0.92 !important;
+      letter-spacing: -0.02em !important;
+      color: #ffffff !important;
+      text-transform: uppercase !important;
+      margin: 0 0 1.25rem 0 !important;
+    }
+
+    .shop-hero-desc {
+      font-family: var(--font-text);
+      font-size: 1.12rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+      max-width: 620px;
+    }
+
+    .shop-hero-badge-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      border-left: 2px solid rgba(217, 160, 68, 0.45);
+      padding-left: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .shop-badge-label {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      color: var(--gold-tan);
+      text-transform: uppercase;
+    }
+
+    /* ================= 3. MAIN SHOP LAYOUT ================= */
+    .shop-main-layout {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 2.8rem;
+      align-items: start;
+      padding: 3.5rem 0 5rem;
+    }
+
+    @media (max-width: 992px) {
+      .shop-main-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    /* ================= 4. SIDEBAR WIDGETS ================= */
+    .sidebar-widget {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      padding: 1.6rem 1.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar-widget-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.4rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .sidebar-widget-title {
+      font-family: var(--font-display);
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .sidebar-count-badge {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--gold-tan);
+    }
+
+    /* Category Tree */
+    .cat-menu-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .cat-menu-item {
+      font-size: 0.88rem;
+    }
+
+    .cat-parent-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.35rem 0;
+      cursor: pointer;
+    }
+
+    .cat-parent-link {
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-size: 0.86rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .cat-parent-link:hover,
+    .cat-parent-link.active {
+      color: var(--gold-tan);
+    }
+
+    .cat-count {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #64748b;
+    }
+
+    .cat-sub-list {
+      list-style: none;
+      padding-left: 0.85rem;
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      border-left: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .cat-sub-link {
+      color: #94a3b8;
+      font-size: 0.82rem;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      transition: color 0.2s ease;
+    }
+
+    .cat-sub-link:hover,
+    .cat-sub-link.active {
+      color: var(--gold-tan);
+    }
+
+    /* Price Filter Widget */
+    .price-range-slider {
+      width: 100%;
+      height: 4px;
+      background: #1e2638;
+      border-radius: 2px;
+      position: relative;
+      margin: 1.5rem 0 1rem;
+    }
+
+    .price-range-fill {
+      position: absolute;
+      left: 0;
+      width: 80%;
+      height: 100%;
+      background: var(--gold-tan);
+    }
+
+    .price-range-values {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-bottom: 1.25rem;
+    }
+
+    .btn-price-reset {
+      background: var(--gold-tan);
+      color: #08090d;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.55rem 1.4rem;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-price-reset:hover {
+      background: var(--gold-tan-hover);
+      transform: translateY(-1px);
+    }
+
+    /* Service Hours Widget */
+    .hours-table {
+      width: 100%;
+      font-size: 0.82rem;
+      margin-bottom: 1rem;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.35rem 0;
+      color: #94a3b8;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+    }
+
+    .hours-day {
+      color: #cbd5e1;
+    }
+
+    .hours-time {
+      font-family: var(--font-mono);
+      color: #ffffff;
+      font-size: 0.78rem;
+    }
+
+    .hours-note {
+      font-size: 0.75rem;
+      color: #64748b;
+      line-height: 1.45;
+    }
+
+    /* ================= 5. SHOP CATALOG GRID ================= */
+    .shop-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .shop-results-info {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .shop-results-info strong {
+      color: var(--gold-tan);
+    }
+
+    .shop-sort-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .shop-sort-label {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #94a3b8;
+    }
+
+    .shop-sort-dropdown {
+      background: var(--bg-surface);
+      color: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 0.5rem 1rem;
+      border-radius: 2px;
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .shop-sort-dropdown:focus {
+      outline: none;
+      border-color: var(--gold-tan);
+    }
+
+    /* 3-Column Luxury Product Grid */
+    .shop-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      margin-bottom: 3.5rem;
+    }
+
+    @media (max-width: 1200px) {
+      .shop-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shop-grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Product Card */
+    .product-luxury-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.28s ease;
+      position: relative;
+    }
+
+    .product-luxury-card:hover {
+      border-color: var(--border-gold-subtle);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+      background: var(--bg-card);
+    }
+
+    .card-thumb-frame {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      background: #090c14;
+      overflow: hidden;
+    }
+
+    .card-thumb-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+
+    .product-luxury-card:hover .card-thumb-frame img {
+      transform: scale(1.06);
+    }
+
+    .tag-sale-pill {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: var(--gold-tan);
+      color: #08090d;
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 2px;
+      z-index: 2;
+    }
+
+    .tag-index-num {
+      position: absolute;
+      bottom: 8px;
+      left: 10px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.45);
+      letter-spacing: 0.1em;
+    }
+
+    .card-content-body {
+      padding: 1.3rem 1.25rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-category-kicker {
+      font-family: var(--font-display);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      color: var(--gold-tan);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .card-product-heading {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+      margin-bottom: 0.6rem;
+    }
+
+    .card-product-heading a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .card-product-heading a:hover {
+      color: var(--gold-tan);
+    }
+
+    .card-product-snippet {
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .card-reviews-stars {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .stars-icon {
+      color: var(--gold-tan);
+      letter-spacing: 1px;
+    }
+
+    .reviews-label {
+      color: #64748b;
+    }
+
+    .card-pricing-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0.9rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .price-value-box {
+      display: flex;
+      align-items: baseline;
+      gap: 0.45rem;
+    }
+
+    .price-current {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #ffffff;
+    }
+
+    .price-old {
+      font-size: 0.85rem;
+      text-decoration: line-through;
+      color: #64748b;
+    }
+
+    .btn-view-item {
+      background: var(--gold-tan);
+      color: #08090d;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.55rem 1.15rem;
+      border-radius: 2px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      border: 1px solid var(--gold-tan);
+    }
+
+    .btn-view-item:hover {
+      background: var(--gold-tan-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(200, 168, 118, 0.3);
+    }
+
+    .btn-view-item svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    /* ================= 6. PAGINATION ================= */
+    .shop-pagination-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 2rem;
+    }
+
+    .page-box {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: #ffffff;
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+    }
+
+    .page-box:hover,
+    .page-box.active {
+      background: var(--gold-tan);
+      border-color: var(--gold-tan);
+      color: #08090d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= 1. FLOATING MODERN CAPSULE NAVBAR ================= -->
+  <header class="site-header" id="main-header">
+    <div class="nav-container">
+      <!-- Brand Logo (BBC original logo kept intact) -->
+      <a href="index.html" class="site-logo" aria-label="Brown Boys Customs Home">
+        <img src="images/logo.png" alt="BBC - Brown Boys Customs" class="brand-logo-img">
+      </a>
+
+      <!-- Center Nav Links (Sentence case, solid pill active state on Shop) -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About us</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Outlined circular cart button with badge, tightened CTA button with directional arrow) -->
+      <div class="nav-actions">
+        <!-- Outlined Circular Cart Button -->
+        <a href="cart.html" class="header-cart-circle-btn" aria-label="View Shopping Cart">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="header-cart-badge header-cart-badge-pill" data-cart-badge>0</span>
+        </a>
+
+        <!-- Tightened CTA Button with Arrow -->
+        <a href="contact.html#quote" class="btn-cta-navbar" data-open-modal="quote">
+          <span>Get a quote</span>
+          <span class="cta-arrow-icon">↗</span>
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button class="nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div style="margin-bottom: 2rem;">
+        <img src="images/logo.png" alt="BBC Logo" style="height: 38px; width: auto; object-fit: contain;">
+      </div>
+      <div class="mobile-menu-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div>
+      <a href="contact.html#quote" class="btn-cta-navbar" style="width: 100%; text-align: center; justify-content: center;" data-open-modal="quote">
+        <span>Get a quote</span>
+        <span class="cta-arrow-icon">↗</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ================= 2. SHOP HERO BANNER ================= -->
+  <section class="shop-hero-section">
+    <div class="container">
+      <div class="shop-hero-wrap">
+        <div>
+          <span class="shop-hero-kicker">BBC COLLECTION / 2026</span>
+          <h1 class="shop-hero-title">
+            WELCOME TO<br>
+            SHOP
+          </h1>
+          <p class="shop-hero-desc">
+            Explore our complete catalogue of custom car accessories, LED lighting, die-cast collector pieces and details made for drivers who want more than stock.
+          </p>
+        </div>
+
+        <div class="shop-hero-badge-box">
+          <span class="shop-badge-label">CURATED IN MISSISSAUGA</span>
+          <span class="shop-badge-label">INSTALLED IN-HOUSE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. MAIN SHOP LAYOUT ================= -->
+  <main class="container">
+    <div class="shop-main-layout">
+      
+      <!-- ================= SIDEBAR ================= -->
+      <aside>
+        <!-- Widget 1: Categories -->
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header">
+            <h3 class="sidebar-widget-title">PRODUCT CATEGORIES</h3>
+            <span class="sidebar-count-badge">208</span>
+          </div>
+
+          <ul class="cat-menu-list">
+            <li class="cat-menu-item">
+              <div class="cat-parent-row">
+                <a href="shop.html" class="cat-parent-link active" data-shop-cat="all">All categories</a>
+                <span class="cat-count">208</span>
+              </div>
+            </li>
+
+            <!-- Car Accessories -->
+            <li class="cat-menu-item">
+              <div class="cat-parent-row">
+                <a href="shop.html?cat=car-accessories" class="cat-parent-link" data-shop-cat="car-accessories">Car Accessories</a>
+                <span class="cat-count">100</span>
+              </div>
+              <ul class="cat-sub-list">
+                <li><a href="shop.html?cat=car-accessories&sub=cleaning-towel" class="cat-sub-link" data-shop-cat="car-accessories" data-shop-sub="cleaning-towel"><span>Cleaning towel</span><span class="cat-count">5</span></a></li>
+                <li><a href="shop.html?cat=car-accessories&sub=exhaust-sound-whistle" class="cat-sub-link" data-shop-cat="car-accessories" data-shop-sub="exhaust-sound-whistle"><span>Exhaust sound whistle</span><span class="cat-count">12</span></a></li>
+                <li><a href="shop.html?cat=car-accessories&sub=floor-mats" class="cat-sub-link" data-shop-cat="car-accessories" data-shop-sub="floor-mats"><span>Floor mats</span><span class="cat-count">15</span></a></li>
+                <li><a href="shop.html?cat=car-accessories&sub=fragrances" class="cat-sub-link" data-shop-cat="car-accessories" data-shop-sub="fragrances"><span>Fragrances</span><span class="cat-count">8</span></a></li>
+                <li><a href="shop.html?cat=car-accessories&sub=hangings" class="cat-sub-link" data-shop-cat="car-accessories" data-shop-sub="hangings"><span>Hangings (Parne / Lattu)</span><span class="cat-count">32</span></a></li>
+                <li><a href="shop.html?cat=car-accessories&sub=keychains" class="cat-sub-link" data-shop-cat="car-accessories" data-shop-sub="keychains"><span>Keychains</span><span class="cat-count">10</span></a></li>
+                <li><a href="shop.html?cat=car-accessories&sub=keyless-entry" class="cat-sub-link" data-shop-cat="car-accessories" data-shop-sub="keyless-entry"><span>Keyless Entry</span><span class="cat-count">5</span></a></li>
+                <li><a href="shop.html?cat=car-accessories&sub=neck-rollers" class="cat-sub-link" data-shop-cat="car-accessories" data-shop-sub="neck-rollers"><span>Neck Rollers Cover</span><span class="cat-count">7</span></a></li>
+                <li><a href="shop.html?cat=car-accessories&sub=door-sill-plates" class="cat-sub-link" data-shop-cat="car-accessories" data-shop-sub="door-sill-plates"><span>Customized Door Sill Plates</span><span class="cat-count">6</span></a></li>
+              </ul>
+            </li>
+
+            <!-- Dashboard Accessories -->
+            <li class="cat-menu-item">
+              <div class="cat-parent-row">
+                <a href="shop.html?cat=dashboard-accessories" class="cat-parent-link" data-shop-cat="dashboard-accessories">Dashboard Accessories</a>
+                <span class="cat-count">18</span>
+              </div>
+              <ul class="cat-sub-list">
+                <li><a href="shop.html?cat=dashboard-accessories&sub=amg-dashboard" class="cat-sub-link" data-shop-cat="dashboard-accessories" data-shop-sub="amg-dashboard"><span>AMG Dashboard Accessories</span><span class="cat-count">10</span></a></li>
+                <li><a href="shop.html?cat=dashboard-accessories&sub=bmw-dashboard" class="cat-sub-link" data-shop-cat="dashboard-accessories" data-shop-sub="bmw-dashboard"><span>BMW Dashboard Accessories</span><span class="cat-count">8</span></a></li>
+              </ul>
+            </li>
+
+            <!-- Die-Cast Products -->
+            <li class="cat-menu-item">
+              <div class="cat-parent-row">
+                <a href="shop.html?cat=die-cast-products" class="cat-parent-link" data-shop-cat="die-cast-products">Die-Cast Products</a>
+                <span class="cat-count">24</span>
+              </div>
+              <ul class="cat-sub-list">
+                <li><a href="shop.html?cat=die-cast-products&sub=die-cast-cars" class="cat-sub-link" data-shop-cat="die-cast-products" data-shop-sub="die-cast-cars"><span>Die-cast cars</span><span class="cat-count">16</span></a></li>
+                <li><a href="shop.html?cat=die-cast-products&sub=die-cast-trucks" class="cat-sub-link" data-shop-cat="die-cast-products" data-shop-sub="die-cast-trucks"><span>Die-cast trucks &amp; trailers</span><span class="cat-count">8</span></a></li>
+              </ul>
+            </li>
+
+            <!-- Lights / LED -->
+            <li class="cat-menu-item">
+              <div class="cat-parent-row">
+                <a href="shop.html?cat=lights-led" class="cat-parent-link" data-shop-cat="lights-led">Lights / LED</a>
+                <span class="cat-count">26</span>
+              </div>
+              <ul class="cat-sub-list">
+                <li><a href="shop.html?cat=lights-led&sub=car-interior-lights" class="cat-sub-link" data-shop-cat="lights-led" data-shop-sub="car-interior-lights"><span>Car Interior Lights</span><span class="cat-count">8</span></a></li>
+                <li><a href="shop.html?cat=lights-led&sub=customised-logo-lights" class="cat-sub-link" data-shop-cat="lights-led" data-shop-sub="customised-logo-lights"><span>Customized Door Lights</span><span class="cat-count">6</span></a></li>
+                <li><a href="shop.html?cat=lights-led&sub=brake-flash-hazard" class="cat-sub-link" data-shop-cat="lights-led" data-shop-sub="brake-flash-hazard"><span>Brake Flash Hazard Light</span><span class="cat-count">5</span></a></li>
+                <li><a href="shop.html?cat=lights-led&sub=car-logo-lights" class="cat-sub-link" data-shop-cat="lights-led" data-shop-sub="car-logo-lights"><span>Car Logo Lights</span><span class="cat-count">7</span></a></li>
+              </ul>
+            </li>
+
+            <!-- Truck Accessories -->
+            <li class="cat-menu-item">
+              <div class="cat-parent-row">
+                <a href="shop.html?cat=truck-accessories" class="cat-parent-link" data-shop-cat="truck-accessories">Truck Accessories</a>
+                <span class="cat-count">16</span>
+              </div>
+              <ul class="cat-sub-list">
+                <li><a href="shop.html?cat=truck-accessories&sub=colored-latka-jeeps" class="cat-sub-link" data-shop-cat="truck-accessories" data-shop-sub="colored-latka-jeeps"><span>Colored Latka for Jeeps</span><span class="cat-count">8</span></a></li>
+                <li><a href="shop.html?cat=truck-accessories&sub=dabbi-wale-parne" class="cat-sub-link" data-shop-cat="truck-accessories" data-shop-sub="dabbi-wale-parne"><span>Dabbi wale parne</span><span class="cat-count">8</span></a></li>
+              </ul>
+            </li>
+
+            <!-- Vehicles -->
+            <li class="cat-menu-item">
+              <div class="cat-parent-row">
+                <a href="shop.html?cat=vehicles" class="cat-parent-link" data-shop-cat="vehicles">Vehicles</a>
+                <span class="cat-count">20</span>
+              </div>
+              <ul class="cat-sub-list">
+                <li><a href="shop.html?cat=vehicles&sub=bikes" class="cat-sub-link" data-shop-cat="vehicles" data-shop-sub="bikes"><span>Bikes</span><span class="cat-count">5</span></a></li>
+                <li><a href="shop.html?cat=vehicles&sub=scooters" class="cat-sub-link" data-shop-cat="vehicles" data-shop-sub="scooters"><span>Scooters</span><span class="cat-count">3</span></a></li>
+                <li><a href="shop.html?cat=vehicles&sub=modified-tractors" class="cat-sub-link" data-shop-cat="vehicles" data-shop-sub="modified-tractors"><span>Modified Tractors</span><span class="cat-count">2</span></a></li>
+                <li><a href="shop.html?cat=vehicles&sub=jeep-wrangler" class="cat-sub-link" data-shop-cat="vehicles" data-shop-sub="jeep-wrangler"><span>Jeep Wrangler Rubicon</span><span class="cat-count">10</span></a></li>
+              </ul>
+            </li>
+
+            <!-- Custom Work -->
+            <li class="cat-menu-item">
+              <div class="cat-parent-row">
+                <a href="shop.html?cat=custom-work" class="cat-parent-link" data-shop-cat="custom-work">Custom Work</a>
+                <span class="cat-count">18</span>
+              </div>
+              <ul class="cat-sub-list">
+                <li><a href="shop.html?cat=custom-work&sub=customised-plates" class="cat-sub-link" data-shop-cat="custom-work" data-shop-sub="customised-plates"><span>Customized plates</span><span class="cat-count">6</span></a></li>
+                <li><a href="shop.html?cat=custom-work&sub=customised-t-shirts" class="cat-sub-link" data-shop-cat="custom-work" data-shop-sub="customised-t-shirts"><span>Customized T-shirts</span><span class="cat-count">12</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Widget 2: Filter by Price -->
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header">
+            <h3 class="sidebar-widget-title">FILTER BY PRICE</h3>
+          </div>
+
+          <div class="price-range-slider">
+            <div class="price-range-fill"></div>
+          </div>
+
+          <div class="price-range-values">
+            <span>$5</span>
+            <span>$500</span>
+          </div>
+
+          <button class="btn-price-reset" onclick="resetFilters()">RESET</button>
+        </div>
+
+        <!-- Widget 3: Service Hours -->
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header">
+            <h3 class="sidebar-widget-title">SERVICE HOURS</h3>
+            <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: var(--gold-tan);">
+              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+            </svg>
+          </div>
+
+          <div class="hours-table">
+            <div class="hours-row">
+              <span class="hours-day">Monday–Friday</span>
+              <span class="hours-time">10:00 AM–9:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">10:00 AM–6:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">12:00 PM–5:00 PM</span>
+            </div>
+          </div>
+
+          <p class="hours-note">
+            * Professional fitting available. Custom work consultations are available by appointment.
+          </p>
+        </div>
+      </aside>
+
+      <!-- ================= PRODUCTS AREA ================= -->
+      <section>
+        <!-- Results Bar -->
+        <div class="shop-top-bar">
+          <div class="shop-results-info" id="shop-results-count">
+            Showing 6 of <strong>208</strong> results
+          </div>
+
+          <div class="shop-sort-group">
+            <span class="shop-sort-label">Sort by</span>
+            <select id="shop-sort-select" class="shop-sort-dropdown" aria-label="Product Sorting">
+              <option value="default">Default sorting</option>
+              <option value="popularity">Popularity</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 3-Column Products Grid -->
+        <div class="shop-grid-3" id="shop-products-grid">
+          <!-- Card 01: 1969 Dodge Challenger -->
+          <article class="product-luxury-card" data-product-id="1969-dodge-challenger">
+            <div class="card-thumb-frame">
+              <span class="tag-sale-pill">SALE</span>
+              <span class="tag-index-num">01</span>
+              <img src="images/products/1969-dodge-challenger.jpg" alt="1969 Dodge Challenger" loading="lazy">
+            </div>
+            <div class="card-content-body">
+              <span class="card-category-kicker">DIE-CAST PRODUCTS · SALE</span>
+              <h3 class="card-product-heading">
+                <a href="product.html?id=1969-dodge-challenger">1969 DODGE CHALLENGER 1:18 DIE-CAST COLLECTOR MODEL</a>
+              </h3>
+              <p class="card-product-snippet">
+                Official licensed 1:18 scale model with opening hood and doors, plus detailed engine and interior.
+              </p>
+              <div class="card-reviews-stars">
+                <span class="stars-icon">★★★★★</span>
+                <span class="reviews-label">14 reviews</span>
+              </div>
+              <div class="card-pricing-footer">
+                <div class="price-value-box">
+                  <span class="price-current">$65.00</span>
+                  <span class="price-old">$89.00</span>
+                </div>
+                <a href="product.html?id=1969-dodge-challenger" class="btn-view-item">
+                  <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  VIEW ITEM
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 02: Aircraft Light For Jeeps -->
+          <article class="product-luxury-card" data-product-id="aircraft-light-piece">
+            <div class="card-thumb-frame">
+              <span class="tag-index-num">02</span>
+              <img src="images/gallery/cockpit-steering.svg" alt="Aircraft Light For Jeeps" loading="lazy">
+            </div>
+            <div class="card-content-body">
+              <span class="card-category-kicker">LIGHTS / LED · ALL-TIME FAVOURITE</span>
+              <h3 class="card-product-heading">
+                <a href="product.html?id=aircraft-light-piece">AIRCRAFT LIGHT FOR JEEPS</a>
+              </h3>
+              <p class="card-product-snippet">
+                High-intensity roof-mounted light with a weather-resistant housing built for rugged drives.
+              </p>
+              <div class="card-reviews-stars">
+                <span class="stars-icon">★★★★★</span>
+                <span class="reviews-label">5 reviews</span>
+              </div>
+              <div class="card-pricing-footer">
+                <div class="price-value-box">
+                  <span class="price-current">$20.00</span>
+                </div>
+                <a href="product.html?id=aircraft-light-piece" class="btn-view-item">
+                  <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  VIEW ITEM
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 03: Being Turbanator Car Hanging -->
+          <article class="product-luxury-card" data-product-id="being-turbanator">
+            <div class="card-thumb-frame">
+              <span class="tag-sale-pill">SALE</span>
+              <span class="tag-index-num">03</span>
+              <img src="images/products/being-turbanator-car-hanging.jpg" alt="Being Turbanator Car Hanging" loading="lazy">
+            </div>
+            <div class="card-content-body">
+              <span class="card-category-kicker">CAR ACCESSORIES · PUNJABI HANGINGS</span>
+              <h3 class="card-product-heading">
+                <a href="product.html?id=being-turbanator">BEING TURBANATOR CAR HANGING</a>
+              </h3>
+              <p class="card-product-snippet">
+                Signature turbaned Sikh Punjabi car hanging that adds personality and pride to every interior.
+              </p>
+              <div class="card-reviews-stars">
+                <span class="stars-icon">★★★★★</span>
+                <span class="reviews-label">7 reviews</span>
+              </div>
+              <div class="card-pricing-footer">
+                <div class="price-value-box">
+                  <span class="price-current">$15.00</span>
+                  <span class="price-old">$25.00</span>
+                </div>
+                <a href="product.html?id=being-turbanator" class="btn-view-item">
+                  <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  VIEW ITEM
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 04: Best Car Fragrance -->
+          <article class="product-luxury-card" data-product-id="best-car-fragrance">
+            <div class="card-thumb-frame">
+              <span class="tag-index-num">04</span>
+              <img src="images/gallery/bay-installation.svg" alt="Best Car Fragrance" loading="lazy">
+            </div>
+            <div class="card-content-body">
+              <span class="card-category-kicker">CAR ACCESSORIES · FRAGRANCES</span>
+              <h3 class="card-product-heading">
+                <a href="product.html?id=best-car-fragrance">BEST CAR FRAGRANCE (LUXURY OUD EDITION)</a>
+              </h3>
+              <p class="card-product-snippet">
+                Long-lasting premium woody oud fragrance for a fresh, refined cabin on every drive.
+              </p>
+              <div class="card-reviews-stars">
+                <span class="stars-icon">★★★★★</span>
+                <span class="reviews-label">8 reviews</span>
+              </div>
+              <div class="card-pricing-footer">
+                <div class="price-value-box">
+                  <span class="price-current">$5.00</span>
+                </div>
+                <a href="product.html?id=best-car-fragrance" class="btn-view-item">
+                  <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  VIEW ITEM
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 05: Black Matt Automotive Package -->
+          <article class="product-luxury-card" data-product-id="black-matt-exterior">
+            <div class="card-thumb-frame">
+              <span class="tag-index-num">05</span>
+              <img src="images/about-workshop.jpg" alt="Black Matt Automotive Exterior Package" loading="lazy">
+            </div>
+            <div class="card-content-body">
+              <span class="card-category-kicker">VEHICLE · CUSTOM WORK</span>
+              <h3 class="card-product-heading">
+                <a href="product.html?id=black-matt-exterior">BLACK MATT AUTOMOTIVE EXTERIOR PACKAGE</a>
+              </h3>
+              <p class="card-product-snippet">
+                A complete matte-black exterior treatment prepared and installed by our workshop team.
+              </p>
+              <div class="card-reviews-stars">
+                <span class="stars-icon">★★★★★</span>
+                <span class="reviews-label">4 reviews</span>
+              </div>
+              <div class="card-pricing-footer">
+                <div class="price-value-box">
+                  <span class="price-current">$200.00</span>
+                </div>
+                <a href="product.html?id=black-matt-exterior" class="btn-view-item">
+                  <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  VIEW ITEM
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 06: Brampton Punjabi Car Hanging -->
+          <article class="product-luxury-card" data-product-id="brampton-punjabi-hanging">
+            <div class="card-thumb-frame">
+              <span class="tag-index-num">06</span>
+              <img src="images/gallery/truck-accessories.svg" alt="Brampton Punjabi Car Hanging" loading="lazy">
+            </div>
+            <div class="card-content-body">
+              <span class="card-category-kicker">CAR ACCESSORIES · HANGINGS</span>
+              <h3 class="card-product-heading">
+                <a href="product.html?id=brampton-punjabi-hanging">BRAMPTON PUNJABI CAR HANGING</a>
+              </h3>
+              <p class="card-product-snippet">
+                A premium Punjabi-inspired hanging with a crisp finish, designed for a distinctive cabin detail.
+              </p>
+              <div class="card-reviews-stars">
+                <span class="stars-icon">★★★★★</span>
+                <span class="reviews-label">8 reviews</span>
+              </div>
+              <div class="card-pricing-footer">
+                <div class="price-value-box">
+                  <span class="price-current">$15.00</span>
+                </div>
+                <a href="product.html?id=brampton-punjabi-hanging" class="btn-view-item">
+                  <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  VIEW ITEM
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Pagination -->
+        <div class="shop-pagination-wrap" id="shop-pagination">
+          <a href="shop.html?page=1" class="page-box active">1</a>
+          <a href="shop.html?page=2" class="page-box">2</a>
+          <a href="shop.html?page=2" class="page-box">&gt;</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+    <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <!-- Column 1: Brand & Address -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo-link" aria-label="Brown Boys Customs Home">
+            <img src="images/logo.png" alt="BBC - Brown Boys Customs" class="footer-logo-img">
+          </a>
+          <p class="footer-brand-desc">
+            Brown Boys Customs (BBC) is Mississauga's premier automotive styling studio, located inside Westwood Mall. We specialize in custom starlight headliners, dynamic ambient lighting, bespoke carbon fiber steering wheels, and 9H ceramic coatings.
+          </p>
+          <div class="footer-address-box">
+            <div class="footer-address-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#d9a044">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+            <div class="footer-address-text">
+              <span class="footer-address-title">Westwood Mall / Westwood Square</span>
+              <span class="footer-address-sub">7215 Goreway Dr, Unit 1C30, Mississauga, ON L4T 2T9</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: QUICK LINKS -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-quick-links">
+            <li>
+              <a href="about.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                  <span>About Us</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="shop.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"/></svg>
+                  <span>Shop</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="privacy.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                  <span>Privacy Policy</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="terms.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                  <span>Terms &amp; Conditions</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="shipping.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                  <span>Shipping Policy</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="returns.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0020 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 004 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+                  <span>Return/Cancellation Policy</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: LATEST NEWS -->
+        <div class="footer-news-col">
+          <h4 class="footer-col-title">LATEST NEWS</h4>
+          <div class="footer-news-wrap">
+            <a href="post.html?id=car-decals-style" class="footer-news-row">
+              <img src="images/blog/car-decals-style.jpg" alt="Car Decals" class="f-news-thumb">
+              <div class="f-news-info">
+                <div class="f-news-meta">
+                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span>JULY 20, 2023</span>
+                </div>
+                <h5 class="f-news-title">UNIQUE WAYS TO USE CAR DECALS TO EXPRESS YOUR STYLE AND PASSIONS</h5>
+              </div>
+            </a>
+
+            <a href="post.html?id=decal-culture-canada" class="footer-news-row">
+              <img src="images/blog/decal-culture-canada.jpg" alt="Decal Culture" class="f-news-thumb">
+              <div class="f-news-info">
+                <div class="f-news-meta">
+                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span>JULY 28, 2023</span>
+                </div>
+                <h5 class="f-news-title">CANADA'S CAR DECAL CULTURE: A LOOK INTO THE TRENDS AND INSPIRATIONS</h5>
+              </div>
+            </a>
+
+            <a href="post.html?id=accessories-guide" class="footer-news-row">
+              <img src="images/blog/accessories-guide.jpg" alt="Accessories Guide" class="f-news-thumb">
+              <div class="f-news-info">
+                <div class="f-news-meta">
+                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span>JULY 15, 2023</span>
+                </div>
+                <h5 class="f-news-title">THE ULTIMATE CAR ACCESSORIES GUIDE: ELEVATE YOUR RIDE WITH BROWN BOYS CUSTOMS</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 4: SERVICES HOUR & CONTACT -->
+        <div class="footer-hours-col">
+          <h4 class="footer-col-title">SERVICES HOUR</h4>
+          <div class="footer-hours-table">
+            <div class="f-hour-row">
+              <div class="f-hour-day">
+                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Monday – Friday</span>
+              </div>
+              <span class="f-hour-time">10:00 AM – 9:00 PM</span>
+            </div>
+            <div class="f-hour-row">
+              <div class="f-hour-day">
+                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Saturday</span>
+              </div>
+              <span class="f-hour-time">10:00 AM – 6:00 PM</span>
+            </div>
+            <div class="f-hour-row">
+              <div class="f-hour-day">
+                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Sunday</span>
+              </div>
+              <span class="f-hour-time">12:00 PM – 5:00 PM</span>
+            </div>
+          </div>
+
+          <div class="footer-contact-actions">
+            <a href="tel:+16479660047" class="f-contact-btn">
+              <div class="f-contact-circle">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <span class="f-contact-main">+1 647 966 0047</span>
+                <span class="f-contact-sub">Call Us 24/7</span>
+              </div>
+            </a>
+
+            <a href="mailto:info@brownboyscustoms.ca" class="f-contact-btn">
+              <div class="f-contact-circle">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <span class="f-contact-main">info@brownboyscustoms.ca</span>
+                <span class="f-contact-sub">Send Us an Email</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.58c.02 1.94-.52 3.9-1.67 5.43-1.37 1.83-3.57 2.97-5.86 2.97-2.67.06-5.32-1.35-6.66-3.66-1.4-2.38-1.24-5.5.39-7.72 1.57-2.14 4.27-3.23 6.9-2.73v4.11c-1.36-.37-2.89.04-3.83 1.05-.98 1.03-1.19 2.67-.52 3.94.67 1.25 2.13 2.01 3.54 1.84 1.34-.14 2.51-1.07 2.87-2.37.13-.5.18-1.02.18-1.54V.02h.67z"/></svg>
+            </a>
+            <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Google">
+              <svg viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Radiant Gold Accent Bar & Bottom Legal -->
+    <div class="footer-bottom-gold-divider"></div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-layout">
+        <div class="footer-copyright">
+          &copy; <span class="dynamic-year">2024</span> Brown Boys Customs. All rights reserved.
+        </div>
+        <div class="footer-bottom-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="f-pipe">|</span>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <span class="f-pipe">|</span>
+          <a href="shipping.html">Shipping Policy</a>
+          <span class="f-pipe">|</span>
+          <a href="returns.html">Return/Cancellation Policy</a>
+        </div>
+        <div class="footer-made-in">
+          Made with <span class="f-heart">❤️</span> in Canada
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cart-core.js"></script>
+  <script src="js/shop.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

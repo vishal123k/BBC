@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#090d20"/>
+  <!-- Dashboard silhouette -->
+  <path d="M50 280 C180 220 420 220 550 280 L550 360 L50 360 Z" fill="#111736" stroke="#1d274f" stroke-width="2"/>
+  <!-- Ambient glow lines -->
+  <path d="M70 270 C200 210 400 210 530 270" stroke="#00f2fe" stroke-width="4" stroke-linecap="round" filter="drop-shadow(0 0 8px #00f2fe)"/>
+  <path d="M120 300 C220 250 380 250 480 300" stroke="#c9a13d" stroke-width="3" stroke-linecap="round" filter="drop-shadow(0 0 6px #c9a13d)"/>
+  <!-- Center Console Turbine Vents -->
+  <circle cx="250" cy="275" r="16" stroke="#c9a13d" stroke-width="3" fill="#0d1229"/>
+  <circle cx="300" cy="275" r="16" stroke="#c9a13d" stroke-width="3" fill="#0d1229"/>
+  <circle cx="350" cy="275" r="16" stroke="#c9a13d" stroke-width="3" fill="#0d1229"/>
+  <!-- Glow dots inside vents -->
+  <circle cx="250" cy="275" r="6" fill="#00f2fe"/>
+  <circle cx="300" cy="275" r="6" fill="#00f2fe"/>
+  <circle cx="350" cy="275" r="6" fill="#00f2fe"/>
+  <text x="300" y="345" font-family="'Barlow Condensed', sans-serif" font-size="16" font-weight="700" fill="#f8fafc" text-anchor="middle" letter-spacing="2">SYMPHONY AMBIENT LIGHTING</text>
+</svg>

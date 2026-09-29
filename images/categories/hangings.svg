@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <rect width="400" height="280" fill="#0d1430"/>
+  <!-- Rearview Mirror Hanging Tag & Talisman -->
+  <line x1="200" y1="20" x2="200" y2="120" stroke="#c9a13d" stroke-width="2.5" stroke-dasharray="4 2"/>
+  <circle cx="200" cy="155" r="42" fill="#131c3f" stroke="#c9a13d" stroke-width="2.5"/>
+  <!-- Khanda / Cultural Car Emblem Silhouette -->
+  <path d="M200 125 L200 185 M180 155 L220 155" stroke="#c9a13d" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="155" r="18" fill="none" stroke="#c9a13d" stroke-width="2"/>
+  <!-- Tassel -->
+  <path d="M190 197 L210 197 L215 240 L185 240 Z" fill="#c9a13d" opacity="0.85"/>
+</svg>

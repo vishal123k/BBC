@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <rect width="400" height="280" fill="#0d1430"/>
+  <circle cx="200" cy="130" r="80" fill="#c9a13d" opacity="0.1"/>
+  <!-- Keyfob / Interior Accessories graphic -->
+  <rect x="145" y="60" width="110" height="150" rx="24" fill="#131c3f" stroke="#c9a13d" stroke-width="2.5"/>
+  <circle cx="200" cy="100" r="18" fill="#1a2550" stroke="#c9a13d" stroke-width="1.5"/>
+  <rect x="175" y="135" width="50" height="12" rx="4" fill="#c9a13d"/>
+  <rect x="175" y="155" width="50" height="12" rx="4" fill="#334155"/>
+  <rect x="175" y="175" width="50" height="12" rx="4" fill="#334155"/>
+  <path d="M190 35 C190 25 210 25 210 35 L210 60 L190 60 Z" fill="#c9a13d"/>
+  <circle cx="200" cy="30" r="10" stroke="#c9a13d" stroke-width="3" fill="none"/>
+</svg>

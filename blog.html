@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Brown Boys Customs (BBC) | Mississauga</title>
+  <meta name="description" content="Explore custom car decal trends, vehicle modification guides, and aftermarket car accessories insights from Brown Boys Customs in Mississauga.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ==========================================================================
+       BBC BLOG LUXURY DARK THEME — PIXEL-PERFECT MATCH FOR USER REFERENCE
+       ========================================================================== */
+    :root {
+      --bbc-bg: #070913;
+      --bbc-surface: #0a0e1c;
+      --bbc-card: #0c1224;
+      --bbc-card-border: rgba(255, 255, 255, 0.08);
+      --bbc-gold: #d9a044;
+      --bbc-gold-hover: #e5af57;
+      --bbc-gold-light: rgba(217, 160, 68, 0.15);
+      --bbc-text-white: #ffffff;
+      --bbc-text-lead: #cbd5e1;
+      --bbc-text-muted: #8e9bb0;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Outfit', sans-serif;
+      --font-condensed: 'Barlow Condensed', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bbc-bg) !important;
+      color: var(--bbc-text-lead) !important;
+      font-family: var(--font-body) !important;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1260px !important;
+      margin: 0 auto !important;
+      padding: 0 1.5rem !important;
+    }
+
+    /* ================= 1. HEADER & NAVBAR ================= */
+    /* ================= 1. FLOATING MODERN CAPSULE NAVBAR ================= */
+    .site-header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+      background: transparent !important;
+      border-bottom: 1px solid transparent !important;
+      box-shadow: none !important;
+      padding: 12px 1.25rem !important;
+      pointer-events: auto !important;
+      transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, padding 0.25s ease !important;
+    }
+
+    /* When page is scrolled, provide a 100% solid dark barrier so content disappears behind it cleanly */
+    .site-header.scrolled {
+      background: #070913 !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      padding: 10px 1.25rem !important;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.75) !important;
+    }
+
+    .nav-container {
+      pointer-events: auto !important;
+      max-width: 1240px !important;
+      margin: 0 auto !important;
+      background: #0c0d12 !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-radius: 9999px !important;
+      height: 68px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 0 1.5rem !important;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.55) !important;
+    }
+
+    .site-logo {
+      display: inline-flex !important;
+      align-items: center !important;
+      text-decoration: none !important;
+      gap: 0.75rem !important;
+      flex-shrink: 0 !important;
+    }
+
+    .brand-logo-img {
+      height: 38px !important;
+      max-height: 38px !important;
+      width: auto !important;
+      object-fit: contain !important;
+      display: block !important;
+    }
+
+    .nav-menu {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.75rem !important;
+    }
+
+    /* Sentence case links with smooth pill active state */
+    .nav-link {
+      color: #cbd5e1 !important;
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif !important;
+      font-size: 0.95rem !important;
+      font-weight: 500 !important;
+      letter-spacing: 0 !important;
+      text-transform: none !important;
+      text-decoration: none !important;
+      padding: 8px 18px !important;
+      border-radius: 9999px !important;
+      position: relative !important;
+      transition: all 0.22s ease !important;
+      display: inline-block !important;
+    }
+
+    .nav-link::after {
+      display: none !important;
+    }
+
+    .nav-link:hover {
+      color: #ffffff !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+    }
+
+    /* Solid Gold Pill Active State */
+    .nav-link.active {
+      background: var(--bbc-gold, #c8a876) !important;
+      color: #08090d !important;
+      font-weight: 600 !important;
+      box-shadow: 0 2px 10px rgba(200, 168, 118, 0.25) !important;
+    }
+
+    .nav-link.active:hover {
+      background: var(--bbc-gold-hover, #d8b785) !important;
+      color: #000000 !important;
+    }
+
+    .nav-actions {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+
+    /* Outlined Circular Cart Button */
+    .header-cart-circle-btn {
+      position: relative !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 44px !important;
+      height: 44px !important;
+      border-radius: 50% !important;
+      border: 1px solid rgba(255, 255, 255, 0.22) !important;
+      background: rgba(255, 255, 255, 0.03) !important;
+      color: #ffffff !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
+      flex-shrink: 0 !important;
+    }
+
+    .header-cart-circle-btn:hover {
+      border-color: var(--bbc-gold, #c8a876) !important;
+      color: var(--bbc-gold, #c8a876) !important;
+      background: rgba(200, 168, 118, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .header-cart-circle-btn svg {
+      width: 19px !important;
+      height: 19px !important;
+      stroke: currentColor !important;
+      fill: none !important;
+      stroke-width: 2 !important;
+      stroke-linecap: round !important;
+      stroke-linejoin: round !important;
+    }
+
+    /* Overlapping Circular Badge */
+    .header-cart-badge-pill {
+      position: absolute !important;
+      top: -4px !important;
+      right: -4px !important;
+      background: var(--bbc-gold, #c8a876) !important;
+      color: #08090d !important;
+      font-family: 'Outfit', sans-serif !important;
+      font-size: 0.72rem !important;
+      font-weight: 800 !important;
+      min-width: 20px !important;
+      height: 20px !important;
+      border-radius: 50% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border: 2px solid #0c0d12 !important;
+      line-height: 1 !important;
+      padding: 0 4px !important;
+    }
+
+    /* Tightened CTA button with directional arrow */
+    .btn-cta-navbar {
+      background: var(--bbc-gold, #c8a876) !important;
+      color: #08090d !important;
+      font-family: 'Outfit', sans-serif !important;
+      font-size: 0.92rem !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.01em !important;
+      padding: 9px 20px !important;
+      border-radius: 10px !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      border: 1px solid var(--bbc-gold, #c8a876) !important;
+      box-shadow: 0 4px 14px rgba(200, 168, 118, 0.22) !important;
+      transition: all 0.25s ease !important;
+      white-space: nowrap !important;
+    }
+
+    .btn-cta-navbar:hover {
+      background: var(--bbc-gold-hover, #d8b785) !important;
+      border-color: var(--bbc-gold-hover, #d8b785) !important;
+      color: #000000 !important;
+      transform: translateY(-1px) !important;
+      box-shadow: 0 6px 20px rgba(200, 168, 118, 0.35) !important;
+    }
+
+    .btn-cta-navbar .cta-arrow-icon {
+      font-size: 1.05rem !important;
+      font-weight: 700 !important;
+      line-height: 1 !important;
+      display: inline-block !important;
+      transition: transform 0.2s ease !important;
+    }
+
+    .btn-cta-navbar:hover .cta-arrow-icon {
+      transform: translate(2px, -2px) !important;
+    }
+
+    /* Mobile Nav Toggle */
+    .nav-toggle {
+      display: none !important;
+      background: transparent !important;
+      border: none !important;
+      cursor: pointer !important;
+      padding: 8px !important;
+    }
+
+    .nav-toggle span {
+      display: block !important;
+      width: 22px !important;
+      height: 2px !important;
+      background: #ffffff !important;
+      margin: 4px 0 !important;
+      transition: all 0.2s ease !important;
+    }
+
+    @media (max-width: 992px) {
+      .site-header {
+        top: 8px !important;
+        padding: 0 0.75rem !important;
+      }
+      .nav-container {
+        height: 60px !important;
+        padding: 0 1rem !important;
+        border-radius: 9999px !important;
+      }
+      .nav-menu {
+        display: none !important;
+      }
+      .nav-toggle {
+        display: block !important;
+      }
+      .btn-cta-navbar {
+        display: none !important;
+      }
+    }
+
+    /* ================= 2. HERO BANNER (DODGE CHALLENGER CINEMATIC) ================= */
+    .blog-hero-section {
+      position: relative;
+      width: 100%;
+      min-height: 260px;
+      background: #070913 url('images/blog/blog-hero.jpg') right center no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      padding: 3.5rem 0 3rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      overflow: hidden;
+    }
+
+    .blog-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, #070913 0%, rgba(7, 9, 19, 0.94) 40%, rgba(7, 9, 19, 0.65) 65%, rgba(7, 9, 19, 0.15) 100%);
+      pointer-events: none;
+    }
+
+    .blog-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+    }
+
+    .blog-hero-title {
+      font-family: var(--font-heading);
+      font-size: 3.8rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      line-height: 1;
+      color: #ffffff;
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+    }
+
+    .blog-hero-title .gold-accent {
+      color: var(--bbc-gold);
+    }
+
+    .blog-hero-subtitle {
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #cbd5e1;
+      margin-bottom: 1.25rem;
+    }
+
+    .blog-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--bbc-text-muted);
+    }
+
+    .blog-breadcrumb a {
+      color: var(--bbc-text-muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: color 0.2s;
+    }
+
+    .blog-breadcrumb a:hover {
+      color: var(--bbc-gold);
+    }
+
+    .blog-breadcrumb-sep {
+      color: #475569;
+    }
+
+    .blog-breadcrumb-current {
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    /* ================= 3. BLOG MAIN CONTENT & SIDEBAR ================= */
+    .blog-main-area {
+      padding: 3.5rem 0 6rem;
+    }
+
+    .blog-layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 2.2rem;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .blog-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+
+    /* ================= 4. ARTICLE CARDS (LEFT COLUMN) ================= */
+    .blog-stacked-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+    }
+
+    .blog-post-card {
+      background: var(--bbc-card);
+      border: 1px solid var(--bbc-card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 1.4rem;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .blog-post-card:hover {
+      border-color: rgba(217, 160, 68, 0.35);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5);
+    }
+
+    .blog-post-media {
+      position: relative;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #05070e;
+      aspect-ratio: 16 / 9;
+      max-height: 380px;
+    }
+
+    .blog-post-media a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .blog-post-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .blog-post-card:hover .blog-post-media img {
+      transform: scale(1.03);
+    }
+
+    .blog-cat-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--bbc-gold);
+      color: #08090d;
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 4px;
+      z-index: 3;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .blog-post-body {
+      padding: 1.5rem 0.4rem 0.4rem;
+    }
+
+    .blog-post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.4rem;
+      font-size: 0.85rem;
+      color: var(--bbc-text-muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .meta-icon {
+      width: 15px;
+      height: 15px;
+      fill: var(--bbc-gold);
+      flex-shrink: 0;
+    }
+
+    .blog-post-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.95rem;
+    }
+
+    .blog-post-title a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .blog-post-title a:hover {
+      color: var(--bbc-gold);
+    }
+
+    .blog-post-excerpt {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: var(--bbc-text-muted);
+      margin-bottom: 1.4rem;
+    }
+
+    .blog-readmore-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bbc-gold);
+      color: #08090d;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.65rem 1.4rem;
+      border-radius: 6px;
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .blog-readmore-btn:hover {
+      background: var(--bbc-gold-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(217, 160, 68, 0.35);
+    }
+
+    /* ================= 5. SIDEBAR WIDGETS (RIGHT COLUMN) ================= */
+    .blog-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .sidebar-widget {
+      background: var(--bbc-card);
+      border: 1px solid var(--bbc-card-border);
+      border-radius: 12px;
+      padding: 1.6rem;
+    }
+
+    .widget-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Widget: Search */
+    .sidebar-search-form {
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    .sidebar-search-input {
+      flex: 1;
+      height: 44px;
+      background: #080b15;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-right: none;
+      border-radius: 6px 0 0 6px;
+      padding: 0 1rem;
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .sidebar-search-input:focus {
+      border-color: var(--bbc-gold);
+    }
+
+    .sidebar-search-input::placeholder {
+      color: #55627a;
+    }
+
+    .sidebar-search-btn {
+      width: 48px;
+      height: 44px;
+      background: var(--bbc-gold);
+      border: 1px solid var(--bbc-gold);
+      border-radius: 0 6px 6px 0;
+      color: #08090d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .sidebar-search-btn:hover {
+      background: var(--bbc-gold-hover);
+    }
+
+    .sidebar-search-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* Widget: Recent Posts */
+    .sidebar-recent-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-recent-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .sidebar-recent-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .sidebar-recent-item:first-child {
+      padding-top: 0;
+    }
+
+    .sidebar-recent-thumb {
+      width: 68px;
+      height: 68px;
+      border-radius: 6px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #060913;
+    }
+
+    .sidebar-recent-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .sidebar-recent-item:hover .sidebar-recent-thumb img {
+      transform: scale(1.08);
+    }
+
+    .sidebar-recent-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .sidebar-recent-title {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .sidebar-recent-title:hover {
+      color: var(--bbc-gold);
+    }
+
+    .sidebar-recent-date {
+      font-size: 0.76rem;
+      color: var(--bbc-text-muted);
+    }
+
+    /* Widget: Categories */
+    .sidebar-cat-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-cat-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-cat-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .sidebar-cat-row:first-child {
+      padding-top: 0;
+    }
+
+    .sidebar-cat-name {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #cbd5e1;
+      transition: color 0.2s ease;
+    }
+
+    .sidebar-cat-row:hover .sidebar-cat-name {
+      color: #ffffff;
+    }
+
+    .sidebar-cat-count {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--bbc-text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      padding: 2px 10px;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-cat-row:hover .sidebar-cat-count {
+      border-color: var(--bbc-gold);
+      color: var(--bbc-gold);
+    }
+
+    /* Widget: Westwood Mall Showroom CTA */
+    .sidebar-consult-card {
+      background: var(--bbc-card);
+      border: 1px solid rgba(217, 160, 68, 0.4);
+      border-radius: 12px;
+      padding: 1.6rem;
+      position: relative;
+    }
+
+    .consult-kicker {
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--bbc-gold);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .consult-heading {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 900;
+      line-height: 1.25;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    .consult-text {
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: var(--bbc-text-muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .consult-media {
+      width: 100%;
+      height: 160px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1.25rem;
+      background: #070913;
+    }
+
+    .consult-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .consult-btn {
+      width: 100%;
+      background: var(--bbc-gold);
+      color: #08090d;
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.85rem;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: background 0.2s ease, transform 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .consult-btn:hover {
+      background: var(--bbc-gold-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 1001;
+    }
+
+    .mobile-drawer-backdrop.active {
+      display: block;
+    }
+
+    .mobile-drawer {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 280px;
+      height: 100%;
+      background: #0a0e1c;
+      z-index: 1002;
+      padding: 2rem 1.5rem;
+      transition: right 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mobile-drawer.active {
+      right: 0;
+    }
+
+    .mobile-menu-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .mobile-menu-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-family: var(--font-condensed);
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .mobile-menu-links a.active,
+    .mobile-menu-links a:hover {
+      color: var(--bbc-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= 1. FLOATING MODERN CAPSULE NAVBAR ================= -->
+  <header class="site-header" id="main-header">
+    <div class="nav-container">
+      <!-- Brand Logo (BBC original logo kept intact) -->
+      <a href="index.html" class="site-logo" aria-label="Brown Boys Customs Home">
+        <img src="images/logo.png" alt="BBC - Brown Boys Customs" class="brand-logo-img">
+      </a>
+
+      <!-- Center Nav Links (Sentence case, solid pill active state on Blog) -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About us</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Outlined circular cart button with badge, tightened CTA button with directional arrow) -->
+      <div class="nav-actions">
+        <!-- Outlined Circular Cart Button -->
+        <a href="cart.html" class="header-cart-circle-btn" aria-label="View Shopping Cart">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="header-cart-badge header-cart-badge-pill" data-cart-badge>0</span>
+        </a>
+
+        <!-- Tightened CTA Button with Arrow -->
+        <a href="contact.html#quote" class="btn-cta-navbar" data-open-modal="quote">
+          <span>Get a quote</span>
+          <span class="cta-arrow-icon">↗</span>
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button class="nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div style="margin-bottom: 2rem;">
+        <img src="images/logo.png" alt="BBC Logo" style="height: 38px; width: auto; object-fit: contain;">
+      </div>
+      <div class="mobile-menu-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div>
+      <a href="contact.html#quote" class="btn-cta-navbar" style="width: 100%; text-align: center; justify-content: center;" data-open-modal="quote">
+        <span>Get a quote</span>
+        <span class="cta-arrow-icon">↗</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ================= 2. HERO BANNER (DODGE CHALLENGER CINEMATIC) ================= -->
+  <section class="blog-hero-section">
+    <div class="blog-hero-overlay"></div>
+    <div class="container blog-hero-content">
+      <h1 class="blog-hero-title">BLO<span class="gold-accent">G</span></h1>
+      <p class="blog-hero-subtitle">NEWS, STORIES AND EVERYTHING ABOUT CUSTOM CARS</p>
+      <nav class="blog-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">
+          <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          Home
+        </a>
+        <span class="blog-breadcrumb-sep">&gt;</span>
+        <span class="blog-breadcrumb-current">Blog</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ================= 3. MAIN BLOG & SIDEBAR ================= -->
+  <main class="blog-main-area">
+    <div class="container">
+      <div class="blog-layout-grid">
+
+        <!-- ================= LEFT COLUMN: ARTICLE CARDS ================= -->
+        <div class="blog-left-col">
+          <div class="blog-stacked-list" id="blog-stacked-container">
+
+            <!-- Card 1: Unique Ways to Use Car Decals to Express Your Style and Passions -->
+            <article class="blog-post-card" data-post-id="unique-ways-car-decals-express-style">
+              <div class="blog-post-media">
+                <a href="post.html?id=unique-ways-car-decals-express-style" aria-label="Unique Ways to Use Car Decals to Express Your Style and Passions">
+                  <img src="images/blog/car-decals-style.jpg" alt="Unique Ways to Use Car Decals to Express Your Style and Passions" loading="lazy">
+                </a>
+                <span class="blog-cat-badge">CAR CULTURE</span>
+              </div>
+              <div class="blog-post-body">
+                <div class="blog-post-meta">
+                  <span class="meta-item">
+                    <svg viewBox="0 0 24 24" class="meta-icon"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                    <span>July 20, 2023</span>
+                  </span>
+                  <span class="meta-item">
+                    <svg viewBox="0 0 24 24" class="meta-icon"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    <span>By Admin</span>
+                  </span>
+                  <span class="meta-item">
+                    <svg viewBox="0 0 24 24" class="meta-icon"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+                    <span>0 Comments</span>
+                  </span>
+                </div>
+
+                <h2 class="blog-post-title">
+                  <a href="post.html?id=unique-ways-car-decals-express-style">
+                    UNIQUE WAYS TO USE CAR DECALS TO EXPRESS YOUR STYLE AND PASSIONS
+                  </a>
+                </h2>
+
+                <p class="blog-post-excerpt">
+                  Car decals have evolved far beyond simple decorations — they're a powerful way to showcase your personality, passion, and automotive lifestyle. From discreet window decals to full-body graphics, explore how modern enthusiasts across Canada use decals to turn their rides into unique statements.
+                </p>
+
+                <div>
+                  <a href="post.html?id=unique-ways-car-decals-express-style" class="blog-readmore-btn">
+                    READ MORE ➔
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2: Canada's Car Decal Culture: A Look Into the Trends and Inspirations -->
+            <article class="blog-post-card" data-post-id="canadas-car-decal-culture-trends-inspirations">
+              <div class="blog-post-media">
+                <a href="post.html?id=canadas-car-decal-culture-trends-inspirations" aria-label="Canada's Car Decal Culture: A Look into the Trends and Inspirations">
+                  <img src="images/blog/decal-culture-canada.jpg" alt="Canada's Car Decal Culture: A Look into the Trends and Inspirations" loading="lazy">
+                </a>
+                <span class="blog-cat-badge">TRUCKS & ACCESSORIES</span>
+              </div>
+              <div class="blog-post-body">
+                <div class="blog-post-meta">
+                  <span class="meta-item">
+                    <svg viewBox="0 0 24 24" class="meta-icon"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                    <span>July 28, 2023</span>
+                  </span>
+                  <span class="meta-item">
+                    <svg viewBox="0 0 24 24" class="meta-icon"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    <span>By Admin</span>
+                  </span>
+                  <span class="meta-item">
+                    <svg viewBox="0 0 24 24" class="meta-icon"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+                    <span>0 Comments</span>
+                  </span>
+                </div>
+
+                <h2 class="blog-post-title">
+                  <a href="post.html?id=canadas-car-decal-culture-trends-inspirations">
+                    CANADA'S CAR DECAL CULTURE: A LOOK INTO THE TRENDS AND INSPIRATIONS
+                  </a>
+                </h2>
+
+                <p class="blog-post-excerpt">
+                  Canada's car culture is as diverse as its landscapes. From coast to coast, automotive enthusiasts are embracing custom decals, wraps, and graphics to reflect their individuality. Discover the latest trends, popular styles, and what makes Canada's decal scene truly one of a kind.
+                </p>
+
+                <div>
+                  <a href="post.html?id=canadas-car-decal-culture-trends-inspirations" class="blog-readmore-btn">
+                    READ MORE ➔
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3: The Ultimate Car Accessories Guide: Elevate Your Ride with Brown Boys Customs -->
+            <article class="blog-post-card" data-post-id="ultimate-car-accessories-guide-brown-boys-customs">
+              <div class="blog-post-media">
+                <a href="post.html?id=ultimate-car-accessories-guide-brown-boys-customs" aria-label="The Ultimate Car Accessories Guide: Elevate Your Ride with Brown Boys Customs">
+                  <img src="images/blog/accessories-guide.jpg" alt="The Ultimate Car Accessories Guide: Elevate Your Ride with Brown Boys Customs" loading="lazy">
+                </a>
+                <span class="blog-cat-badge">CAR ACCESSORIES</span>
+              </div>
+              <div class="blog-post-body">
+                <div class="blog-post-meta">
+                  <span class="meta-item">
+                    <svg viewBox="0 0 24 24" class="meta-icon"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                    <span>July 15, 2023</span>
+                  </span>
+                  <span class="meta-item">
+                    <svg viewBox="0 0 24 24" class="meta-icon"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    <span>By Admin</span>
+                  </span>
+                  <span class="meta-item">
+                    <svg viewBox="0 0 24 24" class="meta-icon"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+                    <span>0 Comments</span>
+                  </span>
+                </div>
+
+                <h2 class="blog-post-title">
+                  <a href="post.html?id=ultimate-car-accessories-guide-brown-boys-customs">
+                    THE ULTIMATE CAR ACCESSORIES GUIDE: ELEVATE YOUR RIDE WITH BROWN BOYS CUSTOMS
+                  </a>
+                </h2>
+
+                <p class="blog-post-excerpt">
+                  From lighting upgrades to interior enhancements, the right accessories can completely transform your driving experience. Explore our ultimate guide to car accessories and find the perfect upgrades to make your ride stand out — on the streets and at the show.
+                </p>
+
+                <div>
+                  <a href="post.html?id=ultimate-car-accessories-guide-brown-boys-customs" class="blog-readmore-btn">
+                    READ MORE ➔
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Pagination container if needed -->
+          <div id="blog-pagination" style="display: none; margin-top: 2.5rem; justify-content: center; gap: 0.5rem;"></div>
+        </div>
+
+        <!-- ================= RIGHT COLUMN: SIDEBAR WIDGETS ================= -->
+        <aside class="blog-sidebar" aria-label="Blog Sidebar">
+
+          <!-- Widget 1: Search Blog -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">SEARCH BLOG</h3>
+            <form class="sidebar-search-form" id="blog-search-form">
+              <input type="text" class="sidebar-search-input" id="blog-search-input" placeholder="Search articles, topics..." aria-label="Search articles">
+              <button type="submit" class="sidebar-search-btn" aria-label="Search Button">
+                <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Widget 2: Recent Posts -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">RECENT POSTS</h3>
+            <div class="sidebar-recent-list" id="sidebar-recent-posts">
+
+              <!-- Recent 1 -->
+              <div class="sidebar-recent-item">
+                <a href="post.html?id=unique-ways-car-decals-express-style" class="sidebar-recent-thumb" aria-label="Unique Ways to Use Car Decals">
+                  <img src="images/blog/car-decals-style.jpg" alt="Unique Ways to Use Car Decals">
+                </a>
+                <div class="sidebar-recent-info">
+                  <a href="post.html?id=unique-ways-car-decals-express-style" class="sidebar-recent-title">
+                    Unique Ways to Use Car Decals to Express Your Style and Passions
+                  </a>
+                  <span class="sidebar-recent-date">July 20, 2023</span>
+                </div>
+              </div>
+
+              <!-- Recent 2 -->
+              <div class="sidebar-recent-item">
+                <a href="post.html?id=canadas-car-decal-culture-trends-inspirations" class="sidebar-recent-thumb" aria-label="Canada's Car Decal Culture">
+                  <img src="images/blog/decal-culture-canada.jpg" alt="Canada's Car Decal Culture">
+                </a>
+                <div class="sidebar-recent-info">
+                  <a href="post.html?id=canadas-car-decal-culture-trends-inspirations" class="sidebar-recent-title">
+                    Canada's Car Decal Culture: A Look Into the Trends and Inspirations
+                  </a>
+                  <span class="sidebar-recent-date">July 28, 2023</span>
+                </div>
+              </div>
+
+              <!-- Recent 3 -->
+              <div class="sidebar-recent-item">
+                <a href="post.html?id=ultimate-car-accessories-guide-brown-boys-customs" class="sidebar-recent-thumb" aria-label="The Ultimate Car Accessories Guide">
+                  <img src="images/blog/accessories-guide.jpg" alt="The Ultimate Car Accessories Guide">
+                </a>
+                <div class="sidebar-recent-info">
+                  <a href="post.html?id=ultimate-car-accessories-guide-brown-boys-customs" class="sidebar-recent-title">
+                    The Ultimate Car Accessories Guide: Elevate Your Ride
+                  </a>
+                  <span class="sidebar-recent-date">July 15, 2023</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Widget 3: Categories -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">CATEGORIES</h3>
+            <div class="sidebar-cat-list">
+              <a href="#" class="sidebar-cat-row" data-blog-filter="all">
+                <span class="sidebar-cat-name">Uncategorized</span>
+                <span class="sidebar-cat-count">12</span>
+              </a>
+              <a href="#" class="sidebar-cat-row" data-blog-filter="CAR ACCESSORIES">
+                <span class="sidebar-cat-name">Car Accessories</span>
+                <span class="sidebar-cat-count">08</span>
+              </a>
+              <a href="#" class="sidebar-cat-row" data-blog-filter="CAR CULTURE">
+                <span class="sidebar-cat-name">Decal &amp; Wraps</span>
+                <span class="sidebar-cat-count">06</span>
+              </a>
+              <a href="#" class="sidebar-cat-row" data-blog-filter="Custom Builds">
+                <span class="sidebar-cat-name">Custom Builds</span>
+                <span class="sidebar-cat-count">04</span>
+              </a>
+              <a href="#" class="sidebar-cat-row" data-blog-filter="Lights / LED">
+                <span class="sidebar-cat-name">Lights / LED</span>
+                <span class="sidebar-cat-count">03</span>
+              </a>
+              <a href="#" class="sidebar-cat-row" data-blog-filter="Tips & Guides">
+                <span class="sidebar-cat-name">Tips &amp; Guides</span>
+                <span class="sidebar-cat-count">05</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Widget 4: Westwood Mall Showroom CTA -->
+          <div class="sidebar-consult-card">
+            <span class="consult-kicker">WESTWOOD MALL SHOWROOM</span>
+            <h4 class="consult-heading">BOOK YOUR VEHICLE MODIFICATION CONSULT</h4>
+            <p class="consult-text">
+              Whether you need custom lighting, decals, wheels, or accessories, our team is ready to help you build your dream ride.
+            </p>
+            <div class="consult-media">
+              <img src="images/about-workshop.jpg" alt="BBC Westwood Mall Showroom Workshop" loading="lazy">
+            </div>
+            <a href="contact.html#quote" class="consult-btn" data-open-modal="quote">
+              GET A QUOTE ➔
+            </a>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= 4. REUSABLE GLOBAL FOOTER ================= -->
+    <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <!-- Column 1: Brand & Address -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo-link" aria-label="Brown Boys Customs Home">
+            <img src="images/logo.png" alt="BBC - Brown Boys Customs" class="footer-logo-img">
+          </a>
+          <p class="footer-brand-desc">
+            Brown Boys Customs (BBC) is Mississauga's premier automotive styling studio, located inside Westwood Mall. We specialize in custom starlight headliners, dynamic ambient lighting, bespoke carbon fiber steering wheels, and 9H ceramic coatings.
+          </p>
+          <div class="footer-address-box">
+            <div class="footer-address-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#d9a044">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+            <div class="footer-address-text">
+              <span class="footer-address-title">Westwood Mall / Westwood Square</span>
+              <span class="footer-address-sub">7215 Goreway Dr, Unit 1C30, Mississauga, ON L4T 2T9</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: QUICK LINKS -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-quick-links">
+            <li>
+              <a href="about.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                  <span>About Us</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="shop.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"/></svg>
+                  <span>Shop</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="privacy.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                  <span>Privacy Policy</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="terms.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                  <span>Terms &amp; Conditions</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="shipping.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                  <span>Shipping Policy</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="returns.html">
+                <span class="f-link-left">
+                  <svg class="f-link-icon" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0020 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 004 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+                  <span>Return/Cancellation Policy</span>
+                </span>
+                <span class="f-link-chevron">›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: LATEST NEWS -->
+        <div class="footer-news-col">
+          <h4 class="footer-col-title">LATEST NEWS</h4>
+          <div class="footer-news-wrap">
+            <a href="post.html?id=car-decals-style" class="footer-news-row">
+              <img src="images/blog/car-decals-style.jpg" alt="Car Decals" class="f-news-thumb">
+              <div class="f-news-info">
+                <div class="f-news-meta">
+                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span>JULY 20, 2023</span>
+                </div>
+                <h5 class="f-news-title">UNIQUE WAYS TO USE CAR DECALS TO EXPRESS YOUR STYLE AND PASSIONS</h5>
+              </div>
+            </a>
+
+            <a href="post.html?id=decal-culture-canada" class="footer-news-row">
+              <img src="images/blog/decal-culture-canada.jpg" alt="Decal Culture" class="f-news-thumb">
+              <div class="f-news-info">
+                <div class="f-news-meta">
+                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span>JULY 28, 2023</span>
+                </div>
+                <h5 class="f-news-title">CANADA'S CAR DECAL CULTURE: A LOOK INTO THE TRENDS AND INSPIRATIONS</h5>
+              </div>
+            </a>
+
+            <a href="post.html?id=accessories-guide" class="footer-news-row">
+              <img src="images/blog/accessories-guide.jpg" alt="Accessories Guide" class="f-news-thumb">
+              <div class="f-news-info">
+                <div class="f-news-meta">
+                  <svg viewBox="0 0 24 24" class="f-news-cal"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span>JULY 15, 2023</span>
+                </div>
+                <h5 class="f-news-title">THE ULTIMATE CAR ACCESSORIES GUIDE: ELEVATE YOUR RIDE WITH BROWN BOYS CUSTOMS</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 4: SERVICES HOUR & CONTACT -->
+        <div class="footer-hours-col">
+          <h4 class="footer-col-title">SERVICES HOUR</h4>
+          <div class="footer-hours-table">
+            <div class="f-hour-row">
+              <div class="f-hour-day">
+                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Monday – Friday</span>
+              </div>
+              <span class="f-hour-time">10:00 AM – 9:00 PM</span>
+            </div>
+            <div class="f-hour-row">
+              <div class="f-hour-day">
+                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Saturday</span>
+              </div>
+              <span class="f-hour-time">10:00 AM – 6:00 PM</span>
+            </div>
+            <div class="f-hour-row">
+              <div class="f-hour-day">
+                <svg viewBox="0 0 24 24" class="f-hour-clock"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Sunday</span>
+              </div>
+              <span class="f-hour-time">12:00 PM – 5:00 PM</span>
+            </div>
+          </div>
+
+          <div class="footer-contact-actions">
+            <a href="tel:+16479660047" class="f-contact-btn">
+              <div class="f-contact-circle">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <span class="f-contact-main">+1 647 966 0047</span>
+                <span class="f-contact-sub">Call Us 24/7</span>
+              </div>
+            </a>
+
+            <a href="mailto:info@brownboyscustoms.ca" class="f-contact-btn">
+              <div class="f-contact-circle">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <span class="f-contact-main">info@brownboyscustoms.ca</span>
+                <span class="f-contact-sub">Send Us an Email</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.58c.02 1.94-.52 3.9-1.67 5.43-1.37 1.83-3.57 2.97-5.86 2.97-2.67.06-5.32-1.35-6.66-3.66-1.4-2.38-1.24-5.5.39-7.72 1.57-2.14 4.27-3.23 6.9-2.73v4.11c-1.36-.37-2.89.04-3.83 1.05-.98 1.03-1.19 2.67-.52 3.94.67 1.25 2.13 2.01 3.54 1.84 1.34-.14 2.51-1.07 2.87-2.37.13-.5.18-1.02.18-1.54V.02h.67z"/></svg>
+            </a>
+            <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="f-social-icon" aria-label="Google">
+              <svg viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Radiant Gold Accent Bar & Bottom Legal -->
+    <div class="footer-bottom-gold-divider"></div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-layout">
+        <div class="footer-copyright">
+          &copy; <span class="dynamic-year">2024</span> Brown Boys Customs. All rights reserved.
+        </div>
+        <div class="footer-bottom-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="f-pipe">|</span>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <span class="f-pipe">|</span>
+          <a href="shipping.html">Shipping Policy</a>
+          <span class="f-pipe">|</span>
+          <a href="returns.html">Return/Cancellation Policy</a>
+        </div>
+        <div class="footer-made-in">
+          Made with <span class="f-heart">❤️</span> in Canada
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= QUOTE MODAL ================= -->
+  <div class="quote-modal-backdrop" id="quote-modal-backdrop">
+    <div class="quote-modal" style="background: #0a0e1c; border: 1px solid rgba(217, 160, 68, 0.4); border-radius: 12px; padding: 2rem; max-width: 500px; width: 90%; margin: auto; position: relative;">
+      <div class="quote-modal-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+        <div>
+          <span style="font-family: var(--font-heading); font-size: 0.75rem; color: var(--bbc-gold); letter-spacing: 0.08em; text-transform: uppercase;">BBC CUSTOM INQUIRY</span>
+          <h3 style="color: #ffffff; font-family: var(--font-heading); font-size: 1.5rem; margin-top: 0.2rem; text-transform: uppercase;">GET A CUSTOM QUOTE</h3>
+        </div>
+        <button class="quote-modal-close" style="background: none; border: none; color: #cbd5e1; font-size: 1.8rem; cursor: pointer; line-height: 1;">&times;</button>
+      </div>
+      <div class="quote-modal-body">
+        <form id="quote-form">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label style="display: block; font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.4rem;">Full Name *</label>
+            <input type="text" class="sidebar-search-input" style="width: 100%; border-radius: 6px; border-right: 1px solid rgba(255,255,255,0.1);" required placeholder="Your Name">
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.4rem;">Phone Number *</label>
+              <input type="tel" class="sidebar-search-input" style="width: 100%; border-radius: 6px; border-right: 1px solid rgba(255,255,255,0.1);" required placeholder="+1 (647) 000-0000">
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.4rem;">Email Address *</label>
+              <input type="email" class="sidebar-search-input" style="width: 100%; border-radius: 6px; border-right: 1px solid rgba(255,255,255,0.1);" required placeholder="name@domain.com">
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label style="display: block; font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.4rem;">Vehicle &amp; Service *</label>
+            <input type="text" class="sidebar-search-input" style="width: 100%; border-radius: 6px; border-right: 1px solid rgba(255,255,255,0.1);" required placeholder="e.g. 2024 Dodge Challenger — Custom Decals & Consult">
+          </div>
+          <button type="submit" class="consult-btn">
+            SUBMIT QUOTE REQUEST
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/cart-core.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+
+  <script>
+    // Mobile Drawer Toggle
+    const navToggle = document.getElementById('mobile-nav-toggle');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const drawerBackdrop = document.getElementById('drawer-backdrop');
+
+    if (navToggle && mobileDrawer && drawerBackdrop) {
+      navToggle.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('active');
+        drawerBackdrop.classList.toggle('active');
+      });
+      drawerBackdrop.addEventListener('click', () => {
+        mobileDrawer.classList.remove('active');
+        drawerBackdrop.classList.remove('active');
+      });
+    }
+
+    // Modal Quote open/close
+    document.querySelectorAll('[data-open-modal="quote"]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modal = document.getElementById('quote-modal-backdrop');
+        if (modal) modal.style.display = 'flex';
+      });
+    });
+
+    document.querySelectorAll('.quote-modal-close').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modal = document.getElementById('quote-modal-backdrop');
+        if (modal) modal.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>

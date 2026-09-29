@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#090d20"/>
+  <!-- Steering Wheel Outer Rim -->
+  <circle cx="300" cy="190" r="120" stroke="#1f293d" stroke-width="24" fill="none"/>
+  <!-- Flat Bottom Cut -->
+  <rect x="230" y="290" width="140" height="24" fill="#090d20"/>
+  <path d="M220 295 L380 295" stroke="#c9a13d" stroke-width="12" stroke-linecap="round"/>
+  <!-- Top 12 O'clock Marker -->
+  <rect x="294" y="68" width="12" height="24" rx="2" fill="#c9a13d"/>
+  <!-- Carbon Fiber pattern top rim -->
+  <path d="M220 95 A 120 120 0 0 1 380 95" stroke="#111827" stroke-width="20" stroke-dasharray="4 2" fill="none"/>
+  <!-- LED Shift Lights on top hub -->
+  <g fill="#22c55e">
+    <circle cx="270" cy="115" r="4"/>
+    <circle cx="280" cy="115" r="4"/>
+  </g>
+  <g fill="#eab308">
+    <circle cx="293" cy="115" r="4"/>
+    <circle cx="307" cy="115" r="4"/>
+  </g>
+  <g fill="#ef4444">
+    <circle cx="320" cy="115" r="4"/>
+    <circle cx="330" cy="115" r="4"/>
+  </g>
+  <!-- Spokes -->
+  <rect x="220" y="180" width="80" height="20" fill="#1e293b" rx="4"/>
+  <rect x="300" y="180" width="80" height="20" fill="#1e293b" rx="4"/>
+  <rect x="290" y="195" width="20" height="85" fill="#1e293b" rx="4"/>
+  <!-- Center Horn Monogram -->
+  <circle cx="300" cy="190" r="32" fill="#0d1229" stroke="#c9a13d" stroke-width="2"/>
+  <text x="300" y="196" font-family="'Barlow Condensed', sans-serif" font-size="14" font-weight="900" fill="#c9a13d" text-anchor="middle">BBC</text>
+  <text x="300" y="355" font-family="'Barlow Condensed', sans-serif" font-size="16" font-weight="700" fill="#f8fafc" text-anchor="middle" letter-spacing="2">LED CARBON STEERING WHEEL</text>
+</svg>

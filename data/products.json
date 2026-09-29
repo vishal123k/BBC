@@ -1,0 +1,888 @@
+[
+  {
+    "id": "1969-dodge-challenger",
+    "name": "1969 Dodge Challenger 1:18 Die-Cast Collector Model",
+    "category": "Die-Cast Products",
+    "subCategory": "Die-cast cars",
+    "price": 65.0,
+    "comparePrice": 85.0,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewsCount": 27,
+    "inStock": true,
+    "image": "images/products/1969-dodge-challenger.jpg",
+    "shortDescription": "Official licensed 1:18 scale metal die-cast muscle car model with opening hood, doors and detailed engine bay.",
+    "featured": true,
+    "createdAt": "2026-09-20",
+    "sku": "BBC-1969-D-01",
+    "gallery": [
+      "images/products/1969-dodge-challenger.jpg",
+      "images/products/dodge-side.jpg",
+      "images/products/dodge-rear.jpg",
+      "images/products/dodge-front.jpg",
+      "images/products/dodge-engine.jpg"
+    ],
+    "fullDescription": "Experience classic American muscle in breathtaking 1:18 collector scale. This 1969 Dodge Challenger die-cast replica boasts opening functional hood, doors, and trunk, revealing an authentic dual-carburetor V8 engine block, authentic dash gauges, and steerable rubber Goodyear tread tires.",
+    "features": [
+      "Official licensed 1:18 heavy die-cast metal body",
+      "Working hood, doors, and detailed trunk with spare tire",
+      "Functional steering wheel linked to front rubber wheels",
+      "Collector display plinth with engraved model plaque"
+    ],
+    "specifications": {
+      "Scale": "1:18",
+      "Material": "Die-Cast Metal & ABS Precision Components",
+      "Length": "10.8 inches (27.5 cm)",
+      "Color": "Classic Hemi Plum Crazy / Jet Black Vinyl Roof",
+      "Condition": "Brand New In Factory Box"
+    },
+    "installation": "Display model ready out of the box. Includes acrylic protective plinth screws.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.9,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "aircraft-light-piece",
+    "name": "Aircraft Light (Per Piece)",
+    "category": "Lights / LED",
+    "subCategory": "Air tyre cap lights",
+    "price": 20.0,
+    "comparePrice": null,
+    "onSale": false,
+    "rating": 4.6,
+    "reviewsCount": 14,
+    "inStock": true,
+    "image": "images/products/aircraft-light-piece.jpg",
+    "shortDescription": "High-intensity multi-mode strobe auxiliary warning light with vibration sensor and magnetic base.",
+    "featured": false,
+    "createdAt": "2026-09-18",
+    "sku": "BBC-AIRCRA-01",
+    "gallery": [
+      "images/products/aircraft-light-piece.jpg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer Aircraft Light (Per Piece), meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Lights / LED",
+      "Sub-Category": "Air tyre cap lights",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.6,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "aircraft-light-remote",
+    "name": "Aircraft Light with Remote (Per Piece)",
+    "category": "Lights / LED",
+    "subCategory": "Air tyre cap lights",
+    "price": 35.0,
+    "comparePrice": null,
+    "onSale": false,
+    "rating": 4.8,
+    "reviewsCount": 21,
+    "inStock": true,
+    "image": "images/products/aircraft-light-remote.jpg",
+    "shortDescription": "Wireless RF remote-controlled aircraft beacon strobe light with 7 flashing modes and USB recharge.",
+    "featured": false,
+    "createdAt": "2026-09-19",
+    "sku": "BBC-AIRCRA-01",
+    "gallery": [
+      "images/products/aircraft-light-remote.jpg"
+    ],
+    "fullDescription": "Equip your vehicle, motorcycle, drone, or bicycle with aerospace-grade strobe visibility. Features wireless RF remote operation up to 20 meters, 7 high-contrast LED color modes, and vibration sensor sleep mode that preserves rechargeable battery life.",
+    "features": [
+      "Wireless RF remote control with multi-unit sync",
+      "7 color channels: Red, White, Green, Blue, Yellow, Purple, Ice Blue",
+      "Vibration-activated standby & auto-wake sensor",
+      "Magnetic base + industrial 3M velcro mount included"
+    ],
+    "specifications": {
+      "Battery": "USB-C Rechargeable 350mAh Lithium Polymer",
+      "Battery Life": "Up to 16 hours continuous flash mode",
+      "Waterproof Rating": "IP65 Weather Sealed",
+      "Weight": "28 grams per module"
+    },
+    "installation": "Fasten magnetic plate or 3M velcro base to bumper, grille, roof rack, or motorcycle frame. Charge via USB-C.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.8,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "amg-dashboard-accessories",
+    "name": "AMG Dashboard Accessories",
+    "category": "Dashboard Accessories",
+    "subCategory": "AMG Dashboard Accessories",
+    "price": 50.0,
+    "comparePrice": null,
+    "onSale": false,
+    "rating": 4.7,
+    "reviewsCount": 18,
+    "inStock": true,
+    "image": "images/products/amg-dashboard-accessories.jpg",
+    "shortDescription": "Premium OEM-spec aluminum alloy AMG cockpit styling trims, rotary dial caps, and air vent rings.",
+    "featured": true,
+    "createdAt": "2026-09-15",
+    "sku": "BBC-AMG-DA-01",
+    "gallery": [
+      "images/products/amg-dashboard-accessories.jpg"
+    ],
+    "fullDescription": "Upgrade your Mercedes-Benz interior cockpit with precision CNC-machined aluminum AMG styling trims. Engineered to snap seamlessly over factory knobs, rotary selectors, and air vent bezels with OEM-level flush fitment.",
+    "features": [
+      "CNC machined aeronautical aluminum with knurled grip edges",
+      "Anodized silver and satin red finishes resistant to UV fading",
+      "Zero modification required — non-destructive adhesive fitment"
+    ],
+    "specifications": {
+      "Compatibility": "Mercedes C-Class, E-Class, CLA, GLA, GLC, AMG Models",
+      "Material": "T6061 Billet Aluminum Alloy",
+      "Set Contents": "Selector Dial Ring, Volume Knob Bezel, Ignition Start Ring"
+    },
+    "installation": "Peel 3M adhesive backing and press firmly over factory dials for 30 seconds.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.7,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "android-screens-multimedia",
+    "name": "Android Screens Touch Multimedia Unit",
+    "category": "Dashboard Accessories",
+    "subCategory": "AMG Dashboard Accessories",
+    "price": 400.0,
+    "comparePrice": null,
+    "onSale": false,
+    "rating": 4.9,
+    "reviewsCount": 35,
+    "inStock": true,
+    "image": "images/products/android-screens.jpg",
+    "shortDescription": "High-definition IPS touch multimedia head unit with Wireless Apple CarPlay, Android Auto, and GPS navigation.",
+    "featured": true,
+    "createdAt": "2026-09-10",
+    "sku": "BBC-ANDROI-01",
+    "gallery": [
+      "images/products/android-screens.jpg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer Android Screens Touch Multimedia Unit, meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Dashboard Accessories",
+      "Sub-Category": "AMG Dashboard Accessories",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.9,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "being-turbanator-hanging",
+    "name": "Being Turbanator Car Hanging",
+    "category": "Car Accessories",
+    "subCategory": "Hangings",
+    "price": 15.0,
+    "comparePrice": 25.0,
+    "onSale": true,
+    "rating": 5.0,
+    "reviewsCount": 63,
+    "inStock": true,
+    "image": "images/products/being-turbanator-car-hanging.jpg",
+    "shortDescription": "Signature handcrafted Punjabi culture rearview mirror hanging with gold accents and detailed beard styling.",
+    "featured": true,
+    "createdAt": "2026-09-22",
+    "sku": "BBC-BEING--01",
+    "gallery": [
+      "images/products/being-turbanator-car-hanging.jpg"
+    ],
+    "video": {
+      "poster": "images/products/turbanator-hanging-video-poster.svg",
+      "title": "Being Turbanator In-Car Showcase",
+      "duration": "0:45",
+      "type": "embed"
+    },
+    "fullDescription": "A celebrated symbol of pride, valor, and Punjabi automotive culture, the Being Turbanator Car Hanging is custom-crafted specifically for enthusiasts across Ontario and North America. Featuring a laser-cut metallic alloy silhouette with royal mustard-gold turban contours, sleek dark sunglasses, and a hand-knotted gold-threaded silk tassel, this piece brings unmatched presence to your rearview mirror.\n\nEngineered to withstand direct Ontario sunlight without warping or fading, each unit comes with a durable braided suspension loop that fits all standard rearview mirror mounts. It arrives nestled in Brown Boys Customs' signature velvet-lined collector box — making it an exceptional personal styling statement or gift.",
+    "features": [
+      "Authentic Punjabi cultural automotive iconography with sleek modern styling",
+      "Premium laser-etched high-density metallic alloy with anti-tarnish coating",
+      "Hand-finished gold thread fringe tassel with reinforced knotting",
+      "Heat and UV-resistant materials engineered for extreme Canadian weather",
+      "Packaged in official Brown Boys Customs luxury velvet gift box",
+      "Quick loop fitment compatible with 100% of car, SUV, and commercial truck rearview mirrors"
+    ],
+    "specifications": {
+      "Material": "Reinforced Zinc Alloy & Premium Silk Tassel",
+      "Finish": "Antique Gold Plating & Matte Onyx Enamel",
+      "Total Length": "11.5 inches (29 cm) including suspension cord",
+      "Emblem Diameter": "3.2 inches (8 cm)",
+      "Mounting": "Quick-tie braided jewelry cord",
+      "Origin": "Brown Boys Customs Exclusive Design",
+      "Warranty": "1-Year Color & Finish Guarantee"
+    },
+    "installation": "Simply drape the braided suspension cord over your interior rearview mirror and adjust to your preferred hang height. No tools required.",
+    "reviews": [
+      {
+        "author": "Harpreet S.",
+        "location": "Brampton, ON",
+        "vehicle": "Dodge Charger Scat Pack",
+        "rating": 5,
+        "date": "September 21, 2026",
+        "title": "Unreal presence inside the car!",
+        "comment": "The gold finish looks even better in person under the streetlights at night. Sturdy metal, not cheap plastic. Gets noticed everywhere in Brampton."
+      },
+      {
+        "author": "Navjot D.",
+        "location": "Mississauga, ON",
+        "vehicle": "Ford F-150 Lariat",
+        "rating": 5,
+        "date": "September 14, 2026",
+        "title": "Top quality & fast Westwood Mall pickup",
+        "comment": "Ordered online and picked up 20 minutes later at Unit 1C30 Westwood Mall. The box packaging is super premium. Highly recommend BBC!"
+      },
+      {
+        "author": "Gurinder K.",
+        "location": "Surrey, BC",
+        "vehicle": "Honda Civic Type R",
+        "rating": 5,
+        "date": "August 30, 2026",
+        "title": "Shipped fast to BC",
+        "comment": "Got it delivered in 3 days. Beautiful tassel and solid weight. Exactly what I was looking for."
+      }
+    ]
+  },
+  {
+    "id": "best-car-fragrance",
+    "name": "Best Car Fragrance (Luxury Oud Edition)",
+    "category": "Car Accessories",
+    "subCategory": "Fragrances",
+    "price": 15.0,
+    "comparePrice": 35.0,
+    "onSale": true,
+    "rating": 4.8,
+    "reviewsCount": 49,
+    "inStock": true,
+    "image": "images/products/car-fragrance.svg",
+    "shortDescription": "Long-lasting premium wooden-cap hanging bottle infused with pure organic Dubai amber and royal oud oils.",
+    "featured": false,
+    "createdAt": "2026-09-21",
+    "sku": "BBC-BEST-C-01",
+    "gallery": [
+      "images/products/car-fragrance.svg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer Best Car Fragrance (Luxury Oud Edition), meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Car Accessories",
+      "Sub-Category": "Fragrances",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.8,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "bmw-dashboard-accessories",
+    "name": "BMW Dashboard Accessories",
+    "category": "Dashboard Accessories",
+    "subCategory": "BMW Dashboard Accessories",
+    "price": 50.0,
+    "comparePrice": null,
+    "onSale": false,
+    "rating": 4.7,
+    "reviewsCount": 16,
+    "inStock": true,
+    "image": "images/categories/dashboard-accessories.svg",
+    "shortDescription": "Bespoke M-Performance tricolor ignition covers, center console accents, and steering wheel badge rings.",
+    "featured": false,
+    "createdAt": "2026-09-14",
+    "sku": "BBC-BMW-DA-01",
+    "gallery": [
+      "images/categories/dashboard-accessories.svg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer BMW Dashboard Accessories, meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Dashboard Accessories",
+      "Sub-Category": "BMW Dashboard Accessories",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.7,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "body-kits-aerodynamic",
+    "name": "Body Kits Aerodynamic Exterior Package",
+    "category": "Vehicles",
+    "subCategory": "Jeep Wrangler Rubicon",
+    "price": 200.0,
+    "comparePrice": null,
+    "onSale": false,
+    "rating": 4.5,
+    "reviewsCount": 8,
+    "inStock": true,
+    "image": null,
+    "shortDescription": "Aerodynamic front lip splitter, side skirts, and rear diffuser package. Custom fitment available at shop.",
+    "featured": false,
+    "createdAt": "2026-09-08",
+    "sku": "BBC-BODY-K-01",
+    "gallery": [
+      "images/no-image-placeholder.svg"
+    ],
+    "fullDescription": "Bespoke exterior aerodynamic body styling package. Includes front bumper splitter, aggressive side skirt extensions, and multi-fin rear diffuser. Custom fitment and paint matching available directly at Brown Boys Customs Mississauga.",
+    "features": [
+      "High-impact ABS injection-molded construction",
+      "Engineered to improve high-speed downforce and aerodynamic stability",
+      "Available in Gloss Black or Paint-to-Match options",
+      "In-store fitment consultation at Westwood Mall bay"
+    ],
+    "specifications": {
+      "Material": "Automotive Grade Polypropylene / ABS",
+      "Hardware": "Stainless steel mounting brackets & self-tapping screws included",
+      "Note": "Product photo currently being updated. Contact BBC for vehicle-specific mockups."
+    },
+    "installation": "Professional mounting and alignment recommended at our Westwood Mall facility.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.5,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "brampton-pind-car-hangings",
+    "name": "Brampton Pind Car Hangings",
+    "category": "Car Accessories",
+    "subCategory": "Hangings",
+    "price": 15.0,
+    "comparePrice": 25.0,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewsCount": 54,
+    "inStock": true,
+    "image": "images/products/brampton-pind.svg",
+    "shortDescription": "Custom acrylic Ontario 'Brampton Pind' vehicle rearview pendant with Punjabi script and protective red tassel.",
+    "featured": false,
+    "createdAt": "2026-09-23",
+    "sku": "BBC-BRAMPT-01",
+    "gallery": [
+      "images/products/brampton-pind.svg",
+      "images/products/turbanator-hanging-mirror.svg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer Brampton Pind Car Hangings, meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Car Accessories",
+      "Sub-Category": "Hangings",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.9,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "cadillac-escalade-ambient-lights",
+    "name": "Cadillac Escalade Ambient Lights",
+    "category": "Lights / LED",
+    "subCategory": "Car interior lights",
+    "price": 700.0,
+    "comparePrice": null,
+    "onSale": false,
+    "rating": 5.0,
+    "reviewsCount": 12,
+    "inStock": true,
+    "image": "images/products/escalade-ambient.svg",
+    "shortDescription": "Factory-integrated multi-zone fiber optic lighting package custom fitted for Cadillac Escalade cabins.",
+    "featured": false,
+    "createdAt": "2026-09-12",
+    "sku": "BBC-CADILL-01",
+    "gallery": [
+      "images/products/escalade-ambient.svg",
+      "images/products/ambient-lighting.svg"
+    ],
+    "fullDescription": "Bring luxury private-jet cabin ambiance to your Cadillac Escalade with custom-engineered OEM-integration fiber optic light bars. Controllable via smartphone app or dashboard controls, offering infinite color spectra and synchronized audio pulse modes.",
+    "features": [
+      "Direct fitment for Cadillac Escalade dashboard and door trim channels",
+      "64 dynamic colors with adjustable brightness and warm white presets",
+      "Ultra-thin 0.5mm light guides for clean factory-original appearance"
+    ],
+    "specifications": {
+      "Fitment": "Cadillac Escalade 2015-2024 Models",
+      "Voltage": "12V DC Automotive OEM harness",
+      "Control": "Bluetooth App (iOS & Android) + Wireless Switch"
+    },
+    "installation": "Professional installation recommended at Brown Boys Customs Westwood Mall bay. Call +1 647 966 0047 to schedule.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 5.0,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "camry-rgb-tail-lights",
+    "name": "Camry RGB Tail Lights (Smoked Edition)",
+    "category": "Lights / LED",
+    "subCategory": "Car interior lights",
+    "price": 800.0,
+    "comparePrice": null,
+    "onSale": false,
+    "rating": 4.9,
+    "reviewsCount": 19,
+    "inStock": true,
+    "image": "images/products/camry-taillights.svg",
+    "shortDescription": "Plug-and-play dynamic startup animation LED smoked taillight assemblies for Toyota Camry models.",
+    "featured": false,
+    "createdAt": "2026-09-16",
+    "sku": "BBC-CAMRY--01",
+    "gallery": [
+      "images/products/camry-taillights.svg",
+      "images/products/underglow-lights.svg"
+    ],
+    "fullDescription": "Transform the rear profile of your Toyota Camry with smoked dynamic LED tail light assemblies. Features aggressive welcome startup animations, sequential turn signals, and high-intensity LED brake arrays.",
+    "features": [
+      "Smoked lens with high-output Osram LED internal matrices",
+      "Dynamic sweeping welcome sequence upon vehicle unlock",
+      "Integrated sequential amber turn signal indicators",
+      "100% plug-and-play harness — zero wire splicing required"
+    ],
+    "specifications": {
+      "Vehicle Fitment": "Toyota Camry 2018-2024 (LE, SE, XLE, XSE, TRD)",
+      "Lens Finish": "Smoked Polycarbonate (DOT & SAE compliant)",
+      "Warranty": "2-Year Manufacturer BBC Warranty"
+    },
+    "installation": "Direct bolt-on installation using OEM mounting studs and harness connectors. In-shop installation available.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.9,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "bbc-starlight-kit",
+    "name": "Fiber Optic Starlight Headliner Kit (550+ Stars)",
+    "category": "Lights / LED",
+    "subCategory": "Car interior lights",
+    "price": 389.99,
+    "comparePrice": 449.99,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewsCount": 38,
+    "inStock": true,
+    "image": "images/products/starlight-headliner.jpg",
+    "shortDescription": "App-controlled RGBW fiber optic twinkle starlight ceiling kit with shooting star engine.",
+    "featured": true,
+    "createdAt": "2026-09-18",
+    "sku": "BBC-BBC-ST-01",
+    "gallery": [
+      "images/products/starlight-headliner.jpg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer Fiber Optic Starlight Headliner Kit (550+ Stars), meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Lights / LED",
+      "Sub-Category": "Car interior lights",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.9,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "bbc-ambient-dash",
+    "name": "Integrated Symphony LED Ambient Lighting Suite",
+    "category": "Dashboard Accessories",
+    "subCategory": "AMG Dashboard Accessories",
+    "price": 249.99,
+    "comparePrice": 299.99,
+    "onSale": true,
+    "rating": 4.8,
+    "reviewsCount": 24,
+    "inStock": true,
+    "image": "images/products/ambient-lighting.svg",
+    "shortDescription": "Full interior hidden acrylic fiber lighting with dynamic flow and 64-color smartphone control.",
+    "featured": false,
+    "createdAt": "2026-09-15",
+    "sku": "BBC-BBC-AM-01",
+    "gallery": [
+      "images/products/ambient-lighting.svg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer Integrated Symphony LED Ambient Lighting Suite, meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Dashboard Accessories",
+      "Sub-Category": "AMG Dashboard Accessories",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.8,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "bbc-carbon-wheel",
+    "name": "Custom Carbon Fiber LED Shift Indicator Wheel",
+    "category": "Car Accessories",
+    "subCategory": "Customised Decals/Stickers",
+    "price": 899.99,
+    "comparePrice": 1050.0,
+    "onSale": true,
+    "rating": 5.0,
+    "reviewsCount": 19,
+    "inStock": true,
+    "image": "images/products/carbon-wheel.svg",
+    "shortDescription": "Real pre-preg gloss carbon fiber with perforated leather grips & LED RPM shift display.",
+    "featured": false,
+    "createdAt": "2026-09-11",
+    "sku": "BBC-BBC-CA-01",
+    "gallery": [
+      "images/products/carbon-wheel.svg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer Custom Carbon Fiber LED Shift Indicator Wheel, meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Car Accessories",
+      "Sub-Category": "Customised Decals/Stickers",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 5.0,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "bbc-ceramic-pro",
+    "name": "BBC Diamond 9H Graphene Ceramic Coating Kit (50ml)",
+    "category": "Car Accessories",
+    "subCategory": "Floor mats",
+    "price": 149.99,
+    "comparePrice": 179.99,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewsCount": 42,
+    "inStock": true,
+    "image": "images/products/ceramic-coating.svg",
+    "shortDescription": "Ultra-hydrophobic 5-year scratch & UV protection coating engineered for harsh Canadian winters.",
+    "featured": false,
+    "createdAt": "2026-09-13",
+    "sku": "BBC-BBC-CE-01",
+    "gallery": [
+      "images/products/ceramic-coating.svg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer BBC Diamond 9H Graphene Ceramic Coating Kit (50ml), meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Car Accessories",
+      "Sub-Category": "Floor mats",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.9,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "bbc-underglow-suite",
+    "name": "Universal RGB Underglow Chassis Light Suite (App Control)",
+    "category": "Lights / LED",
+    "subCategory": "Customised logo door lights",
+    "price": 189.99,
+    "comparePrice": 229.99,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewsCount": 31,
+    "inStock": true,
+    "image": "images/products/underglow-lights.svg",
+    "shortDescription": "Waterproof IP68 exterior dynamic chase underglow tubes with brake trigger & turn signal sync.",
+    "featured": false,
+    "createdAt": "2026-09-17",
+    "sku": "BBC-BBC-UN-01",
+    "gallery": [
+      "images/products/underglow-lights.svg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer Universal RGB Underglow Chassis Light Suite (App Control), meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Lights / LED",
+      "Sub-Category": "Customised logo door lights",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.9,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "bbc-turbine-vents",
+    "name": "Dashboard Turbo Air Vent RGB Jet Nozzle Set (Set of 5)",
+    "category": "Dashboard Accessories",
+    "subCategory": "AMG Dashboard Accessories",
+    "price": 159.99,
+    "comparePrice": 199.99,
+    "onSale": true,
+    "rating": 4.7,
+    "reviewsCount": 16,
+    "inStock": true,
+    "image": "images/products/jet-vents.svg",
+    "shortDescription": "Mercedes OEM-style illuminated rotary turbine AC vents with 64-color ambient synchronization.",
+    "featured": false,
+    "createdAt": "2026-09-14",
+    "sku": "BBC-BBC-TU-01",
+    "gallery": [
+      "images/products/jet-vents.svg"
+    ],
+    "fullDescription": "Brown Boys Customs is pleased to offer Dashboard Turbo Air Vent RGB Jet Nozzle Set (Set of 5), meticulously engineered to enhance your vehicle's styling, performance, and presence. Tested rigorously for durability under demanding Canadian seasonal conditions.",
+    "features": [
+      "Premium materials engineered for long-lasting durability",
+      "Designed and curated by BBC automotive styling specialists",
+      "Fast same-day pickup at Westwood Mall (Unit 1C30) or tracked shipping",
+      "Backed by Brown Boys Customs customer satisfaction guarantee"
+    ],
+    "specifications": {
+      "Category": "Dashboard Accessories",
+      "Sub-Category": "AMG Dashboard Accessories",
+      "Condition": "Brand New Authentic BBC Item",
+      "Availability": "In Stock at Westwood Mall / Ready to Ship"
+    },
+    "installation": "Standard automotive accessory installation. Professional installation available at our Mississauga location.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.7,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  },
+  {
+    "id": "custom-license-plate-frame",
+    "name": "Custom License Plate Frame",
+    "category": "Car Accessories",
+    "subCategory": "Exterior Accessories",
+    "price": 45.0,
+    "comparePrice": 55.0,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewsCount": 24,
+    "inStock": true,
+    "image": "images/products/custom-license-plate-frame.jpg",
+    "shortDescription": "Matte black automotive license plate frame with gold metallic embossed Brown Boys Customs emblem.",
+    "featured": true,
+    "createdAt": "2026-09-24",
+    "sku": "BBC-FRAME-01",
+    "gallery": [
+      "images/products/custom-license-plate-frame.jpg"
+    ],
+    "fullDescription": "Precision-crafted matte black automotive license plate frame featuring an embossed solid brass BBC gold medallion emblem. Engineered with universal North American fitment, stainless hardware caps, and rattle-dampening backing.",
+    "features": [
+      "Heavy-duty matte black cast alloy frame with anti-rust powder coating",
+      "Solid metallic gold embossed BBC Brown Boys Customs medallion",
+      "Universal North American 6x12 inch standard fitment",
+      "Includes matte black screw cap covers and anti-vibration silicone pads"
+    ],
+    "specifications": {
+      "Dimensions": "Standard 12.25\" x 6.3\" North America",
+      "Material": "Heavy-Duty Powder-Coated Metal Alloy",
+      "Finish": "Matte Black with Gold Metallic Medallion",
+      "Condition": "Brand New In Packaging"
+    },
+    "installation": "Attaches with standard 2-hole or 4-hole license plate screws. Hardware caps included.",
+    "reviews": [
+      {
+        "author": "Sunny G.",
+        "location": "Mississauga, ON",
+        "vehicle": "GTA Driver",
+        "rating": 4.9,
+        "date": "September 2026",
+        "title": "Solid quality, BBC never disappoints",
+        "comment": "Super clean product. Exactly as advertised. Customer service at Westwood Mall was top tier."
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <defs>
+    <linearGradient id="mod-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050711"/>
+      <stop offset="50%" stop-color="#0c1228"/>
+      <stop offset="100%" stop-color="#161c38"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#mod-bg)"/>
+
+  <!-- Performance Engine & Tuning Blueprint Grid -->
+  <g stroke="#1e274a" stroke-width="1.5" opacity="0.6">
+    <circle cx="400" cy="230" r="140" fill="none"/>
+    <circle cx="400" cy="230" r="180" fill="none"/>
+    <line x1="200" y1="230" x2="600" y2="230"/>
+    <line x1="400" y1="50" x2="400" y2="410"/>
+  </g>
+
+  <!-- Turbocharger & Coilover Graphic -->
+  <g transform="translate(240, 100)">
+    <!-- Turbo housing -->
+    <path d="M120 130 C120 70 200 70 200 130 C200 170 170 190 120 180 L80 180 L80 140 Z" fill="#131a38" stroke="#c9a13d" stroke-width="3"/>
+    <circle cx="160" cy="130" r="30" fill="#090d20" stroke="#e2e8f0" stroke-width="2"/>
+    <!-- Turbine blades -->
+    <path d="M160 100 L160 160 M130 130 L190 130 M138 108 L182 152 M138 152 L182 108" stroke="#c9a13d" stroke-width="2.5"/>
+
+    <!-- Coilover suspension spring -->
+    <g transform="translate(240, 30)">
+      <rect x="0" y="0" width="40" height="30" rx="4" fill="#c9a13d"/>
+      <path d="M5 30 Q35 45 5 60 Q35 75 5 90 Q35 105 5 120 Q35 135 5 150 Q35 165 5 180" stroke="#eab308" stroke-width="8" fill="none"/>
+      <rect x="5" y="180" width="30" height="40" rx="4" fill="#1f294d" stroke="#c9a13d" stroke-width="2"/>
+    </g>
+  </g>
+
+  <rect x="40" y="40" width="240" height="34" rx="6" fill="#0a0f24" stroke="#c9a13d" stroke-width="1.5"/>
+  <text x="160" y="62" font-family="'Barlow Condensed', sans-serif" font-size="14" font-weight="800" fill="#c9a13d" text-anchor="middle" letter-spacing="2">CAR MODIFICATION COMPENDIUM</text>
+  
+  <text x="400" y="435" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">EVERYTHING YOU NEED TO KNOW ABOUT CUSTOM BUILDS</text>
+</svg>

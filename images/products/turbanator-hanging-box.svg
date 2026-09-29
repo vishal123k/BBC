@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="box-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c1a"/>
+      <stop offset="100%" stop-color="#141a33"/>
+    </linearGradient>
+    <linearGradient id="gold-foil" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e18a"/>
+      <stop offset="50%" stop-color="#c9a13d"/>
+      <stop offset="100%" stop-color="#8a671d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#box-bg)"/>
+
+  <!-- Presentation Box base -->
+  <rect x="130" y="80" width="340" height="240" rx="12" fill="#0c1126" stroke="#252e4d" stroke-width="2"/>
+  
+  <!-- Velvet Inner Bed -->
+  <rect x="145" y="95" width="310" height="210" rx="8" fill="#060914" stroke="#c9a13d" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Gold Foil BBC Brand Stamp inside Box Lid -->
+  <text x="300" y="130" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="900" fill="url(#gold-foil)" text-anchor="middle" letter-spacing="4">BROWN BOYS CUSTOMS</text>
+  <text x="300" y="148" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#94a3b8" text-anchor="middle" letter-spacing="2">SIGNATURE COLLECTOR'S PACKAGING</text>
+
+  <!-- Product nestled in velvet -->
+  <circle cx="300" cy="205" r="42" fill="#111736" stroke="url(#gold-foil)" stroke-width="2.5"/>
+  <path d="M272 205 C272 175 328 175 328 205 Z" fill="#eab308"/>
+  <circle cx="300" cy="211" r="11" fill="#090d20"/>
+  <rect x="286" y="207" width="11" height="5" rx="1" fill="#000" stroke="#c9a13d" stroke-width="1"/>
+  <rect x="303" y="207" width="11" height="5" rx="1" fill="#000" stroke="#c9a13d" stroke-width="1"/>
+  <path d="M290 247 L310 247 L316 288 L284 288 Z" fill="url(#gold-foil)"/>
+
+  <!-- Seal Badge -->
+  <circle cx="430" cy="270" r="22" fill="#141a35" stroke="url(#gold-foil)" stroke-width="1.5"/>
+  <text x="430" y="274" font-family="'Barlow Condensed', sans-serif" font-size="10" font-weight="800" fill="url(#gold-foil)" text-anchor="middle">100%</text>
+  <text x="430" y="283" font-family="'Outfit', sans-serif" font-size="7" font-weight="700" fill="#ffffff" text-anchor="middle">AUTHENTIC</text>
+
+  <rect x="20" y="340" width="220" height="40" rx="6" fill="#0b0f24" fill-opacity="0.85" stroke="#c9a13d" stroke-width="1"/>
+  <text x="130" y="365" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" fill="#c9a13d" text-anchor="middle">PREMIUM GIFT BOX PACKAGING</text>
+</svg>

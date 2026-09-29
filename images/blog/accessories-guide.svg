@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <defs>
+    <linearGradient id="acc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060914"/>
+      <stop offset="60%" stop-color="#0e1433"/>
+      <stop offset="100%" stop-color="#182047"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#acc-bg)"/>
+
+  <!-- Interior Cockpit & Accessories Display -->
+  <g transform="translate(120, 100)">
+    <!-- Steering wheel with carbon fiber rim & gold 12 o'clock stripe -->
+    <circle cx="200" cy="170" r="110" fill="none" stroke="#252d4d" stroke-width="26"/>
+    <circle cx="200" cy="170" r="110" fill="none" stroke="#c9a13d" stroke-width="4" stroke-dasharray="16 380"/>
+    <rect x="195" y="47" width="10" height="26" fill="#eab308"/>
+    <!-- Wheel Spokes & BBC Center Cap -->
+    <path d="M120 170 L280 170 M200 170 L200 250" stroke="#1a2240" stroke-width="16"/>
+    <circle cx="200" cy="170" r="32" fill="#090d20" stroke="#c9a13d" stroke-width="2"/>
+    <text x="200" y="176" font-family="'Barlow Condensed', sans-serif" font-size="16" font-weight="900" fill="#c9a13d" text-anchor="middle">BBC</text>
+
+    <!-- Hanging Parandi / Latkan Ornament next to cockpit -->
+    <g transform="translate(420, 40)">
+      <line x1="0" y1="0" x2="0" y2="80" stroke="#c9a13d" stroke-width="3" stroke-dasharray="4 2"/>
+      <circle cx="0" cy="110" r="30" fill="#111736" stroke="#c9a13d" stroke-width="2"/>
+      <path d="M-18 110 C-18 85 18 85 18 110 Z" fill="#eab308"/>
+      <path d="M-8 140 L8 140 L12 210 L-12 210 Z" fill="#c9a13d"/>
+    </g>
+
+    <!-- Ambient Glow Bar underneath -->
+    <line x1="40" y1="310" x2="520" y2="310" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" filter="drop-shadow(0 0 10px #38bdf8)"/>
+  </g>
+
+  <rect x="40" y="40" width="220" height="34" rx="6" fill="#0a0f24" stroke="#c9a13d" stroke-width="1.5"/>
+  <text x="150" y="62" font-family="'Barlow Condensed', sans-serif" font-size="14" font-weight="800" fill="#c9a13d" text-anchor="middle" letter-spacing="2">BBC ACCESSORIES BUYER'S GUIDE</text>
+  
+  <text x="400" y="435" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">ELEVATE YOUR CABIN & EXTERIOR</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#090d20"/>
+  <!-- Luxury SUV Dashboard Silhouette with OLED Curved Dash -->
+  <path d="M60 260 C200 180 400 180 540 260 L540 330 L60 330 Z" fill="#111736" stroke="#1e294f" stroke-width="2"/>
+  <!-- Curved OLED Screen Frame -->
+  <path d="M120 230 C220 190 380 190 480 230" stroke="#00f2fe" stroke-width="5" stroke-linecap="round" filter="drop-shadow(0 0 10px #00f2fe)"/>
+  <!-- Escalade ambient lines -->
+  <path d="M80 260 C200 200 400 200 520 260" stroke="#c9a13d" stroke-width="4" stroke-linecap="round" filter="drop-shadow(0 0 8px #c9a13d)"/>
+  <text x="300" y="355" font-family="'Barlow Condensed', sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="2">CADILLAC ESCALADE AMBIENT LIGHTS</text>
+</svg>

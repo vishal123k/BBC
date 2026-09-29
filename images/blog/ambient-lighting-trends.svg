@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <rect width="600" height="360" fill="#0b0f24"/>
+  <rect x="20" y="20" width="560" height="320" rx="12" fill="#131a38" stroke="#1f294f"/>
+  <!-- Multi-color glowing soundwaves / LED bars -->
+  <g stroke-linecap="round" stroke-width="6">
+    <line x1="140" y1="180" x2="140" y2="120" stroke="#f43f5e"/>
+    <line x1="170" y1="200" x2="170" y2="100" stroke="#fb923c"/>
+    <line x1="200" y1="220" x2="200" y2="80" stroke="#c9a13d"/>
+    <line x1="230" y1="210" x2="230" y2="90" stroke="#eab308"/>
+    <line x1="260" y1="230" x2="260" y2="70" stroke="#22c55e"/>
+    <line x1="290" y1="250" x2="290" y2="50" stroke="#06b6d4"/>
+    <line x1="320" y1="250" x2="320" y2="50" stroke="#3b82f6"/>
+    <line x1="350" y1="230" x2="350" y2="70" stroke="#6366f1"/>
+    <line x1="380" y1="210" x2="380" y2="90" stroke="#a855f7"/>
+    <line x1="410" y1="220" x2="410" y2="80" stroke="#ec4899"/>
+    <line x1="440" y1="200" x2="440" y2="100" stroke="#f43f5e"/>
+    <line x1="470" y1="180" x2="470" y2="120" stroke="#c9a13d"/>
+  </g>
+  <text x="300" y="290" font-family="'Barlow Condensed', sans-serif" font-size="20" font-weight="800" fill="#f8fafc" text-anchor="middle" letter-spacing="1.5">NEXT-GEN CABIN LIGHTING TRENDS</text>
+  <text x="300" y="315" font-family="'Outfit', sans-serif" font-size="12" font-weight="600" fill="#c9a13d" text-anchor="middle" letter-spacing="1">SYMPHONY FLOWS & HIDDEN FIBERS</text>
+</svg>

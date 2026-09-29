@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <rect width="400" height="280" fill="#0d1430"/>
+  <!-- Heavy Duty Truck Silhouette & Bullbar -->
+  <path d="M70 170 L110 110 L250 110 L310 170 L340 170 L340 210 L60 210 Z" fill="#131c3f" stroke="#1e294f" stroke-width="2"/>
+  <circle cx="120" cy="210" r="30" fill="#0b0f22" stroke="#c9a13d" stroke-width="4"/>
+  <circle cx="280" cy="210" r="30" fill="#0b0f22" stroke="#c9a13d" stroke-width="4"/>
+  <!-- Front Grille & Bullbar Guard -->
+  <path d="M310 150 L350 150 L350 200 L310 200" stroke="#c9a13d" stroke-width="4" fill="none"/>
+  <!-- Top Cab Marker Lights -->
+  <circle cx="150" cy="105" r="4" fill="#f59e0b"/>
+  <circle cx="180" cy="105" r="4" fill="#f59e0b"/>
+  <circle cx="210" cy="105" r="4" fill="#f59e0b"/>
+</svg>

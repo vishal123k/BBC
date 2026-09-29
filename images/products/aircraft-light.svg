@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#090d20"/>
+  <!-- Strobing Aircraft Warning / Auxiliary Light -->
+  <circle cx="300" cy="180" r="85" fill="#131c3f" stroke="#c9a13d" stroke-width="3"/>
+  <circle cx="300" cy="180" r="55" fill="#080b18" stroke="#334155" stroke-width="2"/>
+  <circle cx="300" cy="180" r="30" fill="#ffffff" filter="drop-shadow(0 0 16px #38bdf8)"/>
+  <!-- Light flash rays -->
+  <g stroke="#38bdf8" stroke-width="3" stroke-linecap="round">
+    <line x1="300" y1="60" x2="300" y2="40"/>
+    <line x1="300" y1="300" x2="300" y2="320"/>
+    <line x1="180" y1="180" x2="160" y2="180"/>
+    <line x1="420" y1="180" x2="440" y2="180"/>
+    <line x1="215" y1="95" x2="200" y2="80"/>
+    <line x1="385" y1="265" x2="400" y2="280"/>
+    <line x1="385" y1="95" x2="400" y2="80"/>
+    <line x1="215" y1="265" x2="200" y2="280"/>
+  </g>
+  <text x="300" y="355" font-family="'Barlow Condensed', sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="2">AIRCRAFT STROBE LIGHT (PER PIECE)</text>
+</svg>

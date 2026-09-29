@@ -1,0 +1,39 @@
+# ─── Sensitive Data — NEVER commit to GitHub ──────────────────────────────────
+data/admin_credentials.json
+data/orders.json
+data/inquiries.json
+
+# ─── Build Artifacts ──────────────────────────────────────────────────────────
+dist/
+dist.zip
+
+# ─── Dev Tools ────────────────────────────────────────────────────────────────
+dev_server.py
+email_template.py
+update_footer_and_navbar.py
+email-preview.html
+__pycache__/
+*.pyc
+
+# ─── Node / npm ───────────────────────────────────────────────────────────────
+node_modules/
+package-lock.json
+
+# ─── OS Files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Editor Files ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Generated Email Previews ─────────────────────────────────────────────────
+data/latest_admin_email.html
+data/latest_customer_email.html
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+error_log

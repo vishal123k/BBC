@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#090d20"/>
+  <!-- Bottle body -->
+  <rect x="255" y="140" width="90" height="150" rx="8" fill="#111827" stroke="#c9a13d" stroke-width="2"/>
+  <!-- Bottle neck & cap -->
+  <rect x="280" y="100" width="40" height="40" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+  <rect x="275" y="85" width="50" height="20" rx="3" fill="#c9a13d"/>
+  <!-- Bottle Label -->
+  <rect x="263" y="165" width="74" height="100" rx="4" fill="#0d1229" stroke="#1f293d"/>
+  <text x="300" y="190" font-family="'Barlow Condensed', sans-serif" font-size="16" font-weight="900" fill="#c9a13d" text-anchor="middle">BBC 9H</text>
+  <text x="300" y="210" font-family="'Outfit', sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">GRAPHENE</text>
+  <text x="300" y="225" font-family="'Outfit', sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">CERAMIC COAT</text>
+  <text x="300" y="250" font-family="'Outfit', sans-serif" font-size="10" font-weight="700" fill="#c9a13d" text-anchor="middle">50 ML</text>
+  <!-- Water Beading Hydrophobic Droplets on Gloss floor -->
+  <ellipse cx="200" cy="270" rx="14" ry="10" fill="#38bdf8" opacity="0.8"/>
+  <ellipse cx="400" cy="270" rx="18" ry="12" fill="#38bdf8" opacity="0.8"/>
+  <ellipse cx="380" cy="290" rx="10" ry="7" fill="#38bdf8" opacity="0.7"/>
+  <text x="300" y="355" font-family="'Barlow Condensed', sans-serif" font-size="16" font-weight="700" fill="#f8fafc" text-anchor="middle" letter-spacing="2">9H GRAPHENE CERAMIC SYSTEM</text>
+</svg>

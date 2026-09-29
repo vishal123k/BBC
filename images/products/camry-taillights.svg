@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#090d20"/>
+  <!-- Camry Smoked Taillight Housing with Dynamic RGB Lightbar -->
+  <path d="M100 160 L240 160 L280 200 L120 220 Z" fill="#180b12" stroke="#dc2626" stroke-width="3"/>
+  <path d="M500 160 L360 160 L320 200 L480 220 Z" fill="#180b12" stroke="#dc2626" stroke-width="3"/>
+  <path d="M110 170 L230 170 L260 200" stroke="#f43f5e" stroke-width="5" stroke-linecap="round" filter="drop-shadow(0 0 10px #f43f5e)"/>
+  <path d="M490 170 L370 170 L340 200" stroke="#f43f5e" stroke-width="5" stroke-linecap="round" filter="drop-shadow(0 0 10px #f43f5e)"/>
+  <!-- Center connecting lightbar -->
+  <line x1="260" y1="180" x2="340" y2="180" stroke="#f43f5e" stroke-width="4" filter="drop-shadow(0 0 8px #f43f5e)"/>
+  <text x="300" y="355" font-family="'Barlow Condensed', sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="2">CAMRY RGB SMOKED TAIL LIGHTS</text>
+</svg>

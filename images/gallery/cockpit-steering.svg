@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" fill="none">
+  <rect width="500" height="320" fill="#090d20"/>
+  <rect x="30" y="30" width="440" height="260" rx="8" fill="#111736" stroke="#1f294f"/>
+  <!-- Steering wheel and carbon trim display stand -->
+  <circle cx="250" cy="180" r="70" stroke="#1f293d" stroke-width="16" fill="none"/>
+  <circle cx="250" cy="180" r="22" fill="#0d1229" stroke="#c9a13d" stroke-width="2"/>
+  <text x="250" y="185" font-family="'Barlow Condensed', sans-serif" font-size="11" font-weight="900" fill="#c9a13d" text-anchor="middle">BBC</text>
+  <path d="M210 240 L290 240" stroke="#c9a13d" stroke-width="8" stroke-linecap="round"/>
+  <!-- LED shift lights on top hub -->
+  <circle cx="230" cy="130" r="3" fill="#22c55e"/>
+  <circle cx="240" cy="130" r="3" fill="#22c55e"/>
+  <circle cx="250" cy="130" r="3" fill="#eab308"/>
+  <circle cx="260" cy="130" r="3" fill="#ef4444"/>
+  <circle cx="270" cy="130" r="3" fill="#ef4444"/>
+  <text x="250" y="85" font-family="'Barlow Condensed', sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">CUSTOM CARBON LAB</text>
+  <text x="250" y="110" font-family="'Outfit', sans-serif" font-size="11" fill="#c9a13d" text-anchor="middle">BESPOKE STITCHING &amp; LED INTEGRATION</text>
+</svg>

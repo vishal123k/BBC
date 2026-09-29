@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#090d20"/>
+  <rect x="50" y="50" width="500" height="300" rx="10" fill="#111736" stroke="#1f294f"/>
+  <!-- 1969 Dodge Challenger Muscle Car Silhouette -->
+  <path d="M100 240 L130 180 L220 170 L340 170 L430 190 L500 210 L500 250 L100 250 Z" fill="#0c1129" stroke="#c9a13d" stroke-width="2.5"/>
+  <circle cx="170" cy="250" r="32" fill="#000000" stroke="#c9a13d" stroke-width="3"/>
+  <circle cx="430" cy="250" r="32" fill="#000000" stroke="#c9a13d" stroke-width="3"/>
+  <path d="M220 175 L330 175 L310 205 L200 205 Z" fill="#1e294b" stroke="#38bdf8" stroke-width="1.5"/>
+  <!-- Dual White Hood Racing Stripes -->
+  <line x1="150" y1="180" x2="210" y2="175" stroke="#ffffff" stroke-width="4"/>
+  <line x1="160" y1="180" x2="220" y2="175" stroke="#ffffff" stroke-width="4"/>
+  <text x="300" y="325" font-family="'Barlow Condensed', sans-serif" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">1969 DODGE CHALLENGER 1:18 DIE-CAST</text>
+  <text x="300" y="345" font-family="'Outfit', sans-serif" font-size="11" fill="#c9a13d" text-anchor="middle">OFFICIAL COLLECTOR SHOWPIECE</text>
+</svg>

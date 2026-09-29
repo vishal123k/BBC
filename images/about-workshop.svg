@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" fill="none">
+  <rect width="700" height="500" fill="#080c1d"/>
+  
+  <!-- Workshop Wall Grid -->
+  <defs>
+    <pattern id="brickWall" width="40" height="20" patternUnits="userSpaceOnUse">
+      <rect width="40" height="20" fill="#0c1126" stroke="#151e3f" stroke-width="0.8"/>
+    </pattern>
+    <radialGradient id="neonGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#c9a13d" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#080c1d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="700" height="300" fill="url(#brickWall)"/>
+  <rect width="700" height="500" fill="url(#neonGlow)"/>
+
+  <!-- Glowing Neon Sign on Workshop Wall -->
+  <g transform="translate(230, 40)">
+    <rect x="0" y="0" width="240" height="60" rx="10" fill="#080b18" stroke="#c9a13d" stroke-width="2.5" filter="drop-shadow(0 0 12px rgba(201,161,61,0.5))"/>
+    <text x="120" y="38" font-family="'Barlow Condensed', sans-serif" font-size="24" font-weight="900" fill="#c9a13d" text-anchor="middle" letter-spacing="3">BROWN BOYS CUSTOMS</text>
+  </g>
+
+  <!-- Hydraulic Lift Posts -->
+  <rect x="80" y="100" width="24" height="400" fill="#1e294b" stroke="#334155"/>
+  <rect x="596" y="100" width="24" height="400" fill="#1e294b" stroke="#334155"/>
+
+  <!-- Lift arms holding a sleek coupe in the air -->
+  <line x1="92" y1="280" x2="250" y2="330" stroke="#c9a13d" stroke-width="8"/>
+  <line x1="608" y1="280" x2="450" y2="330" stroke="#c9a13d" stroke-width="8"/>
+
+  <!-- Supercar / Custom Coupe Silhouette -->
+  <g transform="translate(130, 190) scale(0.6)">
+    <!-- Car body -->
+    <path d="M50 200 Q200 120 400 120 Q560 130 680 190 Q720 210 740 240 L30 240 Z" fill="#121a3b" stroke="#c9a13d" stroke-width="3"/>
+    <!-- Cabin starlight glow seen through window -->
+    <path d="M220 190 Q340 130 480 130 Q540 130 600 190 Z" fill="#080b18" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="300" cy="160" r="1.5" fill="#ffffff"/>
+    <circle cx="340" cy="150" r="2" fill="#c9a13d"/>
+    <circle cx="390" cy="165" r="1.5" fill="#ffffff"/>
+    <circle cx="440" cy="155" r="2" fill="#c9a13d"/>
+    <circle cx="500" cy="165" r="1.8" fill="#ffffff"/>
+    <!-- Underglow light bar under car on the lift -->
+    <ellipse cx="380" cy="245" rx="300" ry="12" fill="#c9a13d" opacity="0.4" filter="blur(6px)"/>
+  </g>
+
+  <!-- Polished Epoxy Workshop Floor -->
+  <polygon points="0,380 700,380 700,500 0,500" fill="#050711"/>
+  <line x1="0" y1="380" x2="700" y2="380" stroke="#1e294f" stroke-width="2"/>
+  <line x1="150" y1="380" x2="50" y2="500" stroke="#151e3f" stroke-width="1.5"/>
+  <line x1="350" y1="380" x2="350" y2="500" stroke="#151e3f" stroke-width="1.5"/>
+  <line x1="550" y1="380" x2="650" y2="500" stroke="#151e3f" stroke-width="1.5"/>
+
+  <!-- Badge in corner -->
+  <g transform="translate(30, 430)">
+    <rect x="0" y="0" width="220" height="46" rx="6" fill="#0d1229" stroke="#c9a13d" stroke-width="1.5"/>
+    <text x="110" y="28" font-family="'Barlow Condensed', sans-serif" font-size="14" font-weight="700" fill="#c9a13d" text-anchor="middle" letter-spacing="1">WESTWOOD MALL BAY • MISSISSAUGA</text>
+  </g>
+</svg>

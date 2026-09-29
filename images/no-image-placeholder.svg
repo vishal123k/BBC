@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#0d1430"/>
+  <rect x="20" y="20" width="560" height="360" rx="8" fill="#131c3f" stroke="#1f294f" stroke-dasharray="6 6"/>
+  <!-- Camera / Missing Image Icon -->
+  <g transform="translate(250, 130)">
+    <rect x="10" y="20" width="80" height="60" rx="8" fill="#090d20" stroke="#c9a13d" stroke-width="2.5"/>
+    <circle cx="50" cy="50" r="16" stroke="#c9a13d" stroke-width="2.5" fill="#131c3f"/>
+    <path d="M30 20 L40 10 L60 10 L70 20 Z" fill="#c9a13d"/>
+    <circle cx="70" cy="32" r="3" fill="#c9a13d"/>
+  </g>
+  <text x="300" y="245" font-family="'Barlow Condensed', sans-serif" font-size="20" font-weight="700" fill="#f8fafc" text-anchor="middle" letter-spacing="1.5">IMAGE COMING SOON</text>
+  <text x="300" y="270" font-family="'Outfit', sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Brown Boys Customs • Photo In Progress</text>
+</svg>

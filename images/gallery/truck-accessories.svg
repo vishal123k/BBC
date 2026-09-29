@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" fill="none">
+  <rect width="500" height="320" fill="#090d20"/>
+  <rect x="30" y="30" width="440" height="260" rx="8" fill="#111736" stroke="#1f294f"/>
+  <!-- Truck accessories & cultural ornaments display showcase -->
+  <rect x="70" y="140" width="360" height="120" rx="6" fill="#080b18" stroke="#c9a13d" stroke-width="1.5"/>
+  <!-- Hangings tassels (Parandi / Latkan / Jhalar) hanging on display rail -->
+  <line x1="90" y1="160" x2="410" y2="160" stroke="#475569" stroke-width="3"/>
+  <!-- Tassel 1 -->
+  <line x1="130" y1="160" x2="130" y2="200" stroke="#c9a13d" stroke-width="2"/>
+  <circle cx="130" cy="205" r="8" fill="#f59e0b"/>
+  <path d="M124 213 L136 213 L138 245 L122 245 Z" fill="#ef4444"/>
+  <!-- Tassel 2 -->
+  <line x1="210" y1="160" x2="210" y2="195" stroke="#c9a13d" stroke-width="2"/>
+  <circle cx="210" cy="200" r="10" fill="#c9a13d"/>
+  <path d="M202 210 L218 210 L220 248 L200 248 Z" fill="#c9a13d"/>
+  <!-- Tassel 3 -->
+  <line x1="290" y1="160" x2="290" y2="200" stroke="#c9a13d" stroke-width="2"/>
+  <circle cx="290" cy="205" r="8" fill="#3b82f6"/>
+  <path d="M284 213 L296 213 L298 245 L282 245 Z" fill="#10b981"/>
+  <!-- Tassel 4 -->
+  <line x1="370" y1="160" x2="370" y2="195" stroke="#c9a13d" stroke-width="2"/>
+  <circle cx="370" cy="200" r="10" fill="#f59e0b"/>
+  <path d="M362 210 L378 210 L380 248 L360 248 Z" fill="#f59e0b"/>
+  <text x="250" y="85" font-family="'Barlow Condensed', sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">CULTURAL TRUCK &amp; CABIN SHOWCASE</text>
+  <text x="250" y="110" font-family="'Outfit', sans-serif" font-size="11" fill="#c9a13d" text-anchor="middle">PARANDI, LATKAN, JHALAR &amp; DIE-CAST ACCENTS</text>
+</svg>
